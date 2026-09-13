@@ -93,6 +93,19 @@ interface TmdbTvDetail {
 	backdrop_path?: string;
 }
 
+interface TmdbSeasonEpisode {
+	runtime?: number;
+	vote_average?: number;
+}
+
+interface TmdbSeasonDetail {
+	name: string;
+	air_date?: string;
+	overview?: string;
+	poster_path?: string;
+	episodes?: TmdbSeasonEpisode[];
+}
+
 async function tmdbFetch<T>(pathname: string): Promise<T> {
 	const url = new URL(`${API_BASE}${pathname}`);
 	url.searchParams.set('api_key', API_KEY!);
@@ -103,28 +116,40 @@ async function tmdbFetch<T>(pathname: string): Promise<T> {
 	return res.json() as Promise<T>;
 }
 
+// Several season Entries resolve to the exact same search (same show,
+// different `season`), so cache by the search itself rather than the entry.
+const searchCache = new Map<string, Promise<number | null>>();
+
 async function resolveTmdbId(entry: Entry): Promise<number | null> {
 	if (!entry.tmdb) return null;
 	if (entry.tmdb.tmdbId) return entry.tmdb.tmdbId;
 
 	const query = entry.tmdb.query ?? entry.title;
 	const searchType = entry.tmdb.type === 'movie' ? 'movie' : 'tv';
-	const data = await tmdbFetch<TmdbSearchResponse>(
-		`/search/${searchType}?query=${encodeURIComponent(query)}&include_adult=false`
-	);
+	const cacheKey = `${searchType}:${query}:${entry.tmdb.year ?? ''}`;
 
-	const results = data.results ?? [];
-	if (results.length === 0) return null;
+	let cached = searchCache.get(cacheKey);
+	if (!cached) {
+		cached = (async () => {
+			const data = await tmdbFetch<TmdbSearchResponse>(
+				`/search/${searchType}?query=${encodeURIComponent(query)}&include_adult=false`
+			);
+			const results = data.results ?? [];
+			if (results.length === 0) return null;
 
-	if (entry.tmdb.year) {
-		const withYear = results.find((r) => {
-			const date = r.release_date ?? r.first_air_date;
-			return date?.startsWith(String(entry.tmdb!.year));
-		});
-		if (withYear) return withYear.id;
+			if (entry.tmdb!.year) {
+				const withYear = results.find((r) => {
+					const date = r.release_date ?? r.first_air_date;
+					return date?.startsWith(String(entry.tmdb!.year));
+				});
+				if (withYear) return withYear.id;
+			}
+
+			return results[0].id;
+		})();
+		searchCache.set(cacheKey, cached);
 	}
-
-	return results[0].id;
+	return cached;
 }
 
 async function fetchMovie(id: number): Promise<GeneratedFields> {
@@ -177,6 +202,56 @@ async function fetchTv(id: number): Promise<GeneratedFields> {
 	};
 }
 
+// One TMDB show can back several Entry objects (one per season), so cache
+// its credits/backdrop instead of refetching them once per season.
+const showCache = new Map<number, Promise<{ credits: TmdbCredits; detail: TmdbTvDetail }>>();
+
+function getShow(id: number) {
+	let cached = showCache.get(id);
+	if (!cached) {
+		cached = Promise.all([
+			tmdbFetch<TmdbTvDetail>(`/tv/${id}`),
+			tmdbFetch<TmdbCredits>(`/tv/${id}/credits`)
+		]).then(([detail, credits]) => ({ detail, credits }));
+		showCache.set(id, cached);
+	}
+	return cached;
+}
+
+async function fetchTvSeason(showId: number, seasonNumber: number): Promise<GeneratedFields> {
+	const [{ detail: show, credits }, season] = await Promise.all([
+		getShow(showId),
+		tmdbFetch<TmdbSeasonDetail>(`/tv/${showId}/season/${seasonNumber}`)
+	]);
+
+	const episodes = season.episodes ?? [];
+	const runtimes = episodes
+		.map((e) => e.runtime)
+		.filter((n): n is number => typeof n === 'number' && n > 0);
+	const ratings = episodes
+		.map((e) => e.vote_average)
+		.filter((n): n is number => typeof n === 'number' && n > 0);
+
+	return {
+		title: season.name,
+		releaseDate: season.air_date || undefined,
+		runtimeMinutes: runtimes.length
+			? Math.round(runtimes.reduce((a, b) => a + b, 0) / runtimes.length)
+			: undefined,
+		episodes: episodes.length || undefined,
+		seasons: 1,
+		synopsis: season.overview || undefined,
+		// Per-episode cast credits aren't in this endpoint — the show's
+		// overall top-billed cast is a reasonable stand-in per season.
+		cast: (credits.cast ?? []).slice(0, 5).map((c) => c.name),
+		rating: ratings.length
+			? Math.round((ratings.reduce((a, b) => a + b, 0) / ratings.length) * 10) / 10
+			: undefined,
+		posterPath: season.poster_path || show.poster_path || undefined,
+		backdropPath: show.backdrop_path || undefined
+	};
+}
+
 async function syncFranchise(
 	id: string,
 	entries: Entry[]
@@ -193,8 +268,13 @@ async function syncFranchise(
 				continue;
 			}
 
-			result[entry.id] =
-				entry.tmdb.type === 'movie' ? await fetchMovie(tmdbId) : await fetchTv(tmdbId);
+			if (entry.tmdb.type === 'movie') {
+				result[entry.id] = await fetchMovie(tmdbId);
+			} else if (entry.tmdb.season) {
+				result[entry.id] = await fetchTvSeason(tmdbId, entry.tmdb.season);
+			} else {
+				result[entry.id] = await fetchTv(tmdbId);
+			}
 
 			console.log(`[${id}] synced ${entry.id}`);
 		} catch (err) {

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Entry, EntryOrder } from '$lib/data/types';
 	import Poster from './Poster.svelte';
-	import { formatDate, typeLabel } from '$lib/utils/format';
+	import { formatYear, typeLabel } from '$lib/utils/format';
 	import { resolve } from '$app/paths';
 
 	let {
@@ -14,81 +14,93 @@
 </script>
 
 <a
-	class="item"
+	class="node"
 	href={resolve('/[franchise]/[entry]', { franchise: entry.franchise, entry: entry.id })}
 >
 	<div class="thumb">
 		<Poster {entry} size="w185" />
 	</div>
 	<div class="content">
-		<p class="marker">
-			{#if order === 'release'}
-				{formatDate(entry.releaseDate)}
-			{:else}
-				{entry.chronologyNote ?? formatDate(entry.releaseDate)}
-			{/if}
-		</p>
 		<span class="type-badge">{typeLabel(entry.type)}</span>
-		<h3>{entry.title}</h3>
-		<p class="synopsis">{entry.synopsis}</p>
+		<h4>{entry.title}</h4>
+		<span class="marker">
+			{#if order === 'release'}
+				{formatYear(entry.releaseDate)}
+			{:else}
+				{entry.chronologyNote ?? formatYear(entry.releaseDate)}
+			{/if}
+		</span>
 	</div>
 </a>
 
 <style>
-	.item {
+	.node {
 		display: flex;
-		gap: var(--space-5);
+		align-items: stretch;
+		gap: var(--space-2);
+		width: 100%;
+		height: 100%;
 		text-decoration: none;
 		color: inherit;
-		padding: var(--space-4);
-		border-radius: var(--radius-lg);
+		background: var(--surface-raised);
+		border: 1px solid var(--border);
+		border-radius: var(--radius-md);
+		overflow: hidden;
 		transition:
-			background var(--duration-fast) var(--ease-out),
-			transform var(--duration-fast) var(--ease-out);
+			border-color var(--duration-fast) var(--ease-out),
+			transform var(--duration-fast) var(--ease-out),
+			box-shadow var(--duration-fast) var(--ease-out);
 	}
 
-	.item:hover,
-	.item:focus-visible {
-		background: var(--surface-raised);
-		transform: translateX(4px);
+	.node:hover,
+	.node:focus-visible {
+		border-color: var(--accent-soft);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-card);
 	}
 
 	.thumb {
-		width: 88px;
+		width: 76px;
 		flex-shrink: 0;
 	}
 
-	.marker {
-		font-size: var(--fs-small);
-		color: var(--accent-soft);
-		font-weight: 600;
-		margin-bottom: var(--space-1);
+	.thumb :global(.poster) {
+		border-radius: 0;
+		height: 100%;
+	}
+
+	.content {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 3px;
+		padding: var(--space-2) var(--space-3) var(--space-2) 0;
 	}
 
 	.type-badge {
-		font-size: var(--fs-small);
-		color: var(--ink-faint);
+		font-size: 0.65rem;
+		font-weight: 700;
+		color: var(--accent-soft);
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
 	}
 
-	h3 {
-		font-size: var(--fs-h4);
-		margin-block: var(--space-1) var(--space-2);
+	h4 {
+		font-size: 0.82rem;
+		line-height: 1.25;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-break: break-word;
 	}
 
-	.synopsis {
-		color: var(--ink-dim);
-		font-size: var(--fs-small);
-		max-width: 60ch;
-	}
-
-	@media (max-width: 560px) {
-		.item {
-			gap: var(--space-3);
-		}
-		.thumb {
-			width: 64px;
-		}
+	.marker {
+		font-size: 0.7rem;
+		color: var(--ink-faint);
 	}
 </style>

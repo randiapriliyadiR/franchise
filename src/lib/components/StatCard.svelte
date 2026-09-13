@@ -2,34 +2,41 @@
 	let {
 		label,
 		value,
-		hint
+		hint,
+		href
 	}: {
 		label: string;
 		value: string;
 		hint?: string;
+		/** Renders the card as a link (e.g. to the entry a highlight refers to). */
+		href?: string;
 	} = $props();
 </script>
 
-<div class="stat-card">
+<svelte:element this={href ? 'a' : 'div'} class="stat-card" {href}>
 	<p class="label">{label}</p>
 	<p class="value">{value}</p>
 	{#if hint}
 		<p class="hint">{hint}</p>
 	{/if}
-</div>
+</svelte:element>
 
 <style>
 	.stat-card {
+		display: block;
 		background: var(--surface-raised);
 		border: 1px solid var(--border);
 		border-radius: var(--radius-lg);
 		padding: var(--space-5);
+		color: inherit;
+		text-decoration: none;
 		transition:
 			transform var(--duration-base) var(--ease-out),
 			border-color var(--duration-base) var(--ease-out);
 	}
 
-	.stat-card:hover {
+	.stat-card:hover,
+	.stat-card:focus-visible {
 		transform: translateY(-3px);
 		border-color: var(--accent-soft);
 	}

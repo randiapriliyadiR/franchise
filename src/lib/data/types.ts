@@ -30,6 +30,11 @@ export interface TmdbQuery {
 	type: 'movie' | 'tv';
 	/** Pin to a specific TMDB id once known, skipping the search step entirely. */
 	tmdbId?: number;
+	/** For one season of an ongoing show (e.g. each The Walking Dead season
+	 * is its own Entry) — `query`/`year`/`tmdbId` resolve the *show*, and
+	 * this picks out the season within it. Without this, a TV query is
+	 * treated as the whole show. */
+	season?: number;
 }
 
 export interface Entry {
@@ -59,6 +64,11 @@ export interface Entry {
 	 * parallel lanes rather than forcing everything into one sequence.
 	 */
 	branch?: string;
+	/** One-line explanation of how this branch relates to the main line, e.g.
+	 * "Runs parallel to Seasons 1–5, then continues past them." Shown as the
+	 * lane's subtitle on the timeline — every entry sharing a `branch` should
+	 * carry the same note. */
+	branchNote?: string;
 
 	/** Grouping used for filters and timeline sections, e.g. "Phase One", "Season 4". */
 	group?: string;
@@ -102,6 +112,13 @@ export interface Franchise {
 	heroEntryId: string;
 }
 
+export interface EntryHighlight {
+	id: string;
+	title: string;
+	franchise: string;
+	value: number;
+}
+
 export interface FranchiseStats {
 	total: number;
 	byType: Record<MediaType, number>;
@@ -110,6 +127,13 @@ export interface FranchiseStats {
 	totalRuntimeMinutes: number;
 	averageRating: number | null;
 	yearRange: [number, number] | null;
+	/** The highest-rated entry with a rating on record. */
+	topRated: EntryHighlight | null;
+	/** The single entry with the most total watch time (runtime × episodes
+	 * for series, plain runtime otherwise). */
+	longest: EntryHighlight | null;
+	/** The group (phase/season bucket) with the most entries. */
+	busiestGroup: { group: string; count: number } | null;
 }
 
 export interface FilterOptions {

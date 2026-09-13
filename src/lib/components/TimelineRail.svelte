@@ -1,16 +1,69 @@
 <script lang="ts">
-	import { flip } from 'svelte/animate';
-	import { fly } from 'svelte/transition';
-	import { cubicOut } from 'svelte/easing';
 	import type { Entry, EntryOrder } from '$lib/data/types';
-	import { timelineLanes } from '$lib/data';
-	import { duration, stagger } from '$lib/utils/motion';
+	import { buildTimelineGraph } from '$lib/data';
 	import TimelineItem from './TimelineItem.svelte';
 
 	let { entries }: { entries: Entry[] } = $props();
 
 	let order = $state<EntryOrder>('release');
-	const lanes = $derived(timelineLanes(entries, order));
+	const graph = $derived(buildTimelineGraph(entries, order));
+
+	// Fixed-size grid: node position is pure arithmetic from (column, row),
+	// no DOM measurement needed — that's what lets the connectors and nodes
+	// glide smoothly (via a plain CSS transition) when `order` toggles.
+	const PADDING = 28;
+	const COLUMN_WIDTH = 248;
+	const ROW_HEIGHT = 122;
+	const NODE_WIDTH = 224;
+	const NODE_HEIGHT = 106;
+
+	const x = (column: number) => PADDING + column * COLUMN_WIDTH;
+	const y = (row: number) => PADDING + row * ROW_HEIGHT;
+	const centerX = (column: number) => x(column) + NODE_WIDTH / 2;
+	const centerY = (row: number) => y(row) + NODE_HEIGHT / 2;
+
+	const maxColumn = $derived(Math.max(0, ...graph.columns.map((c) => c.column)));
+	const canvasWidth = $derived(PADDING * 2 + (maxColumn + 1) * COLUMN_WIDTH);
+	const canvasHeight = $derived(PADDING * 2 + graph.totalRows * ROW_HEIGHT);
+
+	const mainColumn = $derived(graph.columns.find((c) => c.isMain));
+
+	function branchPath(col: (typeof graph.columns)[number]): string {
+		const bx = centerX(col.column);
+		const startY = centerY(col.startRow);
+		const endY = centerY(col.endRow);
+		const mx = centerX(0);
+		const corner = 22;
+		if (col.endRow === col.startRow) {
+			return `M ${mx} ${startY} Q ${bx} ${startY} ${bx} ${startY}`;
+		}
+		return `M ${mx} ${startY} Q ${bx} ${startY} ${bx} ${startY + corner} L ${bx} ${endY}`;
+	}
+
+	// Drag-to-pan the board horizontally (native touch scroll already
+	// handles this on phones/tablets — this adds the same for mouse/desktop).
+	let viewport: HTMLDivElement;
+	let panning = $state(false);
+	let panStartX = 0;
+	let panScrollStart = 0;
+
+	function startPan(event: PointerEvent) {
+		if (event.button !== 0) return;
+		panning = true;
+		panStartX = event.clientX;
+		panScrollStart = viewport.scrollLeft;
+		viewport.setPointerCapture(event.pointerId);
+	}
+
+	function movePan(event: PointerEvent) {
+		if (!panning) return;
+		viewport.scrollLeft = panScrollStart - (event.clientX - panStartX);
+	}
+
+	function endPan(event: PointerEvent) {
+		panning = false;
+		viewport.releasePointerCapture(event.pointerId);
+	}
 </script>
 
 <div class="toggle" role="group" aria-label="Timeline order">
@@ -28,35 +81,59 @@
 
 <p class="disclaimer">
 	Story order is a fan-friendly approximation for browsing, not an official studio document. The
-	story doesn't always run in one line — parallel threads below (different places, timelines, or
-	universes) are separate lanes, each ordered on its own.
+	main continuity runs down the left; branches — parallel places, timelines, or universes — peel off
+	to the right for as long as they last. Drag sideways (or scroll) if it doesn't fit.
 </p>
 
-{#each lanes as lane (lane.branch)}
-	<section class="lane" class:branch={!lane.isMain}>
-		{#if !lane.isMain}
-			<h3 class="lane-title">
-				<span class="branch-icon" aria-hidden="true">⑂</span>
-				{lane.branch}
-			</h3>
-		{/if}
-		<ol class="rail">
-			{#each lane.entries as entry, i (entry.id)}
-				<li
-					animate:flip={{ duration: duration(500), easing: cubicOut }}
-					in:fly={{
-						x: i % 2 === 0 ? -24 : 24,
-						duration: duration(400),
-						delay: stagger(i, 35, 350),
-						easing: cubicOut
-					}}
-				>
-					<TimelineItem {entry} {order} />
-				</li>
+<div
+	class="viewport"
+	role="region"
+	aria-roledescription="pannable timeline board"
+	aria-label="Timeline board — drag or scroll sideways to see more"
+	bind:this={viewport}
+	class:panning
+	onpointerdown={startPan}
+	onpointermove={movePan}
+	onpointerup={endPan}
+	onpointercancel={endPan}
+>
+	<div class="board" style="width: {canvasWidth}px; height: {canvasHeight}px">
+		<svg class="connectors" width={canvasWidth} height={canvasHeight}>
+			{#if mainColumn}
+				<line
+					class="edge main"
+					x1={centerX(0)}
+					y1={centerY(mainColumn.startRow)}
+					x2={centerX(0)}
+					y2={centerY(mainColumn.endRow)}
+				/>
+			{/if}
+			{#each graph.columns.filter((c) => !c.isMain) as col (col.column)}
+				<path class="edge branch" d={branchPath(col)} fill="none" />
 			{/each}
-		</ol>
-	</section>
-{/each}
+		</svg>
+
+		{#each graph.nodes as node (node.key)}
+			{#if node.isBranchStart}
+				<div
+					class="branch-tag"
+					style="left: {x(node.column)}px; top: {y(node.row) - 24}px; width: {NODE_WIDTH}px"
+				>
+					<span class="branch-icon" aria-hidden="true">⑂</span>
+					{node.entry.branch}
+				</div>
+			{/if}
+			<div
+				class="node-slot"
+				style="left: {x(node.column)}px; top: {y(
+					node.row
+				)}px; width: {NODE_WIDTH}px; height: {NODE_HEIGHT}px"
+			>
+				<TimelineItem entry={node.entry} {order} />
+			</div>
+		{/each}
+	</div>
+</div>
 
 <style>
 	.toggle {
@@ -95,87 +172,79 @@
 		color: var(--ink-faint);
 	}
 
-	.lane {
-		margin-top: var(--space-7);
-	}
-
-	.lane:first-child {
+	.viewport {
 		margin-top: var(--space-6);
+		overflow-x: auto;
+		overflow-y: hidden;
+		cursor: grab;
+		touch-action: pan-x;
+		user-select: none;
+		border-radius: var(--radius-lg);
+		background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+		background-size: 22px 22px;
+		background-color: color-mix(in srgb, var(--surface) 40%, transparent);
 	}
 
-	.lane-title {
+	.viewport.panning {
+		cursor: grabbing;
+	}
+
+	.board {
+		position: relative;
+	}
+
+	.connectors {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+	}
+
+	.edge {
+		stroke: var(--border-strong);
+		stroke-width: 2;
+		transition: d var(--duration-slow) var(--ease-out);
+	}
+
+	.edge.branch {
+		stroke: var(--accent-soft);
+		stroke-dasharray: 5 4;
+		opacity: 0.8;
+	}
+
+	.node-slot {
+		position: absolute;
+		transition:
+			left var(--duration-slow) var(--ease-out),
+			top var(--duration-slow) var(--ease-out);
+	}
+
+	.branch-tag {
+		position: absolute;
 		display: flex;
 		align-items: center;
-		gap: var(--space-2);
-		font-size: var(--fs-small);
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
+		gap: 4px;
+		font-size: 0.65rem;
+		font-weight: 700;
 		color: var(--accent-soft);
-		margin-bottom: var(--space-2);
-		padding-bottom: var(--space-2);
-		border-bottom: 1px dashed var(--border-strong);
-		max-width: 60rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		transition:
+			left var(--duration-slow) var(--ease-out),
+			top var(--duration-slow) var(--ease-out);
 	}
 
 	.branch-icon {
-		font-size: 1.1em;
-	}
-
-	.rail {
-		position: relative;
-		max-width: 60rem;
-	}
-
-	.rail::before {
-		content: '';
-		position: absolute;
-		left: 43px;
-		top: 0;
-		bottom: 0;
-		width: 1px;
-		background: var(--border-strong);
-	}
-
-	.lane.branch .rail::before {
-		background-image: linear-gradient(var(--accent-soft) 60%, transparent 0%);
-		background-size: 1px 8px;
-		background-repeat: repeat-y;
-		opacity: 0.6;
-	}
-
-	.rail li {
-		position: relative;
-	}
-
-	.rail li::before {
-		content: '';
-		position: absolute;
-		left: 39px;
-		top: 44px;
-		width: 9px;
-		height: 9px;
-		border-radius: 50%;
-		background: var(--accent);
-		box-shadow: 0 0 0 4px var(--bg);
-		animation: pulse-glow 2.6s ease-in-out infinite;
-	}
-
-	.lane.branch .rail li::before {
-		background: var(--accent-soft);
-	}
-
-	@media (max-width: 560px) {
-		.rail::before {
-			left: 31px;
-		}
-		.rail li::before {
-			left: 27px;
-		}
+		font-size: 1em;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.rail li::before {
-			animation: none;
+		.edge,
+		.node-slot,
+		.branch-tag {
+			transition: none;
 		}
 	}
 </style>

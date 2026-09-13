@@ -26,7 +26,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Sheriff’s deputy Rick Grimes wakes from a coma into a world overrun by the dead, and sets out to find his family.',
 		cast: ['Andrew Lincoln', 'Jon Bernthal', 'Sarah Wayne Callies'],
-		tmdb: { type: 'tv', year: 2010, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 1 }
 	},
 	{
 		id: 'twd-s02',
@@ -43,7 +43,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Trapped on a highway and then holed up on a secluded farm, the group’s fragile trust starts to fracture over who gets to make the hard calls.',
 		cast: ['Andrew Lincoln', 'Norman Reedus', 'Steven Yeun'],
-		tmdb: { type: 'tv', year: 2011, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 2 }
 	},
 	{
 		id: 'twd-s03',
@@ -60,7 +60,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Fortified inside a prison, Rick’s group collides with a walled town called Woodbury and the man who rules it with an iron fist.',
 		cast: ['Andrew Lincoln', 'David Morrissey', 'Danai Gurira'],
-		tmdb: { type: 'tv', year: 2012, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 3 }
 	},
 	{
 		id: 'twd-s04',
@@ -77,7 +77,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'A plague inside the prison walls and an old enemy’s return scatter the group across the countryside, alone or in fractured pairs.',
 		cast: ['Andrew Lincoln', 'Chandler Riggs', 'Melissa McBride'],
-		tmdb: { type: 'tv', year: 2013, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 4 }
 	},
 	{
 		id: 'twd-s05',
@@ -94,7 +94,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'After escaping a cannibalistic community at Terminus, the group searches for a place to actually live rather than merely survive.',
 		cast: ['Andrew Lincoln', 'Lauren Cohan', 'Norman Reedus'],
-		tmdb: { type: 'tv', year: 2014, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 5 }
 	},
 	{
 		id: 'twd-s06',
@@ -111,7 +111,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Settled in Alexandria, the group triggers a herd of thousands while a new, far more organized threat quietly circles the walls.',
 		cast: ['Andrew Lincoln', 'Jeffrey Dean Morgan', 'Danai Gurira'],
-		tmdb: { type: 'tv', year: 2015, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 6 }
 	},
 	{
 		id: 'twd-s07',
@@ -128,7 +128,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Broken by Negan and the Saviors, Rick’s group is forced into submission — until they start quietly building an alliance to fight back.',
 		cast: ['Jeffrey Dean Morgan', 'Andrew Lincoln', 'Norman Reedus'],
-		tmdb: { type: 'tv', year: 2016, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 7 }
 	},
 	{
 		id: 'twd-s08',
@@ -145,7 +145,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'All-out war breaks out between the communities and the Saviors, ending with Rick facing a choice about what kind of world comes next.',
 		cast: ['Andrew Lincoln', 'Jeffrey Dean Morgan', 'Lauren Cohan'],
-		tmdb: { type: 'tv', year: 2017, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 8 }
 	},
 	{
 		id: 'twd-s09',
@@ -162,7 +162,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'A fragile peace between the communities holds only briefly before a six-year jump reveals a new generation, and a new, masked threat.',
 		cast: ['Danai Gurira', 'Norman Reedus', 'Lauren Cohan'],
-		tmdb: { type: 'tv', year: 2018, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 9 }
 	},
 	{
 		id: 'twd-s10',
@@ -179,7 +179,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'The Whisperers’ war of attrition pushes every community to its breaking point, in the show’s longest and most brutal season yet.',
 		cast: ['Norman Reedus', 'Melissa McBride', 'Samantha Morton'],
-		tmdb: { type: 'tv', year: 2019, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 10 }
 	},
 	{
 		id: 'twd-s11',
@@ -196,7 +196,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'The flagship series closes out with a final push against the Commonwealth, a sprawling, class-stratified society unlike anything the group has faced.',
 		cast: ['Norman Reedus', 'Melissa McBride', 'Lauren Cohan'],
-		tmdb: { type: 'tv', year: 2021, query: 'The Walking Dead' }
+		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 11 }
 	},
 	{
 		id: 'fear-the-walking-dead',
@@ -207,6 +207,8 @@ export const twdEntries: Entry[] = [
 		chronology: 0.5,
 		chronologyNote: 'begins days before TWD Season 1, in Los Angeles',
 		branch: 'Los Angeles (Fear the Walking Dead)',
+		branchNote:
+			'Starts before the outbreak reaches Rick in Georgia — runs parallel through the main series, then continues past its finale.',
 		group: 'Spin-offs',
 		tags: ['companion-series'],
 		seasons: 8,
@@ -224,6 +226,8 @@ export const twdEntries: Entry[] = [
 		chronology: 9.5,
 		chronologyNote: 'year 10, a fortified civilization inland',
 		branch: 'The Campus Colony (World Beyond)',
+		branchNote:
+			'A separate, well-supplied settlement discovered a decade into the outbreak — briefly intersects the main line in Season 10.',
 		group: 'Spin-offs',
 		tags: ['coming-of-age', 'limited-series'],
 		seasons: 2,
@@ -241,6 +245,7 @@ export const twdEntries: Entry[] = [
 		chronology: 9.2,
 		chronologyNote: 'various points across the timeline',
 		branch: 'Anthology (Tales of the Walking Dead)',
+		branchNote: 'Six standalone stories scattered across the outbreak — not one continuous thread.',
 		group: 'Spin-offs',
 		tags: ['anthology'],
 		seasons: 1,
@@ -258,6 +263,8 @@ export const twdEntries: Entry[] = [
 		chronology: 12,
 		chronologyNote: 'after the Season 11 finale',
 		branch: 'New York (Dead City)',
+		branchNote:
+			'One of three parallel stories picking up right after the flagship series ends, each following different survivors in a different place.',
 		group: 'Spin-offs',
 		tags: ['crime'],
 		seasons: 2,
@@ -275,6 +282,8 @@ export const twdEntries: Entry[] = [
 		chronology: 12.2,
 		chronologyNote: 'after the Season 11 finale',
 		branch: 'France (Daryl Dixon)',
+		branchNote:
+			'One of three parallel stories picking up right after the flagship series ends, each following different survivors in a different place.',
 		group: 'Spin-offs',
 		tags: [],
 		seasons: 2,
@@ -292,6 +301,8 @@ export const twdEntries: Entry[] = [
 		chronology: 12.5,
 		chronologyNote: 'fills the gap since Season 9, converges after Season 11',
 		branch: 'Rick & Michonne (The Ones Who Live)',
+		branchNote:
+			'Fills the years since Rick was separated from the group, running alongside the other post-finale spin-offs before the two threads meet.',
 		group: 'Spin-offs',
 		tags: ['limited-series', 'romance'],
 		seasons: 1,

@@ -107,44 +107,101 @@ export function orderedEntries(entries: Entry[], order: EntryOrder): Entry[] {
 
 export const MAIN_BRANCH = 'Main Continuity';
 
-export interface TimelineLane {
+export interface TimelineNode {
+	key: string;
+	entry: Entry;
+	column: number;
+	/** 0-indexed position in the merged chronological sequence — a node's
+	 * grid row. Every node gets its own row (unlike a git graph, nothing
+	 * shares a row), so pixel position is pure arithmetic: no DOM
+	 * measurement needed, which is what makes the connectors animate
+	 * smoothly as `order` changes. */
+	row: number;
+	isBranchStart: boolean;
+	branchNote?: string;
+}
+
+export interface TimelineColumn {
+	column: number;
 	branch: string;
-	/** False for the implicit main line — lets the UI treat it as the
-	 * primary rail and everything else as a parallel/branching thread. */
 	isMain: boolean;
-	entries: Entry[];
+	startRow: number;
+	endRow: number;
+}
+
+export interface TimelineGraph {
+	nodes: TimelineNode[];
+	columns: TimelineColumn[];
+	totalRows: number;
 }
 
 /**
- * Groups entries into parallel timeline lanes by `branch` instead of forcing
- * a single sequence — a franchise's story isn't always one straight line
+ * Lays out every entry as a node in a single chronologically-ordered graph —
+ * main line and branches interleaved by real position in time — tagging
+ * each with a column (0 = main, 1+ = a specific branch) and row (its index
+ * in that merged order). A franchise's story isn't always one straight line
  * (concurrent spin-offs in different places, multiverse detours, a prequel
- * series running before the flagship show even starts). Each lane is
- * independently ordered; only entries within the same lane are directly
- * comparable by chronology.
+ * series running before the flagship show even starts), so this is meant to
+ * be rendered as a branching board — a persistent main column, with branch
+ * columns that peel off partway through and run alongside it for as long as
+ * that branch has entries.
  */
-export function timelineLanes(entries: Entry[], order: EntryOrder): TimelineLane[] {
-	const groups = new Map<string, Entry[]>();
+export function buildTimelineGraph(entries: Entry[], order: EntryOrder): TimelineGraph {
+	const byBranch = new Map<string, Entry[]>();
 	for (const entry of entries) {
 		const key = entry.branch ?? MAIN_BRANCH;
-		const list = groups.get(key);
+		const list = byBranch.get(key);
 		if (list) list.push(entry);
-		else groups.set(key, [entry]);
+		else byBranch.set(key, [entry]);
 	}
 
-	const lanes = [...groups.entries()].map(([branch, es]) => ({
-		branch,
-		isMain: branch === MAIN_BRANCH,
-		entries: orderedEntries(es, order)
-	}));
-
-	lanes.sort((a, b) => {
-		if (a.isMain) return -1;
-		if (b.isMain) return 1;
-		return a.entries[0].chronology - b.entries[0].chronology;
+	const branchKeys = [...byBranch.keys()].filter((k) => k !== MAIN_BRANCH);
+	branchKeys.sort((a, b) => {
+		const aMin = Math.min(...byBranch.get(a)!.map((e) => e.chronology));
+		const bMin = Math.min(...byBranch.get(b)!.map((e) => e.chronology));
+		return aMin - bMin;
 	});
 
-	return lanes;
+	const columnOf = new Map<string, number>([[MAIN_BRANCH, 0]]);
+	branchKeys.forEach((key, i) => columnOf.set(key, i + 1));
+
+	const sorted = orderedEntries(entries, order);
+	const seenBranch = new Set<string>();
+
+	const nodes: TimelineNode[] = sorted.map((entry, row) => {
+		const key = entry.branch ?? MAIN_BRANCH;
+		const column = columnOf.get(key)!;
+		const isBranchStart = key !== MAIN_BRANCH && !seenBranch.has(key);
+		if (isBranchStart) seenBranch.add(key);
+		return {
+			key: `e:${entry.id}`,
+			entry,
+			column,
+			row,
+			isBranchStart,
+			branchNote: entry.branchNote
+		};
+	});
+
+	const columns: TimelineColumn[] = [
+		{ column: 0, branch: MAIN_BRANCH, isMain: true, startRow: 0, endRow: nodes.length - 1 }
+	];
+
+	for (const key of branchKeys) {
+		const column = columnOf.get(key)!;
+		const rowsForColumn = nodes.filter((n) => n.column === column).map((n) => n.row);
+		if (rowsForColumn.length > 0) {
+			columns.push({
+				column,
+				branch: key,
+				isMain: false,
+				startRow: Math.min(...rowsForColumn),
+				endRow: Math.max(...rowsForColumn)
+			});
+		}
+	}
+
+	return { nodes, columns, totalRows: nodes.length };
 }
 
 /** Previous/next entry relative to `id`, following the given order — used
@@ -182,6 +239,8 @@ export function computeStats(entries: Entry[]): FranchiseStats {
 	let ratingCount = 0;
 	let minYear = Infinity;
 	let maxYear = -Infinity;
+	let topRated: FranchiseStats['topRated'] = null;
+	let longest: FranchiseStats['longest'] = null;
 
 	for (const entry of entries) {
 		byType[entry.type]++;
@@ -195,14 +254,30 @@ export function computeStats(entries: Entry[]): FranchiseStats {
 			}
 		}
 
-		if (entry.runtimeMinutes) {
-			totalRuntimeMinutes +=
-				entry.runtimeMinutes * (entry.type === 'series' ? (entry.episodes ?? 1) : 1);
+		const entryMinutes = entry.runtimeMinutes
+			? entry.runtimeMinutes * (entry.type === 'series' ? (entry.episodes ?? 1) : 1)
+			: 0;
+		totalRuntimeMinutes += entryMinutes;
+		if (entryMinutes > 0 && (longest === null || entryMinutes > longest.value)) {
+			longest = {
+				id: entry.id,
+				title: entry.title,
+				franchise: entry.franchise,
+				value: entryMinutes
+			};
 		}
 
 		if (typeof entry.rating === 'number') {
 			ratingSum += entry.rating;
 			ratingCount++;
+			if (topRated === null || entry.rating > topRated.value) {
+				topRated = {
+					id: entry.id,
+					title: entry.title,
+					franchise: entry.franchise,
+					value: entry.rating
+				};
+			}
 		}
 
 		if (entry.group) {
@@ -226,6 +301,13 @@ export function computeStats(entries: Entry[]): FranchiseStats {
 		averageRating: g.count > 0 ? g.sum / g.count : null
 	}));
 
+	let busiestGroup: FranchiseStats['busiestGroup'] = null;
+	for (const g of byGroup) {
+		if (busiestGroup === null || g.count > busiestGroup.count) {
+			busiestGroup = { group: g.group, count: g.count };
+		}
+	}
+
 	return {
 		total: entries.length,
 		byType,
@@ -233,7 +315,10 @@ export function computeStats(entries: Entry[]): FranchiseStats {
 		byGroup,
 		totalRuntimeMinutes,
 		averageRating: ratingCount > 0 ? ratingSum / ratingCount : null,
-		yearRange: Number.isFinite(minYear) ? [minYear, maxYear] : null
+		yearRange: Number.isFinite(minYear) ? [minYear, maxYear] : null,
+		topRated,
+		longest,
+		busiestGroup
 	};
 }
 

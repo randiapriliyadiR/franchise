@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch: {}
+  workflow_run:
+    # Commits made by the sync workflow's GITHUB_TOKEN don't trigger the
+    # `push` event above (GitHub's anti-recursion safeguard), so pick it up
+    # explicitly once that workflow finishes.
+    workflows: [Sync TMDB data]
+    types: [completed]
 
 permissions:
   contents: read
@@ -17,9 +23,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Skip if triggered by a failed/cancelled sync run — only deploy after a
+    # successful data refresh (push and manual triggers are unaffected).
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4

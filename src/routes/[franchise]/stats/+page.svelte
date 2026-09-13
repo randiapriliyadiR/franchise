@@ -7,6 +7,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 	import { formatTotalRuntime, typeLabel } from '$lib/utils/format';
 	import { duration, stagger } from '$lib/utils/motion';
+	import { resolve } from '$app/paths';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -27,28 +28,43 @@
 			.map((g) => ({ label: g.group, value: Math.round((g.averageRating ?? 0) * 10) / 10 }))
 	);
 
-	const statCards = $derived([
-		{
-			label: 'Total entries',
-			value: String(data.stats.total),
-			hint: undefined as string | undefined
-		},
-		{
-			label: 'Total runtime',
-			value: formatTotalRuntime(data.stats.totalRuntimeMinutes),
-			hint: 'films, shorts & series runtime combined'
-		},
-		{
-			label: 'Average rating',
-			value: data.stats.averageRating ? `★ ${data.stats.averageRating.toFixed(1)}` : '—',
-			hint: undefined
-		},
-		{
-			label: 'Year span',
-			value: data.stats.yearRange ? `${data.stats.yearRange[0]}–${data.stats.yearRange[1]}` : '—',
-			hint: undefined
-		}
-	]);
+	// Every number here is something you can't already see in the hero strip
+	// above (entries / span / avg rating) — otherwise this page is just
+	// repeating itself.
+	const highlightCards = $derived(
+		[
+			{
+				label: 'Total watch time',
+				value: formatTotalRuntime(data.stats.totalRuntimeMinutes),
+				hint: 'films, shorts & series runtime combined',
+				href: undefined as string | undefined
+			},
+			data.stats.topRated && {
+				label: 'Highest rated',
+				value: `★ ${data.stats.topRated.value.toFixed(1)}`,
+				hint: data.stats.topRated.title,
+				href: resolve('/[franchise]/[entry]', {
+					franchise: data.stats.topRated.franchise,
+					entry: data.stats.topRated.id
+				})
+			},
+			data.stats.longest && {
+				label: 'Longest single watch',
+				value: formatTotalRuntime(data.stats.longest.value),
+				hint: data.stats.longest.title,
+				href: resolve('/[franchise]/[entry]', {
+					franchise: data.stats.longest.franchise,
+					entry: data.stats.longest.id
+				})
+			},
+			data.stats.busiestGroup && {
+				label: 'Busiest era',
+				value: data.stats.busiestGroup.group,
+				hint: `${data.stats.busiestGroup.count} entries`,
+				href: undefined
+			}
+		].filter((c): c is NonNullable<typeof c> => Boolean(c))
+	);
 </script>
 
 <Seo
@@ -57,10 +73,15 @@
 />
 
 <div class="container">
+	<p class="intro">
+		A few things the grid and timeline don't spell out directly — the standout entries, and how the
+		franchise's output is actually distributed.
+	</p>
+
 	<div class="stat-row">
-		{#each statCards as stat, i (stat.label)}
+		{#each highlightCards as stat, i (stat.label)}
 			<div in:fly={{ y: 16, duration: duration(400), delay: stagger(i, 70), easing: cubicOut }}>
-				<StatCard label={stat.label} value={stat.value} hint={stat.hint} />
+				<StatCard label={stat.label} value={stat.value} hint={stat.hint} href={stat.href} />
 			</div>
 		{/each}
 	</div>
@@ -94,6 +115,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-6);
+	}
+
+	.intro {
+		max-width: 60ch;
+		color: var(--ink-dim);
 	}
 
 	.stat-row {

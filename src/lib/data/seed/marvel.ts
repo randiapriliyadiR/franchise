@@ -518,7 +518,7 @@ export const marvelEntries: Entry[] = [
 		synopsis:
 			'Snatched out of time for stealing the Tesseract in 2012, a variant of Loki is recruited by a bureaucratic agency that polices the timeline.',
 		cast: ['Tom Hiddleston', 'Owen Wilson', 'Sophia Di Martino'],
-		tmdb: { type: 'tv', year: 2021 }
+		tmdb: { type: 'tv', query: 'Loki', year: 2021, season: 1 }
 	},
 	{
 		id: 'what-if-season-1-2021',
@@ -529,13 +529,15 @@ export const marvelEntries: Entry[] = [
 		chronology: 11.2,
 		chronologyNote: 'across the multiverse',
 		branch: 'Multiverse (What If…?)',
+		branchNote:
+			'Each episode branches off a single changed decision — a different timeline per episode, not one continuous story.',
 		group: 'Phase Four',
 		tags: ['multiverse', 'anthology', 'animated'],
 		seasons: 1,
 		synopsis:
 			'The Watcher observes a set of single decisions that spin entire timelines away from the one audiences already know.',
 		cast: ['Jeffrey Wright'],
-		tmdb: { type: 'tv', year: 2021 }
+		tmdb: { type: 'tv', query: 'What If...?', year: 2021, season: 1 }
 	},
 	{
 		id: 'hawkeye-2021',
@@ -679,7 +681,7 @@ export const marvelEntries: Entry[] = [
 		synopsis:
 			'With the Sacred Timeline fracturing, Loki has to master his growing control over time itself before the TVA collapses for good.',
 		cast: ['Tom Hiddleston', 'Owen Wilson', 'Sophia Di Martino'],
-		tmdb: { type: 'tv', year: 2023 }
+		tmdb: { type: 'tv', query: 'Loki', year: 2021, season: 2 }
 	},
 	{
 		id: 'the-marvels-2023',
@@ -800,6 +802,7 @@ export const marvelEntries: Entry[] = [
 		chronology: 13.9,
 		chronologyNote: 'a retro-futurist parallel Earth, 1960s',
 		branch: 'Earth-828 (Fantastic Four)',
+		branchNote: 'Set on a separate Earth, outside the main MCU timeline until it crosses over.',
 		group: 'Phase Six',
 		tags: ['origin', 'alternate-universe', 'period'],
 		synopsis:

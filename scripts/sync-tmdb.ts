@@ -233,7 +233,9 @@ async function fetchTvSeason(showId: number, seasonNumber: number): Promise<Gene
 		.filter((n): n is number => typeof n === 'number' && n > 0);
 
 	return {
-		title: season.name,
+		// Deliberately no `title` here: the season endpoint's `name` is
+		// usually just "Season N" with no show context, which is worse than
+		// the seed's own authored title (e.g. "The Walking Dead: Season 1").
 		releaseDate: season.air_date || undefined,
 		runtimeMinutes: runtimes.length
 			? Math.round(runtimes.reduce((a, b) => a + b, 0) / runtimes.length)

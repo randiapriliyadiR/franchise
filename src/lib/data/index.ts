@@ -5,12 +5,20 @@ import { harryPotterEntries } from './seed/harry-potter';
 import { starWarsEntries } from './seed/star-wars';
 import { starTrekEntries } from './seed/star-trek';
 import { bondEntries } from './seed/james-bond';
+import { lotrEntries } from './seed/lord-of-the-rings';
+import { stephenKingEntries } from './seed/stephen-king';
+import { asterixEntries } from './seed/asterix';
+import { sherlockHolmesEntries } from './seed/sherlock-holmes';
 import marvelGenerated from './generated/marvel.json';
 import twdGenerated from './generated/the-walking-dead.json';
 import harryPotterGenerated from './generated/harry-potter.json';
 import starWarsGenerated from './generated/star-wars.json';
 import starTrekGenerated from './generated/star-trek.json';
 import bondGenerated from './generated/james-bond.json';
+import lotrGenerated from './generated/lord-of-the-rings.json';
+import stephenKingGenerated from './generated/stephen-king.json';
+import asterixGenerated from './generated/asterix.json';
+import sherlockHolmesGenerated from './generated/sherlock-holmes.json';
 export { franchises, getFranchise } from './franchises';
 
 /** Fields `scripts/sync-tmdb.mjs` is allowed to fill in from TMDB. */
@@ -56,7 +64,11 @@ const entriesByFranchise: Record<string, Entry[]> = {
 	'harry-potter': mergeGenerated(harryPotterEntries, harryPotterGenerated as GeneratedData),
 	'star-wars': mergeGenerated(starWarsEntries, starWarsGenerated as GeneratedData),
 	'star-trek': mergeGenerated(starTrekEntries, starTrekGenerated as GeneratedData),
-	'james-bond': mergeGenerated(bondEntries, bondGenerated as GeneratedData)
+	'james-bond': mergeGenerated(bondEntries, bondGenerated as GeneratedData),
+	'lord-of-the-rings': mergeGenerated(lotrEntries, lotrGenerated as GeneratedData),
+	'stephen-king': mergeGenerated(stephenKingEntries, stephenKingGenerated as GeneratedData),
+	asterix: mergeGenerated(asterixEntries, asterixGenerated as GeneratedData),
+	'sherlock-holmes': mergeGenerated(sherlockHolmesEntries, sherlockHolmesGenerated as GeneratedData)
 };
 
 export function getEntries(franchiseId: string): Entry[] {

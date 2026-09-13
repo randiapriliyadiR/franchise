@@ -18,6 +18,10 @@ import { harryPotterEntries } from '../src/lib/data/seed/harry-potter.ts';
 import { starWarsEntries } from '../src/lib/data/seed/star-wars.ts';
 import { starTrekEntries } from '../src/lib/data/seed/star-trek.ts';
 import { bondEntries } from '../src/lib/data/seed/james-bond.ts';
+import { lotrEntries } from '../src/lib/data/seed/lord-of-the-rings.ts';
+import { stephenKingEntries } from '../src/lib/data/seed/stephen-king.ts';
+import { asterixEntries } from '../src/lib/data/seed/asterix.ts';
+import { sherlockHolmesEntries } from '../src/lib/data/seed/sherlock-holmes.ts';
 import type { Entry } from '../src/lib/data/types.ts';
 
 const API_KEY = process.env.TMDB_API_KEY;
@@ -32,7 +36,11 @@ const FRANCHISES: { id: string; entries: Entry[] }[] = [
 	{ id: 'harry-potter', entries: harryPotterEntries },
 	{ id: 'star-wars', entries: starWarsEntries },
 	{ id: 'star-trek', entries: starTrekEntries },
-	{ id: 'james-bond', entries: bondEntries }
+	{ id: 'james-bond', entries: bondEntries },
+	{ id: 'lord-of-the-rings', entries: lotrEntries },
+	{ id: 'stephen-king', entries: stephenKingEntries },
+	{ id: 'asterix', entries: asterixEntries },
+	{ id: 'sherlock-holmes', entries: sherlockHolmesEntries }
 ];
 
 interface GeneratedFields {

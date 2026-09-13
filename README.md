@@ -1,6 +1,6 @@
 # Franchise Explorer
 
-A static SvelteKit site for browsing long-running entertainment franchises — films, series, games and comics — by release order, in-universe chronology, or straight-up stats. Covers **Marvel Cinematic Universe**, **The Walking Dead**, **Wizarding World**, **Star Wars**, **Star Trek**, and **James Bond**, built on a data model designed to take more franchises without any structural changes.
+A static SvelteKit site for browsing long-running entertainment franchises — films, series, games and comics — by release order, in-universe chronology, or straight-up stats. Covers **Marvel Cinematic Universe**, **The Walking Dead**, **Wizarding World**, **Star Wars**, **Star Trek**, **James Bond**, **The Lord of the Rings**, **Stephen King Adaptations**, **Asterix**, and **Sherlock Holmes**, built on a data model designed to take more franchises without any structural changes.
 
 **Live:** https://randiapriliyadir.github.io/franchises
 

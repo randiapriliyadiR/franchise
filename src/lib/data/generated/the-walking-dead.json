@@ -67,6 +67,19 @@
 		"posterPath": "/3fESZqBjWLVLbUePsKz3zDuMRJe.jpg",
 		"backdropPath": "/vV5LKWmuysEe5wsuZJGbdiL5XJ2.jpg"
 	},
+	"fear-twd-dead-in-the-water": {
+		"releaseDate": "2022-04-10",
+		"runtimeMinutes": 8,
+		"episodes": 6,
+		"seasons": 1,
+		"cast": [
+			"Nick Stahl",
+			"Jason Francisco Blue"
+		],
+		"rating": 7.3,
+		"posterPath": "/kayTdmzIZli4S0njuQjhI8i5clf.jpg",
+		"backdropPath": "/abPZ8LB6onqJMHd6K9yyfvi8kuF.jpg"
+	},
 	"fear-twd-s01": {
 		"releaseDate": "2015-08-23",
 		"runtimeMinutes": 50,

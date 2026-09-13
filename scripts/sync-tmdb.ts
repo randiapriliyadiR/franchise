@@ -14,6 +14,10 @@ import path from 'node:path';
 
 import { marvelEntries } from '../src/lib/data/seed/marvel.ts';
 import { twdEntries } from '../src/lib/data/seed/the-walking-dead.ts';
+import { harryPotterEntries } from '../src/lib/data/seed/harry-potter.ts';
+import { starWarsEntries } from '../src/lib/data/seed/star-wars.ts';
+import { starTrekEntries } from '../src/lib/data/seed/star-trek.ts';
+import { bondEntries } from '../src/lib/data/seed/james-bond.ts';
 import type { Entry } from '../src/lib/data/types.ts';
 
 const API_KEY = process.env.TMDB_API_KEY;
@@ -24,7 +28,11 @@ const GENERATED_DIR = path.resolve(__dirname, '../src/lib/data/generated');
 
 const FRANCHISES: { id: string; entries: Entry[] }[] = [
 	{ id: 'marvel', entries: marvelEntries },
-	{ id: 'the-walking-dead', entries: twdEntries }
+	{ id: 'the-walking-dead', entries: twdEntries },
+	{ id: 'harry-potter', entries: harryPotterEntries },
+	{ id: 'star-wars', entries: starWarsEntries },
+	{ id: 'star-trek', entries: starTrekEntries },
+	{ id: 'james-bond', entries: bondEntries }
 ];
 
 interface GeneratedFields {

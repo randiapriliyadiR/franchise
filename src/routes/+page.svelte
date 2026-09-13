@@ -9,16 +9,18 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
+
+	const eyebrow = $derived(data.cards.map((c) => c.franchise.shortName).join(' · '));
 </script>
 
 <Seo
 	title="Franchise Explorer"
-	description="Explore long-running entertainment franchises by release order, story chronology, and more — starting with Marvel and The Walking Dead."
+	description="Explore long-running entertainment franchises by release order, story chronology, and more."
 />
 
 <section class="hero container">
 	<p class="eyebrow" in:fly={{ y: 10, duration: duration(400), easing: cubicOut }}>
-		Marvel · The Walking Dead
+		{eyebrow}
 	</p>
 	<h1 in:fly={{ y: 16, duration: duration(500), delay: duration(60), easing: cubicOut }}>
 		Every franchise, every timeline, one map.

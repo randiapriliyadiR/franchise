@@ -1,6 +1,6 @@
 # Franchise Explorer
 
-A static SvelteKit site for browsing long-running entertainment franchises — films, series, games and comics — by release order, in-universe chronology, or straight-up stats. Starts with **Marvel Cinematic Universe** and **The Walking Dead**, built on a data model designed to take more franchises without any structural changes.
+A static SvelteKit site for browsing long-running entertainment franchises — films, series, games and comics — by release order, in-universe chronology, or straight-up stats. Covers **Marvel Cinematic Universe**, **The Walking Dead**, **Wizarding World**, **Star Wars**, **Star Trek**, and **James Bond**, built on a data model designed to take more franchises without any structural changes.
 
 **Live:** https://randiapriliyadir.github.io/franchises
 
@@ -84,7 +84,7 @@ Semantic landmarks and a skip link, real `<button>` elements for every toggle/fi
 
 ## Credits
 
-This product uses the TMDB API but is not endorsed or certified by TMDB. Not affiliated with Marvel, Disney, or AMC.
+This product uses the TMDB API but is not endorsed or certified by TMDB. Not affiliated with Marvel, Disney, AMC, Warner Bros., Lucasfilm, Paramount, EON Productions, or any studio mentioned.
 
 ## License
 

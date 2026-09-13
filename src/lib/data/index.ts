@@ -1,8 +1,16 @@
 import type { Entry, EntryOrder, FilterOptions, FranchiseStats, MediaType, SortKey } from './types';
 import { marvelEntries } from './seed/marvel';
 import { twdEntries } from './seed/the-walking-dead';
+import { harryPotterEntries } from './seed/harry-potter';
+import { starWarsEntries } from './seed/star-wars';
+import { starTrekEntries } from './seed/star-trek';
+import { bondEntries } from './seed/james-bond';
 import marvelGenerated from './generated/marvel.json';
 import twdGenerated from './generated/the-walking-dead.json';
+import harryPotterGenerated from './generated/harry-potter.json';
+import starWarsGenerated from './generated/star-wars.json';
+import starTrekGenerated from './generated/star-trek.json';
+import bondGenerated from './generated/james-bond.json';
 export { franchises, getFranchise } from './franchises';
 
 /** Fields `scripts/sync-tmdb.mjs` is allowed to fill in from TMDB. */
@@ -44,7 +52,11 @@ function mergeGenerated(seed: Entry[], generated: GeneratedData): Entry[] {
 
 const entriesByFranchise: Record<string, Entry[]> = {
 	marvel: mergeGenerated(marvelEntries, marvelGenerated as GeneratedData),
-	'the-walking-dead': mergeGenerated(twdEntries, twdGenerated as GeneratedData)
+	'the-walking-dead': mergeGenerated(twdEntries, twdGenerated as GeneratedData),
+	'harry-potter': mergeGenerated(harryPotterEntries, harryPotterGenerated as GeneratedData),
+	'star-wars': mergeGenerated(starWarsEntries, starWarsGenerated as GeneratedData),
+	'star-trek': mergeGenerated(starTrekEntries, starTrekGenerated as GeneratedData),
+	'james-bond': mergeGenerated(bondEntries, bondGenerated as GeneratedData)
 };
 
 export function getEntries(franchiseId: string): Entry[] {

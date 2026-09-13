@@ -16,6 +16,23 @@
 		"posterPath": "/arJF829RP9cYvh0NU70dC5TtXSa.jpg",
 		"backdropPath": "/hvGWyyC8wER1I8ExSXNtFBs7Mgd.jpg"
 	},
+	"casino-royale-1967": {
+		"title": "Casino Royale",
+		"releaseDate": "1967-04-18",
+		"runtimeMinutes": 131,
+		"synopsis": "Sir James Bond is called back out of retirement to stop SMERSH. In order to trick SMERSH, James thinks up the ultimate plan - that every agent will be named 'James Bond'. One of the Bonds, whose real name is Evelyn Tremble is sent to take on Le Chiffre in a game of baccarat, but all the Bonds get more than they can handle.",
+		"cast": [
+			"Peter Sellers",
+			"Ursula Andress",
+			"David Niven",
+			"Orson Welles",
+			"Joanna Pettet"
+		],
+		"rating": 5.2,
+		"director": "Joseph McGrath",
+		"posterPath": "/9wdw5H018bgIM8bK2HuDvh8BwOh.jpg",
+		"backdropPath": "/bzd7Uph8qfAB3fi488rIE3x2pWg.jpg"
+	},
 	"casino-royale-2006": {
 		"title": "Casino Royale",
 		"releaseDate": "2006-11-14",
@@ -202,6 +219,23 @@
 		"director": "Lewis Gilbert",
 		"posterPath": "/6LrJdXNmu5uHOVALZxVYd44Lva0.jpg",
 		"backdropPath": "/mrDC5DLx2wljt4HZGwgkmqlzfcF.jpg"
+	},
+	"never-say-never-again-1983": {
+		"title": "Never Say Never Again",
+		"releaseDate": "1983-10-07",
+		"runtimeMinutes": 134,
+		"synopsis": "James Bond returns as the secret agent 007 to battle the evil organization SPECTRE. Bond must defeat Largo, who has stolen two atomic warheads for nuclear blackmail. But Bond has an ally in Largo's girlfriend, the willowy Domino, who falls for Bond and seeks revenge.",
+		"cast": [
+			"Sean Connery",
+			"Klaus Maria Brandauer",
+			"Max von Sydow",
+			"Barbara Carrera",
+			"Kim Basinger"
+		],
+		"rating": 6.1,
+		"director": "Irvin Kershner",
+		"posterPath": "/zhoAL4o1STGgLbLxJ9r1ijfyHC9.jpg",
+		"backdropPath": "/45uCcAUB8Ljz3uKb1y1JHtT5aCT.jpg"
 	},
 	"no-time-to-die-2021": {
 		"title": "No Time to Die",

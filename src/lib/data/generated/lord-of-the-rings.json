@@ -1,4 +1,21 @@
 {
+	"the-hobbit-1977": {
+		"title": "The Hobbit",
+		"releaseDate": "1977-11-27",
+		"runtimeMinutes": 77,
+		"synopsis": "The story follows the adventures of Bilbo Baggins, a diminutive creative who resides in a place called Middle-Earth before he is compelled to go on a quest to find a treasure buried deep in the heart of the Lonely Mountain.",
+		"cast": [
+			"Orson Bean",
+			"John Huston",
+			"Hans Conried",
+			"Richard Boone",
+			"Theodore Gottlieb"
+		],
+		"rating": 6.6,
+		"director": "Jules Bass",
+		"posterPath": "/2ohvyMPhvjftLrM6S6Ljr6QrL0u.jpg",
+		"backdropPath": "/qNVf39jp9fZSLd1bWMYjOrrEkI2.jpg"
+	},
 	"the-hobbit-an-unexpected-journey-2012": {
 		"title": "The Hobbit: An Unexpected Journey",
 		"releaseDate": "2012-12-12",
@@ -49,6 +66,23 @@
 		"director": "Peter Jackson",
 		"posterPath": "/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
 		"backdropPath": "/5ZYxL6k4ZHrEmrFvmY4HZVzerxG.jpg"
+	},
+	"the-lord-of-the-rings-1978": {
+		"title": "The Lord of the Rings",
+		"releaseDate": "1978-11-15",
+		"runtimeMinutes": 132,
+		"synopsis": "Young Hobbit Frodo Baggins is thrown into an amazing adventure when he's tasked with destroying the One Ring, created by the dark lord Sauron. Frodo must travel in a small fellowship of nine warriors and accomplices. But it won't be an easy journey for the Fellowship of the Ring, on the ultimate quest to rid Middle-earth of evil.",
+		"cast": [
+			"Christopher Guard",
+			"William Squire",
+			"Michael Scholes",
+			"John Hurt",
+			"Simon Chandler"
+		],
+		"rating": 6.6,
+		"director": "Ralph Bakshi",
+		"posterPath": "/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg",
+		"backdropPath": "/TXSxV23MWYkezZ3219gtgcSX6n.jpg"
 	},
 	"the-lord-of-the-rings-the-fellowship-of-the-ring-2001": {
 		"title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -117,5 +151,22 @@
 		"director": "Peter Jackson",
 		"posterPath": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
 		"backdropPath": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg"
+	},
+	"the-return-of-the-king-1980": {
+		"title": "The Return of the King",
+		"releaseDate": "1980-05-11",
+		"runtimeMinutes": 98,
+		"synopsis": "Two Hobbits struggle to destroy the Ring in Mount Doom while their friends desperately fight evil Lord Sauron's forces in a final battle.",
+		"cast": [
+			"Orson Bean",
+			"Roddy McDowall",
+			"John Huston",
+			"Theodore Gottlieb",
+			"Casey Kasem"
+		],
+		"rating": 6.4,
+		"director": "Arthur Rankin Jr.",
+		"posterPath": "/lTwUT4NsSyUQlHV20Mx3C96JHq4.jpg",
+		"backdropPath": "/fBzwSM5zl4xp9L3rFu1PihmY0vh.jpg"
 	}
 }

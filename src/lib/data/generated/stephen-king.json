@@ -154,6 +154,23 @@
 		"posterPath": "/p69QzIBbN06aTYqRRiCOY1emNBh.jpg",
 		"backdropPath": "/ap6Zc5NDOfbZaMhkRDyghbGeLf0.jpg"
 	},
+	"firestarter-1984": {
+		"title": "Firestarter",
+		"releaseDate": "1984-05-11",
+		"runtimeMinutes": 114,
+		"synopsis": "Charlene \"Charlie\" McGee has the amazing ability to start fires with just a glance. Can her psychic power and the love of her father save her from the threatening government agency which wants to destroy her?",
+		"cast": [
+			"Drew Barrymore",
+			"David Keith",
+			"Freddie Jones",
+			"Heather Locklear",
+			"Martin Sheen"
+		],
+		"rating": 6.3,
+		"director": "Mark L. Lester",
+		"posterPath": "/2ux5lqNuibd8eOkwwUhzfzAJBqD.jpg",
+		"backdropPath": "/tGvV6JZJxOh7yTRfcR5Hvo22aln.jpg"
+	},
 	"firestarter-2022": {
 		"title": "Firestarter",
 		"releaseDate": "2022-05-12",
@@ -187,6 +204,25 @@
 		"director": "Mike Flanagan",
 		"posterPath": "/32dippiypDdaKv7XFEfUlQ7kPup.jpg",
 		"backdropPath": "/t9HChjSJi8B1PXSVh5Ec3pcDsAM.jpg"
+	},
+	"it-1990": {
+		"title": "It",
+		"releaseDate": "1990-11-18",
+		"endDate": "1990-11-20",
+		"runtimeMinutes": 90,
+		"seasons": 1,
+		"episodes": 2,
+		"synopsis": "In 1960, seven outcast kids known as \"The Losers' Club\" fight against an ancient shape-shifting alien who poses as a child-killing clown, while also dealing with bullies and abusive parents. Thirty years later, they reunite to stop the creature once and for all when it returns to their hometown.",
+		"cast": [
+			"Tim Curry",
+			"Harry Anderson",
+			"Dennis Christopher",
+			"Richard Masur",
+			"Annette O'Toole"
+		],
+		"rating": 6.9,
+		"posterPath": "/4ybQ6gopB3H3cu0seVZLznDnIKo.jpg",
+		"backdropPath": "/2lFfjPdVXleGHukp0Phr5pNJ4ab.jpg"
 	},
 	"it-2017": {
 		"title": "It",
@@ -273,6 +309,23 @@
 		"posterPath": "/8ZtH1V4rhrtP53ezlEWrCaMALXF.jpg",
 		"backdropPath": "/xWq3T9P4NU2pTdZ3hXFygsNnAq4.jpg"
 	},
+	"pet-sematary-2019": {
+		"title": "Pet Sematary",
+		"releaseDate": "2019-04-04",
+		"runtimeMinutes": 101,
+		"synopsis": "Dr. Louis Creed and his wife, Rachel, move from Boston to Ludlow, in rural Maine, with their two young children. Hidden in the woods near the new family home, Ellie, their eldest daughter, discovers a mysterious cemetery where the pets of community members are buried.",
+		"cast": [
+			"Jason Clarke",
+			"Amy Seimetz",
+			"John Lithgow",
+			"Jeté Laurence",
+			"Hugo Lavoie"
+		],
+		"rating": 5.7,
+		"director": "Dennis Widmyer",
+		"posterPath": "/7SPhr7Qj39vbnfF9O2qHRYaKHAL.jpg",
+		"backdropPath": "/8iZjnNSIH4teZERl0VjUeHHVrec.jpg"
+	},
 	"stand-by-me-1986": {
 		"title": "Stand by Me",
 		"releaseDate": "1986-08-08",
@@ -358,6 +411,25 @@
 		"posterPath": "/c4UgUKZjM0Qzy5t4hAXSOFHYsnb.jpg",
 		"backdropPath": "/76J14zgwVWyOciri7X7F3DGP3TA.jpg"
 	},
+	"the-mist-2017": {
+		"title": "The Mist",
+		"releaseDate": "2017-06-22",
+		"endDate": "2017-08-24",
+		"runtimeMinutes": 40,
+		"seasons": 1,
+		"episodes": 10,
+		"synopsis": "A small town family is torn apart by a brutal crime. As they deal with the fallout an eerie mist rolls in, suddenly cutting them off from the rest of the world, and in some cases, each other.",
+		"cast": [
+			"Morgan Spector",
+			"Alyssa Sutherland",
+			"Gus Birney",
+			"Danica Ćurčić",
+			"Okezie Morro"
+		],
+		"rating": 6.2,
+		"posterPath": "/iwDmsffJ5qYBxiGTPdwgIKTscKu.jpg",
+		"backdropPath": "/ugSIMDmPW1HemkB2eCRtzrMjvJ0.jpg"
+	},
 	"the-outsider-2020": {
 		"title": "The Outsider",
 		"releaseDate": "2020-01-12",
@@ -410,6 +482,25 @@
 		"director": "Stanley Kubrick",
 		"posterPath": "/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
 		"backdropPath": "/AdKA2F1SzYPhSZdEbjH1Zh75UVQ.jpg"
+	},
+	"the-shining-1997": {
+		"title": "The Shining",
+		"releaseDate": "1997-04-27",
+		"endDate": "1997-05-01",
+		"runtimeMinutes": 90,
+		"seasons": 1,
+		"episodes": 3,
+		"synopsis": "A new caretaker moves with his family into the mysterious Overlook Hotel for the winter.",
+		"cast": [
+			"Rebecca De Mornay",
+			"Steven Weber",
+			"Wil Horneff",
+			"Courtland Mead",
+			"Cynthia Garris"
+		],
+		"rating": 6.3,
+		"posterPath": "/YTH851DpQxoWFRu9gAYwPM56Yy.jpg",
+		"backdropPath": "/2yYWgVDLWWCodMqgR7bzxDnTjv.jpg"
 	},
 	"under-the-dome-2013": {
 		"title": "Under the Dome",

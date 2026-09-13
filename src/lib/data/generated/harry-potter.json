@@ -185,5 +185,22 @@
 		"director": "Chris Columbus",
 		"posterPath": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
 		"backdropPath": "/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg"
+	},
+	"harry-potter-hbo-2026": {
+		"title": "Harry Potter",
+		"releaseDate": "2026-12-25",
+		"seasons": 1,
+		"episodes": 1,
+		"synopsis": "There is nothing special about Harry Potter - at least that's what his Aunt Petunia always says. On his 11th birthday, a letter of admittance to Hogwarts School of Witchcraft and Wizardry opens up a hidden world for Harry: one of fun, friendship and magic. But with this new adventure comes great risk as Harry is forced to face a dangerous enemy from his past.",
+		"cast": [
+			"Dominic McLaughlin",
+			"Arabella Stanton",
+			"Alastair Stout",
+			"John Lithgow",
+			"Janet McTeer"
+		],
+		"rating": 0,
+		"posterPath": "/SJCnXVBJZh7X7ePLt6XMp6TZAj.jpg",
+		"backdropPath": "/g0VmjKGMyipJSlPwlQvlLBvXTAQ.jpg"
 	}
 }

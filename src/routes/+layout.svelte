@@ -2,10 +2,20 @@
 	import '$lib/styles/base.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { resolve } from '$app/paths';
-	import { onNavigate } from '$app/navigation';
+	import { onNavigate, afterNavigate } from '$app/navigation';
+	import { page } from '$app/state';
 	import Footer from '$lib/components/Footer.svelte';
+	import BackButton from '$lib/components/BackButton.svelte';
+	import { navState } from '$lib/utils/navigation.svelte';
 
 	let { children } = $props();
+
+	// `from` is null on a visit's first page (a fresh load, a shared link, a
+	// new tab) and set on every navigation after that — BackButton uses this
+	// to decide whether a real `history.back()` is safe.
+	afterNavigate(({ from }) => {
+		if (from) navState.hasInAppHistory = true;
+	});
 
 	// Cross-fade between routes using the View Transitions API. No-ops in
 	// browsers that don't support it, and skipped entirely under
@@ -25,6 +35,18 @@
 			});
 		});
 	});
+
+	// Every page except the landing page gets a back button, going to
+	// whichever parent makes sense for that route if there's no real
+	// in-app history to fall back on yet.
+	const backHref = $derived.by(() => {
+		const franchise = page.params.franchise;
+		if (page.route.id === '/[franchise]/[entry]' && franchise) {
+			return resolve('/[franchise]', { franchise });
+		}
+		if (franchise) return resolve('/');
+		return null;
+	});
 </script>
 
 <svelte:head>
@@ -34,11 +56,14 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="site-header">
-	<div class="container">
+	<div class="container header-row">
 		<a class="brand" href={resolve('/')}>
 			<span class="brand-mark" aria-hidden="true">◆</span>
 			Franchise Explorer
 		</a>
+		{#if backHref}
+			<BackButton href={backHref} />
+		{/if}
 	</div>
 </header>
 
@@ -51,6 +76,13 @@
 <style>
 	.site-header {
 		padding-block: var(--space-5);
+	}
+
+	.header-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-4);
 	}
 
 	.brand {

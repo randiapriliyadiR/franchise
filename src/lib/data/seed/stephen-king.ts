@@ -5,12 +5,15 @@ import type { Entry } from '../types';
  * `seed/marvel.ts` for how this data merges with `scripts/sync-tmdb.mjs`
  * output — the same rules apply here.
  *
- * Unlike Marvel or The Walking Dead, these adaptations aren't one
- * serialized story — most stand alone, loosely tied together by recurring
+ * Unlike Marvel or The Walking Dead, most of these adaptations aren't one
+ * serialized story — they stand alone, loosely tied together by recurring
  * fictional towns (Derry, Castle Rock) and King's own mythology rather than
- * a single timeline. `chronology` matches release order (the two genuine
- * direct sequels, It Chapter Two and Doctor Sleep, naturally follow their
- * predecessors this way too); `group` tracks which corner of King's work
+ * a single timeline, so `chronology` matches release order for most of
+ * them. The exception is the Derry cluster: IT: Welcome to Derry is set in
+ * 1962, decades before It's 1989, so it's placed *before* It in story order
+ * even though it released years later — the same idea as any other
+ * prequel here, just without needing its own branch since it's still the
+ * same single town's story. `group` tracks which corner of King's work
  * each adaptation belongs to.
  */
 export const stephenKingEntries: Entry[] = [
@@ -43,12 +46,54 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1980 }
 	},
 	{
+		id: 'creepshow-1982',
+		franchise: 'stephen-king',
+		title: 'Creepshow',
+		type: 'film',
+		status: 'released',
+		chronology: 3,
+		group: 'Adaptations',
+		tags: ['anthology'],
+		synopsis:
+			'A comic-book-styled anthology of five macabre tales, from a vengeful corpse to a crate hiding something ravenous.',
+		cast: ['Hal Holbrook', 'Adrienne Barbeau', 'Leslie Nielsen'],
+		tmdb: { type: 'movie', year: 1982 }
+	},
+	{
+		id: 'christine-1983',
+		franchise: 'stephen-king',
+		title: 'Christine',
+		type: 'film',
+		status: 'released',
+		chronology: 4,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'A withdrawn teenager restores a broken-down 1958 Plymouth Fury with a murderous, jealous will of its own.',
+		cast: ['Keith Gordon', 'John Stockwell', 'Alexandra Paul'],
+		tmdb: { type: 'movie', year: 1983 }
+	},
+	{
+		id: 'cujo-1983',
+		franchise: 'stephen-king',
+		title: 'Cujo',
+		type: 'film',
+		status: 'released',
+		chronology: 5,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'A mother and her young son are trapped in a stalled car by a once-gentle St. Bernard driven rabid and murderous.',
+		cast: ['Dee Wallace', 'Danny Pintauro'],
+		tmdb: { type: 'movie', year: 1983 }
+	},
+	{
 		id: 'stand-by-me-1986',
 		franchise: 'stephen-king',
 		title: 'Stand by Me',
 		type: 'film',
 		status: 'released',
-		chronology: 3,
+		chronology: 6,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
@@ -57,26 +102,12 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1986 }
 	},
 	{
-		id: 'misery-1990',
-		franchise: 'stephen-king',
-		title: 'Misery',
-		type: 'film',
-		status: 'released',
-		chronology: 4,
-		group: 'Adaptations',
-		tags: [],
-		synopsis:
-			'A novelist rescued from a car crash by his self-proclaimed “number one fan” discovers just how obsessive she really is.',
-		cast: ['James Caan', 'Kathy Bates'],
-		tmdb: { type: 'movie', year: 1990 }
-	},
-	{
 		id: 'pet-sematary-1989',
 		franchise: 'stephen-king',
 		title: 'Pet Sematary',
 		type: 'film',
 		status: 'released',
-		chronology: 5,
+		chronology: 7,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
@@ -85,12 +116,26 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1989 }
 	},
 	{
+		id: 'misery-1990',
+		franchise: 'stephen-king',
+		title: 'Misery',
+		type: 'film',
+		status: 'released',
+		chronology: 8,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'A novelist rescued from a car crash by his self-proclaimed “number one fan” discovers just how obsessive she really is.',
+		cast: ['James Caan', 'Kathy Bates'],
+		tmdb: { type: 'movie', year: 1990 }
+	},
+	{
 		id: 'the-shawshank-redemption-1994',
 		franchise: 'stephen-king',
 		title: 'The Shawshank Redemption',
 		type: 'film',
 		status: 'released',
-		chronology: 6,
+		chronology: 9,
 		group: 'Prison & Redemption',
 		tags: ['origin'],
 		synopsis:
@@ -104,7 +149,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'The Green Mile',
 		type: 'film',
 		status: 'released',
-		chronology: 7,
+		chronology: 10,
 		group: 'Prison & Redemption',
 		tags: ['finale'],
 		synopsis:
@@ -113,12 +158,86 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1999 }
 	},
 	{
+		id: 'the-mist-2007',
+		franchise: 'stephen-king',
+		title: 'The Mist',
+		type: 'film',
+		status: 'released',
+		chronology: 11,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'A small town is trapped inside a supermarket by a mysterious mist hiding creatures — and its own fraying humanity.',
+		cast: ['Thomas Jane', 'Marcia Gay Harden', 'Laurie Holden'],
+		tmdb: { type: 'movie', year: 2007 }
+	},
+	{
+		id: '1408-2007',
+		franchise: 'stephen-king',
+		title: '1408',
+		type: 'film',
+		status: 'released',
+		chronology: 12,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'A skeptical author who debunks haunted locations checks into a hotel room that has killed everyone who ever stayed in it.',
+		cast: ['John Cusack', 'Samuel L. Jackson'],
+		tmdb: { type: 'movie', year: 2007 }
+	},
+	{
+		id: 'carrie-2013',
+		franchise: 'stephen-king',
+		title: 'Carrie',
+		type: 'film',
+		status: 'released',
+		chronology: 13,
+		chronologyNote: 'a modern-day remake',
+		group: 'Adaptations',
+		tags: ['remake'],
+		synopsis:
+			'A modern-day retelling: Carrie White’s telekinetic powers surface just as her mother’s religious fanaticism and her classmates’ cruelty peak.',
+		cast: ['Chloë Grace Moretz', 'Julianne Moore', 'Judy Greer'],
+		tmdb: { type: 'movie', year: 2013 }
+	},
+	{
+		id: 'under-the-dome-2013',
+		franchise: 'stephen-king',
+		title: 'Under the Dome',
+		type: 'series',
+		status: 'released',
+		chronology: 14,
+		group: 'Adaptations',
+		tags: [],
+		seasons: 3,
+		synopsis:
+			'An invisible, indestructible dome suddenly seals off a small town from the rest of the world, trapping its residents inside.',
+		cast: ['Mike Vogel', 'Rachelle Lefevre', 'Dean Norris'],
+		tmdb: { type: 'tv', year: 2013 }
+	},
+	{
+		id: 'it-welcome-to-derry-2025',
+		franchise: 'stephen-king',
+		title: 'IT: Welcome to Derry',
+		type: 'series',
+		status: 'released',
+		chronology: 14.5,
+		chronologyNote: '1962, decades before It',
+		group: 'Derry & Castle Rock',
+		tags: ['prequel'],
+		seasons: 1,
+		synopsis:
+			'Decades before the Losers Club, a spate of unexplained disappearances in 1962 Derry reveals a long-buried evil already at work.',
+		cast: ['Taylour Paige', 'Jovan Adepo', 'James Remar'],
+		tmdb: { type: 'tv', year: 2025 }
+	},
+	{
 		id: 'it-2017',
 		franchise: 'stephen-king',
 		title: 'It',
 		type: 'film',
 		status: 'released',
-		chronology: 8,
+		chronology: 15,
 		chronologyNote: '1989, the Losers Club as kids',
 		group: 'Derry & Castle Rock',
 		tags: ['origin'],
@@ -128,12 +247,40 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 2017 }
 	},
 	{
+		id: 'the-dark-tower-2017',
+		franchise: 'stephen-king',
+		title: 'The Dark Tower',
+		type: 'film',
+		status: 'released',
+		chronology: 15.2,
+		group: 'The Dark Tower',
+		tags: [],
+		synopsis:
+			'A boy from our world is pulled into a parallel one to help the last Gunslinger stop a Man in Black bent on destroying the tower holding all universes together.',
+		cast: ['Idris Elba', 'Matthew McConaughey', 'Tom Taylor'],
+		tmdb: { type: 'movie', year: 2017 }
+	},
+	{
+		id: 'geralds-game-2017',
+		franchise: 'stephen-king',
+		title: "Gerald's Game",
+		type: 'film',
+		status: 'released',
+		chronology: 15.4,
+		group: 'Adaptations',
+		tags: [],
+		synopsis:
+			'Handcuffed to a bed after her husband’s sudden death during a remote getaway, a woman confronts her past to survive.',
+		cast: ['Carla Gugino', 'Bruce Greenwood'],
+		tmdb: { type: 'movie', year: 2017 }
+	},
+	{
 		id: 'castle-rock-2018',
 		franchise: 'stephen-king',
 		title: 'Castle Rock',
 		type: 'series',
 		status: 'released',
-		chronology: 8.5,
+		chronology: 15.7,
 		group: 'Derry & Castle Rock',
 		tags: ['anthology'],
 		seasons: 2,
@@ -148,7 +295,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'It Chapter Two',
 		type: 'film',
 		status: 'released',
-		chronology: 9,
+		chronology: 16,
 		chronologyNote: '2016, the Losers Club as adults',
 		group: 'Derry & Castle Rock',
 		tags: ['finale'],
@@ -163,7 +310,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Doctor Sleep',
 		type: 'film',
 		status: 'released',
-		chronology: 10,
+		chronology: 17,
 		chronologyNote: 'decades after The Shining',
 		group: 'The Shining Saga',
 		tags: ['finale'],
@@ -173,17 +320,63 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 2019 }
 	},
 	{
-		id: 'the-dark-tower-2017',
+		id: 'the-outsider-2020',
 		franchise: 'stephen-king',
-		title: 'The Dark Tower',
+		title: 'The Outsider',
+		type: 'series',
+		status: 'released',
+		chronology: 18,
+		group: 'Adaptations',
+		tags: [],
+		seasons: 1,
+		synopsis:
+			'A gruesome child murder with airtight, contradictory evidence against one suspect pulls investigators toward something impossible.',
+		cast: ['Ben Mendelsohn', 'Cynthia Erivo', 'Jason Bateman'],
+		tmdb: { type: 'tv', year: 2020 }
+	},
+	{
+		id: 'firestarter-2022',
+		franchise: 'stephen-king',
+		title: 'Firestarter',
 		type: 'film',
 		status: 'released',
-		chronology: 8.2,
-		group: 'The Dark Tower',
+		chronology: 19,
+		chronologyNote: 'a modern-day remake',
+		group: 'Adaptations',
+		tags: ['remake'],
+		synopsis:
+			'A young girl with the power to start fires with her mind is hunted by a secretive government agency.',
+		cast: ['Zac Efron', 'Ryan Kiera Armstrong'],
+		tmdb: { type: 'movie', year: 2022 }
+	},
+	{
+		id: 'the-long-walk-2025',
+		franchise: 'stephen-king',
+		title: 'The Long Walk',
+		type: 'film',
+		status: 'released',
+		chronology: 20,
+		group: 'Adaptations',
 		tags: [],
 		synopsis:
-			'A boy from our world is pulled into a parallel one to help the last Gunslinger stop a Man in Black bent on destroying the tower holding all universes together.',
-		cast: ['Idris Elba', 'Matthew McConaughey', 'Tom Taylor'],
-		tmdb: { type: 'movie', year: 2017 }
+			'Fifty teenage boys enter a dystopian, deadly annual walking contest — maintain the pace or be executed, until only one remains.',
+		cast: ['Cooper Hoffman', 'David Jonsson', 'Mark Hamill'],
+		tmdb: { type: 'movie', year: 2025 }
+	},
+	{
+		id: 'carrie-2026',
+		franchise: 'stephen-king',
+		title: 'Carrie',
+		type: 'series',
+		status: 'upcoming',
+		chronology: 21,
+		chronologyNote: 'a modern-day remake, set in the social-media age',
+		group: 'Adaptations',
+		tags: ['remake'],
+		seasons: 1,
+		synopsis:
+			'A social-media-era retelling: Carrie White’s home-schooled isolation collides with a viral bullying scandal as her telekinetic powers awaken.',
+		cast: ['Summer H. Howell', 'Samantha Sloyan', 'Siena Agudong'],
+		tmdb: { type: 'tv', year: 2026 }
 	}
 ];

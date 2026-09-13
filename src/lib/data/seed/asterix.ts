@@ -5,10 +5,14 @@ import type { Entry } from '../types';
  * for how this data merges with `scripts/sync-tmdb.mjs` output — the same
  * rules apply here.
  *
- * Each film is a standalone adventure rather than one continuous story, so
- * `chronology` just matches release order; `group` splits the animated and
- * live-action lines, which are separate adaptations rather than a shared
- * continuity.
+ * Asterix doesn't have a real in-universe chronology — each film is a
+ * standalone adventure — and several entries are outright re-adaptations of
+ * the same story rather than sequels (Asterix and Cleopatra ↔ Mission
+ * Cleopatra; Asterix the Gaul ↔ vs. Caesar). So instead of pretending
+ * they're one continuous timeline, the live-action films run as their own
+ * branch alongside the animated ones, `chronology` placing each live-action
+ * entry next to its closest animated counterpart to show the two tracks
+ * side by side rather than end-to-end.
  */
 export const asterixEntries: Entry[] = [
 	{
@@ -24,6 +28,7 @@ export const asterixEntries: Entry[] = [
 			'The first Asterix album: a small Gaulish village, protected by a magic potion, holds out against the entire Roman Empire.',
 		cast: []
 	},
+	// ---- Animated Films (main line) ----
 	{
 		id: 'asterix-the-gaul-1967',
 		franchise: 'asterix',
@@ -81,12 +86,44 @@ export const asterixEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1994 }
 	},
 	{
+		id: 'asterix-and-the-vikings-2006',
+		franchise: 'asterix',
+		title: 'Asterix and the Vikings',
+		type: 'film',
+		status: 'released',
+		chronology: 5,
+		group: 'Animated Films',
+		tags: ['animated'],
+		synopsis:
+			'Asterix is tasked with teaching a cowardly Viking prince to feel fear, unaware the Vikings are hunting for exactly that secret.',
+		cast: [],
+		tmdb: { type: 'movie', year: 2006 }
+	},
+	{
+		id: 'asterix-the-secret-of-the-magic-potion-2018',
+		franchise: 'asterix',
+		title: 'Asterix: The Secret of the Magic Potion',
+		type: 'film',
+		status: 'released',
+		chronology: 6,
+		group: 'Animated Films',
+		tags: ['animated', 'finale'],
+		synopsis:
+			'Fearing for his life after a fall, the druid Getafix searches for a successor to inherit the secret of the magic potion.',
+		cast: [],
+		tmdb: { type: 'movie', year: 2018 }
+	},
+	// ---- Live-Action Films (parallel branch — same adventures, retold) ----
+	{
 		id: 'asterix-and-obelix-vs-caesar-1999',
 		franchise: 'asterix',
 		title: 'Asterix & Obelix vs. Caesar',
 		type: 'film',
 		status: 'released',
-		chronology: 5,
+		chronology: 1.5,
+		branch: 'Live-Action Adaptations',
+		branchNote:
+			'The same loosely-ordered adventures retold in live action, decades later — a parallel version, not a sequel to the animated films.',
 		group: 'Live-Action Films',
 		tags: ['origin'],
 		synopsis:
@@ -100,27 +137,14 @@ export const asterixEntries: Entry[] = [
 		title: 'Asterix & Obelix: Mission Cleopatra',
 		type: 'film',
 		status: 'released',
-		chronology: 6,
+		chronology: 2.5,
+		branch: 'Live-Action Adaptations',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
-			'Asterix and Obelix help an architect build Cleopatra a lavish palace in Alexandria before an impossible deadline.',
+			'Asterix and Obelix help an architect build Cleopatra a lavish palace in Alexandria before an impossible deadline — the live-action retelling of Asterix and Cleopatra.',
 		cast: ['Christian Clavier', 'Gérard Depardieu', 'Jamel Debbouze'],
 		tmdb: { type: 'movie', year: 2002 }
-	},
-	{
-		id: 'asterix-and-the-vikings-2006',
-		franchise: 'asterix',
-		title: 'Asterix and the Vikings',
-		type: 'film',
-		status: 'released',
-		chronology: 7,
-		group: 'Animated Films',
-		tags: ['animated'],
-		synopsis:
-			'Asterix is tasked with teaching a cowardly Viking prince to feel fear, unaware the Vikings are hunting for exactly that secret.',
-		cast: [],
-		tmdb: { type: 'movie', year: 2006 }
 	},
 	{
 		id: 'asterix-at-the-olympic-games-2008',
@@ -128,7 +152,8 @@ export const asterixEntries: Entry[] = [
 		title: 'Asterix at the Olympic Games',
 		type: 'film',
 		status: 'released',
-		chronology: 8,
+		chronology: 3.5,
+		branch: 'Live-Action Adaptations',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
@@ -142,7 +167,8 @@ export const asterixEntries: Entry[] = [
 		title: 'Asterix & Obelix: God Save Britannia',
 		type: 'film',
 		status: 'released',
-		chronology: 9,
+		chronology: 4.5,
+		branch: 'Live-Action Adaptations',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
@@ -151,26 +177,13 @@ export const asterixEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 2012 }
 	},
 	{
-		id: 'asterix-the-secret-of-the-magic-potion-2018',
-		franchise: 'asterix',
-		title: 'Asterix: The Secret of the Magic Potion',
-		type: 'film',
-		status: 'released',
-		chronology: 10,
-		group: 'Animated Films',
-		tags: ['animated'],
-		synopsis:
-			'Fearing for his life after a fall, the druid Getafix searches for a successor to inherit the secret of the magic potion.',
-		cast: [],
-		tmdb: { type: 'movie', year: 2018 }
-	},
-	{
 		id: 'asterix-and-obelix-the-middle-kingdom-2023',
 		franchise: 'asterix',
 		title: 'Asterix & Obelix: The Middle Kingdom',
 		type: 'film',
 		status: 'released',
-		chronology: 11,
+		chronology: 5.5,
+		branch: 'Live-Action Adaptations',
 		group: 'Live-Action Films',
 		tags: ['finale'],
 		synopsis:

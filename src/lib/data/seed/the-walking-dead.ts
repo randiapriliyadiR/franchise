@@ -340,18 +340,18 @@ export const twdEntries: Entry[] = [
 		id: 'fear-twd-dead-in-the-water',
 		franchise: 'the-walking-dead',
 		title: 'Fear the Walking Dead: Dead in the Water',
-		type: 'film',
+		type: 'series',
 		status: 'released',
-		// Placement is a best-effort guess pending the TMDB sync filling in a
-		// real release date — see the note left for the user about this entry.
-		chronology: 11.65,
-		chronologyNote: 'a prequel/coda tied to Alicia Clark, around the Fear the Walking Dead finale',
+		chronology: 0.1,
+		chronologyNote: 'a prequel aboard a submarine, before Fear the Walking Dead begins',
 		branch: 'Los Angeles (Fear the Walking Dead)',
 		group: 'Spin-offs',
-		tags: ['companion-series'],
-		synopsis: 'A feature-length continuation of Fear the Walking Dead centered on Alicia Clark.',
-		cast: ['Alycia Debnam-Carey'],
-		tmdb: { type: 'movie', query: 'Fear the Walking Dead: Dead in the Water' }
+		tags: ['companion-series', 'origin'],
+		seasons: 1,
+		synopsis:
+			'A weapons officer aboard the USS Pennsylvania near the Gulf of Mexico faces a mysterious outbreak as the crew scrambles to escape the sub before it becomes their tomb.',
+		cast: ['Nick Stahl'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead: Dead in the Water', year: 2022, season: 1 }
 	},
 	{
 		id: 'world-beyond-s01',

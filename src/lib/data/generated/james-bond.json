@@ -1,1 +1,427 @@
-{}
+{
+	"a-view-to-a-kill-1985": {
+		"title": "A View to a Kill",
+		"releaseDate": "1985-05-24",
+		"runtimeMinutes": 131,
+		"synopsis": "A newly-developed microchip designed by Zorin Industries for the British Government that can survive the electromagnetic radiation caused by a nuclear explosion has landed in the hands of the KGB. James Bond must find out how and why. His suspicions soon lead him to big industry leader Max Zorin who forms a plan to destroy his only competition in Silicon Valley by triggering a massive earthquake in the San Francisco Bay.",
+		"cast": [
+			"Roger Moore",
+			"Tanya Roberts",
+			"Christopher Walken",
+			"Grace Jones",
+			"Patrick Macnee"
+		],
+		"rating": 6.3,
+		"director": "John Glen",
+		"posterPath": "/arJF829RP9cYvh0NU70dC5TtXSa.jpg",
+		"backdropPath": "/hvGWyyC8wER1I8ExSXNtFBs7Mgd.jpg"
+	},
+	"casino-royale-2006": {
+		"title": "Casino Royale",
+		"releaseDate": "2006-11-14",
+		"runtimeMinutes": 144,
+		"synopsis": "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to establish his financial grip on the terrorist market. M sends Bond—on his maiden mission as a 00 Agent—to attend this game and prevent Le Chiffre from winning. With the help of Vesper Lynd and Felix Leiter, Bond enters the most important poker game in his already dangerous career.",
+		"cast": [
+			"Daniel Craig",
+			"Eva Green",
+			"Mads Mikkelsen",
+			"Judi Dench",
+			"Jeffrey Wright"
+		],
+		"rating": 7.6,
+		"director": "Martin Campbell",
+		"posterPath": "/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
+		"backdropPath": "/klJMCIblHLFwCuGjKz7tyOpekIC.jpg"
+	},
+	"diamonds-are-forever-1971": {
+		"title": "Diamonds Are Forever",
+		"releaseDate": "1971-12-14",
+		"runtimeMinutes": 120,
+		"synopsis": "Diamonds are stolen only to be sold again in the international market. James Bond infiltrates a smuggling mission to find out who's guilty. The mission takes him to Las Vegas where Bond meets his archenemy Blofeld.",
+		"cast": [
+			"Sean Connery",
+			"Jill St. John",
+			"Charles Gray",
+			"Lana Wood",
+			"Jimmy Dean"
+		],
+		"rating": 6.4,
+		"director": "Guy Hamilton",
+		"posterPath": "/ooDT0eKrWCxJCsn9JehPkD0QYNj.jpg",
+		"backdropPath": "/pyTDtQCn5sG8gi2zkM5ZylSNmtJ.jpg"
+	},
+	"die-another-day-2002": {
+		"title": "Die Another Day",
+		"releaseDate": "2002-11-17",
+		"runtimeMinutes": 133,
+		"synopsis": "James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul, who is funding the development of an international space weapon.",
+		"cast": [
+			"Pierce Brosnan",
+			"Halle Berry",
+			"Toby Stephens",
+			"Rosamund Pike",
+			"Rick Yune"
+		],
+		"rating": 6,
+		"director": "Lee Tamahori",
+		"posterPath": "/bZmGqOhMhaLn8AoFMvFDct4tbrL.jpg",
+		"backdropPath": "/ibJEhfV4CudcL3iaUgvhkBrfMCO.jpg"
+	},
+	"dr-no-1962": {
+		"title": "Dr. No",
+		"releaseDate": "1962-10-07",
+		"runtimeMinutes": 110,
+		"synopsis": "Agent 007 battles mysterious Dr. No, a scientific genius bent on destroying the U.S. space program. As the countdown to disaster begins, Bond must go to Jamaica, where he encounters beautiful Honey Ryder, to confront a megalomaniacal villain in his massive island headquarters.",
+		"cast": [
+			"Sean Connery",
+			"Ursula Andress",
+			"Joseph Wiseman",
+			"Jack Lord",
+			"Anthony Dawson"
+		],
+		"rating": 7,
+		"director": "Terence Young",
+		"posterPath": "/9zCOLJmLNst0sCPZlkW1IRoH65E.jpg",
+		"backdropPath": "/srgq7bzZsuDw7NoGXdazRXp7Hl6.jpg"
+	},
+	"for-your-eyes-only-1981": {
+		"title": "For Your Eyes Only",
+		"releaseDate": "1981-06-24",
+		"runtimeMinutes": 128,
+		"synopsis": "A British spy ship has sunk and on board was a hi-tech encryption device. James Bond is sent to find the device that holds British launching instructions before the enemy Soviets get to it first.",
+		"cast": [
+			"Roger Moore",
+			"Carole Bouquet",
+			"Chaim Topol",
+			"Julian Glover",
+			"Lynn-Holly Johnson"
+		],
+		"rating": 6.6,
+		"director": "John Glen",
+		"posterPath": "/xV4Nnr6DjjERlqNikqDQX8LUgua.jpg",
+		"backdropPath": "/z7Jp7HAsY7MqXzPYzTjJnmOQk2r.jpg"
+	},
+	"from-russia-with-love-1963": {
+		"title": "From Russia with Love",
+		"releaseDate": "1963-10-10",
+		"runtimeMinutes": 115,
+		"synopsis": "Agent 007 is back in the second installment of the James Bond series, this time battling a secret crime organization known as SPECTRE. Russians Rosa Klebb and Kronsteen are out to snatch a decoding device known as the Lektor, using the ravishing Tatiana to lure Bond into helping them. Bond willingly travels to meet Tatiana in Istanbul, where he must rely on his wits to escape with his life in a series of deadly encounters with the enemy.",
+		"cast": [
+			"Sean Connery",
+			"Daniela Bianchi",
+			"Pedro Armendáriz",
+			"Robert Shaw",
+			"Lotte Lenya"
+		],
+		"rating": 7.1,
+		"director": "Terence Young",
+		"posterPath": "/zx4V17FP8oclNvOpTgs2iCCtiYk.jpg",
+		"backdropPath": "/8JMiQa0OqsCYvbNUrQIrMzwV7g2.jpg"
+	},
+	"goldeneye-1995": {
+		"title": "GoldenEye",
+		"releaseDate": "1995-11-16",
+		"runtimeMinutes": 130,
+		"synopsis": "When a powerful secret defense system is stolen, James Bond is assigned to stop a Russian crime syndicate from using it.",
+		"cast": [
+			"Pierce Brosnan",
+			"Sean Bean",
+			"Izabella Scorupco",
+			"Famke Janssen",
+			"Joe Don Baker"
+		],
+		"rating": 6.9,
+		"director": "Martin Campbell",
+		"posterPath": "/z0ljRnNxIO7CRBhLEO0DvLgAFPR.jpg",
+		"backdropPath": "/fIWsCpYR9iGDMSbMTSAzy8L7Kg5.jpg"
+	},
+	"goldfinger-1964": {
+		"title": "Goldfinger",
+		"releaseDate": "1964-09-20",
+		"runtimeMinutes": 110,
+		"synopsis": "Special agent 007 comes face to face with one of the most notorious villains of all time, and now he must outwit and outgun the powerful tycoon to prevent him from cashing in on a devious scheme to raid Fort Knox -- and obliterate the world's economy.",
+		"cast": [
+			"Sean Connery",
+			"Gert Fröbe",
+			"Honor Blackman",
+			"Harold Sakata",
+			"Shirley Eaton"
+		],
+		"rating": 7.4,
+		"director": "Guy Hamilton",
+		"posterPath": "/aKNFzaqQgPzsGXnsMc4kJH5hFIV.jpg",
+		"backdropPath": "/mM4WeXqJd2tu1gCF5GYyAZf2Npl.jpg"
+	},
+	"licence-to-kill-1989": {
+		"title": "Licence to Kill",
+		"releaseDate": "1989-06-13",
+		"runtimeMinutes": 133,
+		"synopsis": "After capturing the notorious drug lord Franz Sanchez, Bond's close friend and former CIA agent Felix Leiter is left for dead and his wife is murdered. Bond goes rogue and seeks vengeance on those responsible, as he infiltrates Sanchez's organization from the inside.",
+		"cast": [
+			"Timothy Dalton",
+			"Carey Lowell",
+			"Robert Davi",
+			"Talisa Soto",
+			"Anthony Zerbe"
+		],
+		"rating": 6.4,
+		"director": "John Glen",
+		"posterPath": "/8nzJve63EXA79HGAyidZwivZrQ2.jpg",
+		"backdropPath": "/p6VFbg5lhWj0RCgXf5dj6IDMPvt.jpg"
+	},
+	"live-and-let-die-1973": {
+		"title": "Live and Let Die",
+		"releaseDate": "1973-06-27",
+		"runtimeMinutes": 121,
+		"synopsis": "James Bond must investigate a mysterious murder case of a British agent in New Orleans. Soon he finds himself up against a gangster boss named Mr. Big.",
+		"cast": [
+			"Roger Moore",
+			"Yaphet Kotto",
+			"Jane Seymour",
+			"Clifton James",
+			"Julius Harris"
+		],
+		"rating": 6.5,
+		"director": "Guy Hamilton",
+		"posterPath": "/39qkrjqMZs6utwNmihVImC3ghas.jpg",
+		"backdropPath": "/hzmmXx6UeYQeylioNbliFKjSbV7.jpg"
+	},
+	"moonraker-1979": {
+		"title": "Moonraker",
+		"releaseDate": "1979-06-26",
+		"runtimeMinutes": 126,
+		"synopsis": "After Drax Industries' Moonraker space shuttle is hijacked, secret agent James Bond is assigned to investigate, traveling to California to meet the company's owner, the mysterious Hugo Drax. With the help of scientist Dr. Holly Goodhead, Bond soon uncovers Drax's nefarious plans for humanity, all the while fending off an old nemesis, Jaws, and venturing to Venice, Rio, the Amazon...and even outer space.",
+		"cast": [
+			"Roger Moore",
+			"Lois Chiles",
+			"Michael Lonsdale",
+			"Richard Kiel",
+			"Corinne Cléry"
+		],
+		"rating": 6.2,
+		"director": "Lewis Gilbert",
+		"posterPath": "/6LrJdXNmu5uHOVALZxVYd44Lva0.jpg",
+		"backdropPath": "/mrDC5DLx2wljt4HZGwgkmqlzfcF.jpg"
+	},
+	"no-time-to-die-2021": {
+		"title": "No Time to Die",
+		"releaseDate": "2021-09-29",
+		"runtimeMinutes": 163,
+		"synopsis": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+		"cast": [
+			"Daniel Craig",
+			"Léa Seydoux",
+			"Rami Malek",
+			"Lashana Lynch",
+			"Ralph Fiennes"
+		],
+		"rating": 7.3,
+		"director": "Cary Joji Fukunaga",
+		"posterPath": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
+		"backdropPath": "/bz7pwNGCbV576COsDcYN9MbEACC.jpg"
+	},
+	"octopussy-1983": {
+		"title": "Octopussy",
+		"releaseDate": "1983-06-05",
+		"runtimeMinutes": 131,
+		"synopsis": "James Bond is sent to investigate after a fellow “00” agent is found dead with a priceless Fabergé egg. Bond follows the mystery and uncovers a smuggling scandal and a Russian General who wants to provoke a new World War.",
+		"cast": [
+			"Roger Moore",
+			"Maud Adams",
+			"Louis Jourdan",
+			"Kristina Wayborn",
+			"Kabir Bedi"
+		],
+		"rating": 6.4,
+		"director": "John Glen",
+		"posterPath": "/yoosZitM9igSk3Sd0sBXIhKlAh1.jpg",
+		"backdropPath": "/xTS1qCmhzH3vq7cuextO5vQA6eW.jpg"
+	},
+	"on-her-majestys-secret-service-1969": {
+		"title": "On Her Majesty's Secret Service",
+		"releaseDate": "1969-12-18",
+		"runtimeMinutes": 142,
+		"synopsis": "With the help of Marc-Ange Draco, head of the Unione Corse crime syndicate, and Draco's troubled daughter Tracy, James Bond tracks his archnemesis, Ernst Stravro Blofeld, to a mountaintop retreat in the Swiss Alps, where he is training an army of beautiful, lethal women.",
+		"cast": [
+			"George Lazenby",
+			"Diana Rigg",
+			"Telly Savalas",
+			"Gabriele Ferzetti",
+			"Ilse Steppat"
+		],
+		"rating": 6.6,
+		"director": "Peter R. Hunt",
+		"posterPath": "/m3KfbxvqaiAvRJ6MpguA3GuLdDQ.jpg",
+		"backdropPath": "/58pMrmwwcKamJIdjUlinE6QX1Fs.jpg"
+	},
+	"quantum-of-solace-2008": {
+		"title": "Quantum of Solace",
+		"releaseDate": "2008-10-29",
+		"runtimeMinutes": 106,
+		"synopsis": "Betrayed by Vesper, the woman he loved, 007 fights the urge to make his latest mission personal. Pursuing his determination to uncover the truth, Bond and M interrogate Mr. White, who reveals that the organization that blackmailed Vesper is far more complex and dangerous than anyone had imagined.",
+		"cast": [
+			"Daniel Craig",
+			"Olga Kurylenko",
+			"Mathieu Amalric",
+			"Judi Dench",
+			"Giancarlo Giannini"
+		],
+		"rating": 6.3,
+		"director": "Marc Forster",
+		"posterPath": "/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg",
+		"backdropPath": "/uGs5Z7dMguf7kxWubGFcp9EhKcy.jpg"
+	},
+	"skyfall-2012": {
+		"title": "Skyfall",
+		"releaseDate": "2012-10-24",
+		"runtimeMinutes": 143,
+		"synopsis": "When Bond's latest assignment goes gravely wrong, agents around the world are exposed and MI6 headquarters is attacked. While M faces challenges to her authority and position from Gareth Mallory, the new Chairman of the Intelligence and Security Committee, it's up to Bond, aided only by field agent Eve, to locate the mastermind behind the attack.",
+		"cast": [
+			"Daniel Craig",
+			"Judi Dench",
+			"Javier Bardem",
+			"Ralph Fiennes",
+			"Naomie Harris"
+		],
+		"rating": 7.3,
+		"director": "Sam Mendes",
+		"posterPath": "/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
+		"backdropPath": "/wkA622CCN2X0uwpgqYEOnUYEDf5.jpg"
+	},
+	"spectre-2015": {
+		"title": "Spectre",
+		"releaseDate": "2015-10-26",
+		"runtimeMinutes": 148,
+		"synopsis": "A cryptic message from Bond’s past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
+		"cast": [
+			"Daniel Craig",
+			"Christoph Waltz",
+			"Léa Seydoux",
+			"Ralph Fiennes",
+			"Monica Bellucci"
+		],
+		"rating": 6.6,
+		"director": "Sam Mendes",
+		"posterPath": "/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
+		"backdropPath": "/8lBViysvNJBPkl6zG1LVAaW3qhj.jpg"
+	},
+	"the-living-daylights-1987": {
+		"title": "The Living Daylights",
+		"releaseDate": "1987-06-29",
+		"runtimeMinutes": 130,
+		"synopsis": "After a defecting Russian general reveals a plot to assassinate foreign spies, James Bond is assigned a secret mission to dispatch the new head of the KGB to prevent an escalation of tensions between the Soviet Union and the West.",
+		"cast": [
+			"Timothy Dalton",
+			"Maryam D'Abo",
+			"Joe Don Baker",
+			"Art Malik",
+			"John Rhys-Davies"
+		],
+		"rating": 6.6,
+		"director": "John Glen",
+		"posterPath": "/1oRlmWX9hewpn2B44wawBjHd7dx.jpg",
+		"backdropPath": "/ebaq0ecL1Tu39rIExfHwE4ToFl2.jpg"
+	},
+	"the-man-with-the-golden-gun-1974": {
+		"title": "The Man with the Golden Gun",
+		"releaseDate": "1974-12-04",
+		"runtimeMinutes": 125,
+		"synopsis": "Cool government operative James Bond searches for a stolen invention that can turn the sun's heat into a destructive weapon. He soon crosses paths with the menacing Francisco Scaramanga, a hitman so skilled he has a seven-figure working fee. Bond then joins forces with the swimsuit-clad Mary Goodnight, and together they track Scaramanga to a Thai tropical isle hideout where the killer-for-hire lures the slick spy into a deadly maze for a final duel.",
+		"cast": [
+			"Roger Moore",
+			"Christopher Lee",
+			"Britt Ekland",
+			"Maud Adams",
+			"Hervé Villechaize"
+		],
+		"rating": 6.5,
+		"director": "Guy Hamilton",
+		"posterPath": "/xVkbKwGnBVNQ122GN5bCTMyPbWz.jpg",
+		"backdropPath": "/3tpNEbRahT8smy7RraaWa0xg9Gv.jpg"
+	},
+	"the-spy-who-loved-me-1977": {
+		"title": "The Spy Who Loved Me",
+		"releaseDate": "1977-07-07",
+		"runtimeMinutes": 125,
+		"synopsis": "Russian and British submarines with nuclear missiles on board both vanish from sight without a trace. England and Russia both blame each other as James Bond tries to solve the riddle of the disappearing ships. But the KGB also has an agent on the case.",
+		"cast": [
+			"Roger Moore",
+			"Barbara Bach",
+			"Curd Jürgens",
+			"Richard Kiel",
+			"Caroline Munro"
+		],
+		"rating": 6.8,
+		"director": "Lewis Gilbert",
+		"posterPath": "/3ZxHKFxMYvAko680DsRgAZKWcLi.jpg",
+		"backdropPath": "/lhPq8R8qgoyLNWvVTiqZSkYGLPX.jpg"
+	},
+	"the-world-is-not-enough-1999": {
+		"title": "The World Is Not Enough",
+		"releaseDate": "1999-11-17",
+		"runtimeMinutes": 128,
+		"synopsis": "Greed, revenge, world dominance and high-tech terrorism – it's all in a day's work for Bond, who's on a mission to protect a beautiful oil heiress from a notorious terrorist. In a race against time that culminates in a dramatic submarine showdown, Bond works to defuse the international power struggle that has the world's oil supply hanging in the balance.",
+		"cast": [
+			"Pierce Brosnan",
+			"Sophie Marceau",
+			"Robert Carlyle",
+			"Denise Richards",
+			"Robbie Coltrane"
+		],
+		"rating": 6.3,
+		"director": "Michael Apted",
+		"posterPath": "/wCb2msgoZPK01WIqry24M4xsM73.jpg",
+		"backdropPath": "/n2jVDMcBEWsLFooO7W1ZkcMUtWS.jpg"
+	},
+	"thunderball-1965": {
+		"title": "Thunderball",
+		"releaseDate": "1965-12-11",
+		"runtimeMinutes": 130,
+		"synopsis": "A criminal organization has obtained two nuclear bombs and are asking for a 100 million pound ransom in the form of diamonds in seven days or they will use the weapons. The secret service sends James Bond to the Bahamas to once again save the world.",
+		"cast": [
+			"Sean Connery",
+			"Claudine Auger",
+			"Adolfo Celi",
+			"Luciana Paluzzi",
+			"Rik Van Nutter"
+		],
+		"rating": 6.7,
+		"director": "Terence Young",
+		"posterPath": "/wCc4qllaTDsQN8zgGkAgQrKO6N9.jpg",
+		"backdropPath": "/7DLCXCQx52YLle1qTokrjROTwVV.jpg"
+	},
+	"tomorrow-never-dies-1997": {
+		"title": "Tomorrow Never Dies",
+		"releaseDate": "1997-12-11",
+		"runtimeMinutes": 119,
+		"synopsis": "A deranged media mogul is staging international incidents to pit the world's superpowers against each other. Now James Bond must take on this evil mastermind in an adrenaline-charged battle to end his reign of terror and prevent global pandemonium.",
+		"cast": [
+			"Pierce Brosnan",
+			"Jonathan Pryce",
+			"Michelle Yeoh",
+			"Teri Hatcher",
+			"Ricky Jay"
+		],
+		"rating": 6.4,
+		"director": "Roger Spottiswoode",
+		"posterPath": "/gZm002w7q9yLOkltxT76TWGfdZX.jpg",
+		"backdropPath": "/fesAgiKA0pc04vScDTAQe1f9nd4.jpg"
+	},
+	"you-only-live-twice-1967": {
+		"title": "You Only Live Twice",
+		"releaseDate": "1967-06-13",
+		"runtimeMinutes": 117,
+		"synopsis": "A mysterious spacecraft captures Russian and American space capsules and brings the two superpowers to the brink of war. James Bond investigates the case in Japan and comes face to face with his archenemy Blofeld.",
+		"cast": [
+			"Sean Connery",
+			"Akiko Wakabayashi",
+			"Mie Hama",
+			"Tetsuro Tamba",
+			"Teru Shimada"
+		],
+		"rating": 6.6,
+		"director": "Lewis Gilbert",
+		"posterPath": "/gIhS0VC7YzI8pj6zfS3KxsxV0dS.jpg",
+		"backdropPath": "/cpZAXIYA0lkZMpAt7d1MmH8ojNV.jpg"
+	}
+}

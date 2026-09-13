@@ -1,1 +1,270 @@
-{}
+{
+	"ahsoka-2023": {
+		"title": "Ahsoka",
+		"releaseDate": "2023-08-22",
+		"seasons": 2,
+		"episodes": 16,
+		"synopsis": "Former Jedi Knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy.",
+		"cast": [
+			"Rosario Dawson",
+			"Natasha Liu Bordizzo",
+			"Ivanna Sakhno",
+			"Ray Stevenson",
+			"Mary Elizabeth Winstead"
+		],
+		"rating": 7.4,
+		"posterPath": "/eiJeWeCAEZAmRppnXHiTWDcCd3Q.jpg",
+		"backdropPath": "/loDy1LWCkPjECjVTRmyKtOoUpNN.jpg"
+	},
+	"andor-2022": {
+		"title": "Andor",
+		"releaseDate": "2022-09-21",
+		"endDate": "2025-05-13",
+		"seasons": 2,
+		"episodes": 24,
+		"synopsis": "In an era filled with danger, deception and intrigue, Cassian Andor will discover the difference he can make in the struggle against the tyrannical Galactic Empire. He embarks on a path that is destined to turn him into a rebel hero.",
+		"cast": [
+			"Diego Luna",
+			"Anton Lesser",
+			"Muhannad Bhaier",
+			"Stellan Skarsgård",
+			"Denise Gough"
+		],
+		"rating": 8.3,
+		"posterPath": "/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+		"backdropPath": "/quCeAmVQHfsdcYkicbxZWVauCVb.jpg"
+	},
+	"obi-wan-kenobi-2022": {
+		"title": "Obi-Wan Kenobi",
+		"releaseDate": "2022-05-26",
+		"endDate": "2022-06-22",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+		"cast": [
+			"Ewan McGregor",
+			"Vivien Lyra Blair",
+			"Moses Ingram"
+		],
+		"rating": 7,
+		"posterPath": "/qJRB789ceLryrLvOKrZqLKr2CGf.jpg",
+		"backdropPath": "/p3Jmm6d1ShUrJEuU3DYD2K19c66.jpg"
+	},
+	"rogue-one-a-star-wars-story-2016": {
+		"title": "Rogue One: A Star Wars Story",
+		"releaseDate": "2016-12-14",
+		"runtimeMinutes": 133,
+		"synopsis": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+		"cast": [
+			"Felicity Jones",
+			"Diego Luna",
+			"Alan Tudyk",
+			"Donnie Yen",
+			"Jiang Wen"
+		],
+		"rating": 7.5,
+		"director": "Gareth Edwards",
+		"posterPath": "/i0yw1mFbB7sNGHCs7EXZPzFkdA1.jpg",
+		"backdropPath": "/6t8ES1d12OzWyCGxBeDYLHoaDrT.jpg"
+	},
+	"solo-a-star-wars-story-2018": {
+		"title": "Solo: A Star Wars Story",
+		"releaseDate": "2018-05-15",
+		"runtimeMinutes": 135,
+		"synopsis": "Through a series of daring escapades deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian.",
+		"cast": [
+			"Alden Ehrenreich",
+			"Joonas Suotamo",
+			"Woody Harrelson",
+			"Emilia Clarke",
+			"Donald Glover"
+		],
+		"rating": 6.6,
+		"director": "Ron Howard",
+		"posterPath": "/4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg",
+		"backdropPath": "/y9jGaGNn1dQDhPkhMumXaLize73.jpg"
+	},
+	"star-wars-episode-i-the-phantom-menace-1999": {
+		"title": "Star Wars: Episode I - The Phantom Menace",
+		"releaseDate": "1999-05-19",
+		"runtimeMinutes": 136,
+		"synopsis": "Anakin Skywalker, a young slave strong with the Force, is discovered on Tatooine. Meanwhile, the evil Sith have returned, enacting their plot for revenge against the Jedi.",
+		"cast": [
+			"Liam Neeson",
+			"Ewan McGregor",
+			"Natalie Portman",
+			"Jake Lloyd",
+			"Ian McDiarmid"
+		],
+		"rating": 6.6,
+		"director": "George Lucas",
+		"posterPath": "/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg",
+		"backdropPath": "/3TeGmKJfkik1D1rIoqGb1aR4k9c.jpg"
+	},
+	"star-wars-episode-ii-attack-of-the-clones-2002": {
+		"title": "Star Wars: Episode II - Attack of the Clones",
+		"releaseDate": "2002-05-15",
+		"runtimeMinutes": 142,
+		"synopsis": "Following an assassination attempt on Senator Padmé Amidala, Jedi Knights Anakin Skywalker and Obi-Wan Kenobi investigate a mysterious plot into the heart of the Separatist movement and the beginning of the Clone Wars.",
+		"cast": [
+			"Hayden Christensen",
+			"Ewan McGregor",
+			"Natalie Portman",
+			"Christopher Lee",
+			"Samuel L. Jackson"
+		],
+		"rating": 6.6,
+		"director": "George Lucas",
+		"posterPath": "/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
+		"backdropPath": "/cxvr2IOTwHcQa3EqMoQ8RHCkqBG.jpg"
+	},
+	"star-wars-episode-iii-revenge-of-the-sith-2005": {
+		"title": "Star Wars: Episode III - Revenge of the Sith",
+		"releaseDate": "2005-05-17",
+		"runtimeMinutes": 140,
+		"synopsis": "When the sinister Sith unveil a thousand-year-old plot to rule the galaxy, the Republic crumbles and from its ashes rises the evil Galactic Empire. Jedi hero Anakin Skywalker must choose a side.",
+		"cast": [
+			"Hayden Christensen",
+			"Ewan McGregor",
+			"Natalie Portman",
+			"Ian McDiarmid",
+			"Samuel L. Jackson"
+		],
+		"rating": 7.5,
+		"director": "George Lucas",
+		"posterPath": "/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg",
+		"backdropPath": "/5vDuLrjJXFS9PTF7Q1xzobmYKR9.jpg"
+	},
+	"star-wars-episode-iv-a-new-hope-1977": {
+		"title": "Star Wars",
+		"releaseDate": "1977-05-25",
+		"runtimeMinutes": 121,
+		"synopsis": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+		"cast": [
+			"Mark Hamill",
+			"Harrison Ford",
+			"Carrie Fisher",
+			"Peter Cushing",
+			"Alec Guinness"
+		],
+		"rating": 8.2,
+		"director": "George Lucas",
+		"posterPath": "/fai0rspsNeJCS69wHNjOdWxcI7P.jpg",
+		"backdropPath": "/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg"
+	},
+	"star-wars-episode-ix-the-rise-of-skywalker-2019": {
+		"title": "Star Wars: The Rise of Skywalker",
+		"releaseDate": "2019-12-18",
+		"runtimeMinutes": 142,
+		"synopsis": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
+		"cast": [
+			"Carrie Fisher",
+			"Mark Hamill",
+			"Daisy Ridley",
+			"Adam Driver",
+			"John Boyega"
+		],
+		"rating": 6.2,
+		"director": "J.J. Abrams",
+		"posterPath": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+		"backdropPath": "/auJKGst3vXpJozHZh4nMFs0xWIU.jpg"
+	},
+	"star-wars-episode-v-the-empire-strikes-back-1980": {
+		"title": "The Empire Strikes Back",
+		"releaseDate": "1980-05-20",
+		"runtimeMinutes": 124,
+		"synopsis": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+		"cast": [
+			"Mark Hamill",
+			"Harrison Ford",
+			"Carrie Fisher",
+			"Billy Dee Williams",
+			"Anthony Daniels"
+		],
+		"rating": 8.4,
+		"director": "Irvin Kershner",
+		"posterPath": "/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg",
+		"backdropPath": "/k9pshruhCpJAdH9RaGJO6jaWQ4X.jpg"
+	},
+	"star-wars-episode-vi-return-of-the-jedi-1983": {
+		"title": "Return of the Jedi",
+		"releaseDate": "1983-05-25",
+		"runtimeMinutes": 132,
+		"synopsis": "Luke Skywalker leads a mission to rescue his friend Han Solo from the clutches of Jabba the Hutt, the Emperor prepares to crush the Rebellion with a more powerful Death Star, and the Rebel fleet mounts a massive attack on the space station. Luke Skywalker confronts Darth Vader in a final climactic duel before the evil Emperor.",
+		"cast": [
+			"Mark Hamill",
+			"Harrison Ford",
+			"Carrie Fisher",
+			"Billy Dee Williams",
+			"Anthony Daniels"
+		],
+		"rating": 7.9,
+		"director": "Richard Marquand",
+		"posterPath": "/jQYlydvHm3kUix1f8prMucrplhm.jpg",
+		"backdropPath": "/ziECpBRIyclmBNaFSWlvCfsKbMD.jpg"
+	},
+	"star-wars-episode-vii-the-force-awakens-2015": {
+		"title": "Star Wars: The Force Awakens",
+		"releaseDate": "2015-12-15",
+		"runtimeMinutes": 136,
+		"synopsis": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
+		"cast": [
+			"Daisy Ridley",
+			"John Boyega",
+			"Oscar Isaac",
+			"Adam Driver",
+			"Carrie Fisher"
+		],
+		"rating": 7.2,
+		"director": "J.J. Abrams",
+		"posterPath": "/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
+		"backdropPath": "/8BTsTfln4jlQrLXUBquXJ0ASQy9.jpg"
+	},
+	"star-wars-episode-viii-the-last-jedi-2017": {
+		"title": "Star Wars: The Last Jedi",
+		"releaseDate": "2017-12-13",
+		"runtimeMinutes": 152,
+		"synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+		"cast": [
+			"Mark Hamill",
+			"Carrie Fisher",
+			"Adam Driver",
+			"Daisy Ridley",
+			"John Boyega"
+		],
+		"rating": 6.7,
+		"director": "Rian Johnson",
+		"posterPath": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+		"backdropPath": "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg"
+	},
+	"the-book-of-boba-fett-2021": {
+		"title": "The Book of Boba Fett",
+		"releaseDate": "2021-12-29",
+		"endDate": "2022-02-09",
+		"seasons": 1,
+		"episodes": 7,
+		"synopsis": "Legendary bounty hunter Boba Fett and mercenary Fennec Shand must navigate the galaxy’s underworld when they return to the sands of Tatooine to stake their claim on the territory once ruled by Jabba the Hutt and his crime syndicate.",
+		"cast": [
+			"Temuera Morrison",
+			"Ming-Na Wen"
+		],
+		"rating": 7.5,
+		"posterPath": "/gNbdjDi1HamTCrfvM9JeA94bNi2.jpg",
+		"backdropPath": "/sjx6zjQI2dLGtEL0HGWsnq6UyLU.jpg"
+	},
+	"the-mandalorian-2019": {
+		"title": "The Mandalorian",
+		"releaseDate": "2019-11-12",
+		"endDate": "2023-04-19",
+		"seasons": 3,
+		"episodes": 24,
+		"synopsis": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+		"cast": [
+			"Pedro Pascal",
+			"Katee Sackhoff"
+		],
+		"rating": 8.4,
+		"posterPath": "/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+		"backdropPath": "/9zcbqSxdsRMZWHYtyCd1nXPr2xq.jpg"
+	}
+}

@@ -1,1 +1,189 @@
-{}
+{
+	"fantastic-beasts-and-where-to-find-them-2016": {
+		"title": "Fantastic Beasts and Where to Find Them",
+		"releaseDate": "2016-11-16",
+		"runtimeMinutes": 133,
+		"synopsis": "In 1926, Newt Scamander arrives at the Magical Congress of the United States of America with a magically expanded briefcase, which houses a number of dangerous creatures and their habitats. When the creatures escape from the briefcase, it sends the American wizarding authorities after Newt, and threatens to strain even further the state of magical and non-magical relations.",
+		"cast": [
+			"Eddie Redmayne",
+			"Katherine Waterston",
+			"Dan Fogler",
+			"Alison Sudol",
+			"Colin Farrell"
+		],
+		"rating": 7.3,
+		"director": "David Yates",
+		"posterPath": "/h6NYfVUyM6CDURtZSnBpz647Ldd.jpg",
+		"backdropPath": "/8Qsr8pvDL3s1jNZQ4HK1d1Xlvnh.jpg"
+	},
+	"fantastic-beasts-the-crimes-of-grindelwald-2018": {
+		"title": "Fantastic Beasts: The Crimes of Grindelwald",
+		"releaseDate": "2018-11-14",
+		"runtimeMinutes": 134,
+		"synopsis": "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.",
+		"cast": [
+			"Eddie Redmayne",
+			"Katherine Waterston",
+			"Dan Fogler",
+			"Alison Sudol",
+			"Johnny Depp"
+		],
+		"rating": 6.8,
+		"director": "David Yates",
+		"posterPath": "/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg",
+		"backdropPath": "/i3rRY0EKYhSpyOLRAQ7iB05zhAp.jpg"
+	},
+	"fantastic-beasts-the-secrets-of-dumbledore-2022": {
+		"title": "Fantastic Beasts: The Secrets of Dumbledore",
+		"releaseDate": "2022-04-06",
+		"runtimeMinutes": 142,
+		"synopsis": "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
+		"cast": [
+			"Eddie Redmayne",
+			"Jude Law",
+			"Mads Mikkelsen",
+			"Ezra Miller",
+			"Dan Fogler"
+		],
+		"rating": 6.6,
+		"director": "David Yates",
+		"posterPath": "/3c5GNLB4yRSLBby0trHoA1DSQxQ.jpg",
+		"backdropPath": "/zGLHX92Gk96O1DJvLil7ObJTbaL.jpg"
+	},
+	"harry-potter-and-the-chamber-of-secrets-2002": {
+		"title": "Harry Potter and the Chamber of Secrets",
+		"releaseDate": "2002-11-13",
+		"runtimeMinutes": 161,
+		"synopsis": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione's magical abilities and courage.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Kenneth Branagh",
+			"Toby Jones"
+		],
+		"rating": 7.7,
+		"director": "Chris Columbus",
+		"posterPath": "/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+		"backdropPath": "/7tbeoSTWW2cWPecjQo9fcdf0Hzv.jpg"
+	},
+	"harry-potter-and-the-deathly-hallows-part-1-2010": {
+		"title": "Harry Potter and the Deathly Hallows: Part 1",
+		"releaseDate": "2010-11-17",
+		"runtimeMinutes": 146,
+		"synopsis": "Harry, Ron and Hermione walk away from their last year at Hogwarts to find and destroy the remaining Horcruxes, putting an end to Voldemort's bid for immortality. But with Harry's beloved Dumbledore dead and Voldemort's unscrupulous Death Eaters on the loose, the world is more dangerous than ever.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Emma Watson",
+			"Rupert Grint",
+			"Toby Jones",
+			"Helena Bonham Carter"
+		],
+		"rating": 7.7,
+		"director": "David Yates",
+		"posterPath": "/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+		"backdropPath": "/p2M4xlipwlqUzglAlF2KDlTqeLV.jpg"
+	},
+	"harry-potter-and-the-deathly-hallows-part-2-2011": {
+		"title": "Harry Potter and the Deathly Hallows: Part 2",
+		"releaseDate": "2011-07-12",
+		"runtimeMinutes": 130,
+		"synopsis": "Harry, Ron and Hermione continue their quest to vanquish the evil Voldemort once and for all. Just as things begin to look hopeless for the young wizards, Harry discovers a trio of magical objects that endow him with powers to rival Voldemort's formidable skills.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Emma Watson",
+			"Rupert Grint",
+			"Ralph Fiennes",
+			"Alan Rickman"
+		],
+		"rating": 8.1,
+		"director": "David Yates",
+		"posterPath": "/c54HpQmuwXjHq2C9wmoACjxoom3.jpg",
+		"backdropPath": "/cbcpDn6XJaIGoOil1bKuskU8ds4.jpg"
+	},
+	"harry-potter-and-the-goblet-of-fire-2005": {
+		"title": "Harry Potter and the Goblet of Fire",
+		"releaseDate": "2005-11-16",
+		"runtimeMinutes": 157,
+		"synopsis": "When his name emerges from the Goblet of Fire, Harry Potter becomes a competitor in a grueling battle for glory among three wizarding schools. Signs of Voldemort's return emerge as Harry's friends help him prepare for the Triwizard Tournament.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Brendan Gleeson",
+			"Michael Gambon"
+		],
+		"rating": 7.8,
+		"director": "Mike Newell",
+		"posterPath": "/fECBtHlr0RB3foNHDiCBXeg9Bv9.jpg",
+		"backdropPath": "/cClWTo3ftVXvV1sF8vlLuWfnlph.jpg"
+	},
+	"harry-potter-and-the-half-blood-prince-2009": {
+		"title": "Harry Potter and the Half-Blood Prince",
+		"releaseDate": "2009-07-15",
+		"runtimeMinutes": 153,
+		"synopsis": "Dumbledore tries to prepare Harry for the final battle with Voldemort while Death Eaters wreak havoc in both Muggle and Wizard worlds.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Jim Broadbent",
+			"Michael Gambon"
+		],
+		"rating": 7.7,
+		"director": "David Yates",
+		"posterPath": "/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
+		"backdropPath": "/ze6Mx4QE5mQVXRYmG2flncqqle4.jpg"
+	},
+	"harry-potter-and-the-order-of-the-phoenix-2007": {
+		"title": "Harry Potter and the Order of the Phoenix",
+		"releaseDate": "2007-07-08",
+		"runtimeMinutes": 138,
+		"synopsis": "When a new professor's methods leave Hogwarts unprepared to fight the rising tide of evil, Harry teaches students how to defend against the dark arts.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Imelda Staunton",
+			"Helena Bonham Carter"
+		],
+		"rating": 7.7,
+		"director": "David Yates",
+		"posterPath": "/5aOyriWkPec0zUDxmHFP9qMmBaj.jpg",
+		"backdropPath": "/sO2VWeJ8qagNtYoznyLRL8TeSkw.jpg"
+	},
+	"harry-potter-and-the-prisoner-of-azkaban-2004": {
+		"title": "Harry Potter and the Prisoner of Azkaban",
+		"releaseDate": "2004-05-31",
+		"runtimeMinutes": 141,
+		"synopsis": "Harry Potter's life is in danger once more as dangerous wizard Sirius Black has escaped from Azkaban Prison and is heading to Hogwarts.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Robbie Coltrane",
+			"Michael Gambon"
+		],
+		"rating": 8,
+		"director": "Alfonso Cuarón",
+		"posterPath": "/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+		"backdropPath": "/vbk5CfaAHOjQPSAcYm6AoRRz2Af.jpg"
+	},
+	"harry-potter-and-the-sorcerers-stone-2001": {
+		"title": "Harry Potter and the Philosopher's Stone",
+		"releaseDate": "2001-11-16",
+		"runtimeMinutes": 152,
+		"synopsis": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Richard Harris",
+			"Tom Felton"
+		],
+		"rating": 7.9,
+		"director": "Chris Columbus",
+		"posterPath": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+		"backdropPath": "/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg"
+	}
+}

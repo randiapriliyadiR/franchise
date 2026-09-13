@@ -1,1 +1,258 @@
-{}
+{
+	"star-trek-2009": {
+		"title": "Star Trek",
+		"releaseDate": "2009-05-06",
+		"runtimeMinutes": 127,
+		"synopsis": "The fate of the galaxy rests in the hands of bitter rivals. One, James Kirk, is a delinquent, thrill-seeking Iowa farm boy. The other, Spock, a Vulcan, was raised in a logic-based society that rejects all emotion. As fiery instinct clashes with calm reason, their unlikely but powerful partnership is the only thing capable of leading their crew through unimaginable danger, boldly going where no one has gone before. The human adventure has begun again.",
+		"cast": [
+			"Chris Pine",
+			"Zachary Quinto",
+			"Leonard Nimoy",
+			"Eric Bana",
+			"Bruce Greenwood"
+		],
+		"rating": 7.4,
+		"director": "J.J. Abrams",
+		"posterPath": "/lV5OpzAss1z06YNagOVap1I35mH.jpg",
+		"backdropPath": "/cqXEwYFcwyKPZCKl1jAPaG3cMsl.jpg"
+	},
+	"star-trek-beyond-2016": {
+		"title": "Star Trek Beyond",
+		"releaseDate": "2016-07-07",
+		"runtimeMinutes": 122,
+		"synopsis": "The USS Enterprise crew explores the furthest reaches of uncharted space, where they encounter a mysterious new enemy who puts them and everything the Federation stands for to the test.",
+		"cast": [
+			"Chris Pine",
+			"Zachary Quinto",
+			"Karl Urban",
+			"Zoe Saldaña",
+			"Simon Pegg"
+		],
+		"rating": 6.8,
+		"director": "Justin Lin",
+		"posterPath": "/wI5VghYNYLktDRPUa5rrVcVA1h7.jpg",
+		"backdropPath": "/sUJrnMbL2xLMjMHk4VdReNrL7BK.jpg"
+	},
+	"star-trek-discovery-2017": {
+		"title": "Star Trek: Discovery",
+		"releaseDate": "2017-09-24",
+		"endDate": "2024-05-30",
+		"seasons": 5,
+		"episodes": 65,
+		"synopsis": "Follow the voyages of Starfleet on their missions to discover new worlds and new life forms, and one Starfleet officer who must learn that to truly understand all things alien, you must first understand yourself.",
+		"cast": [
+			"Sonequa Martin-Green",
+			"Doug Jones",
+			"Mary Wiseman",
+			"Anthony Rapp",
+			"Wilson Cruz"
+		],
+		"rating": 6.9,
+		"posterPath": "/xwpOHgym48Ftz7fbJq5te5xoiwu.jpg",
+		"backdropPath": "/ePr0k72sypMpZYubz6w34dcW68Y.jpg"
+	},
+	"star-trek-first-contact-1996": {
+		"title": "Star Trek: First Contact",
+		"releaseDate": "1996-11-22",
+		"runtimeMinutes": 111,
+		"synopsis": "The Borg, a relentless race of cyborgs, are on a direct course for Earth. Violating orders to stay away from the battle, Captain Picard and the crew of the newly-commissioned USS Enterprise E pursue the Borg back in time to prevent the invaders from changing Federation history and assimilating the galaxy.",
+		"cast": [
+			"Patrick Stewart",
+			"Jonathan Frakes",
+			"Brent Spiner",
+			"LeVar Burton",
+			"Michael Dorn"
+		],
+		"rating": 7.3,
+		"director": "Jonathan Frakes",
+		"posterPath": "/iqhHe893Vcf07jNkNQ31tu85dKG.jpg",
+		"backdropPath": "/wygUDDRNpeKUnkekRGeLCZM93tA.jpg"
+	},
+	"star-trek-generations-1994": {
+		"title": "Star Trek: Generations",
+		"releaseDate": "1994-11-18",
+		"runtimeMinutes": 118,
+		"synopsis": "Captain Jean-Luc Picard and the crew of the Enterprise-D find themselves at odds with the renegade scientist Soran who is destroying entire star systems. Only one man can help Picard stop Soran's scheme...and he's been dead for seventy-eight years.",
+		"cast": [
+			"Patrick Stewart",
+			"Jonathan Frakes",
+			"Brent Spiner",
+			"LeVar Burton",
+			"Michael Dorn"
+		],
+		"rating": 6.5,
+		"director": "David Carson",
+		"posterPath": "/gh0ZZRwSmlzEZTIZee3ZCN9Jssx.jpg",
+		"backdropPath": "/mNdsbVuRdsyo8eitW2IBW2BWRkU.jpg"
+	},
+	"star-trek-ii-the-wrath-of-khan-1982": {
+		"title": "Star Trek II: The Wrath of Khan",
+		"releaseDate": "1982-06-04",
+		"runtimeMinutes": 113,
+		"synopsis": "The starship Enterprise and its crew is pulled back into action when old nemesis, Khan, steals a top secret device called Project Genesis.",
+		"cast": [
+			"William Shatner",
+			"Leonard Nimoy",
+			"Ricardo Montalban",
+			"DeForest Kelley",
+			"James Doohan"
+		],
+		"rating": 7.4,
+		"director": "Nicholas Meyer",
+		"posterPath": "/uPyLsKl8Z0LOoxeaFXsY5MxhR5s.jpg",
+		"backdropPath": "/meqmvZjKpQ7WRhpZvIoKIAvioSD.jpg"
+	},
+	"star-trek-iii-the-search-for-spock-1984": {
+		"title": "Star Trek III: The Search for Spock",
+		"releaseDate": "1984-06-01",
+		"runtimeMinutes": 105,
+		"synopsis": "A surprise visit from Spock's father provides a startling revelation: McCoy is harboring Spock's living essence.",
+		"cast": [
+			"William Shatner",
+			"DeForest Kelley",
+			"James Doohan",
+			"George Takei",
+			"Walter Koenig"
+		],
+		"rating": 6.6,
+		"director": "Leonard Nimoy",
+		"posterPath": "/yqEj0oPfKBMCz7YcCARHDgH7VFm.jpg",
+		"backdropPath": "/hFXXFpqrD0tvZPhILN4uqtNZDpY.jpg"
+	},
+	"star-trek-insurrection-1998": {
+		"title": "Star Trek: Insurrection",
+		"releaseDate": "1998-12-11",
+		"runtimeMinutes": 103,
+		"synopsis": "When an alien race and factions within Starfleet attempt to take over a planet that has \"regenerative\" properties, it falls upon Captain Picard and the crew of the Enterprise to defend the planet's people as well as the very ideals upon which the Federation itself was founded.",
+		"cast": [
+			"Patrick Stewart",
+			"Brent Spiner",
+			"Michael Dorn",
+			"Jonathan Frakes",
+			"F. Murray Abraham"
+		],
+		"rating": 6.5,
+		"director": "Jonathan Frakes",
+		"posterPath": "/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg",
+		"backdropPath": "/vsjuHP9RQZJgYUvvSlO3mjJpXkq.jpg"
+	},
+	"star-trek-into-darkness-2013": {
+		"title": "Star Trek Into Darkness",
+		"releaseDate": "2013-05-05",
+		"runtimeMinutes": 132,
+		"synopsis": "When the crew of the Enterprise is called back home, they find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis.  With a personal score to settle, Captain Kirk leads a manhunt to a war-zone world to capture a one man weapon of mass destruction. As our heroes are propelled into an epic chess game of life and death, love will be challenged, friendships will be torn apart, and sacrifices must be made for the only family Kirk has left: his crew.",
+		"cast": [
+			"Chris Pine",
+			"Zachary Quinto",
+			"Zoe Saldaña",
+			"Benedict Cumberbatch",
+			"Karl Urban"
+		],
+		"rating": 7.3,
+		"director": "J.J. Abrams",
+		"posterPath": "/Aim3kVNh1MPIxPEFeJrl9e9Uf1a.jpg",
+		"backdropPath": "/npDrIM6ZbuD7nUxI7ZzNBxs4IRF.jpg"
+	},
+	"star-trek-iv-the-voyage-home-1986": {
+		"title": "Star Trek IV: The Voyage Home",
+		"releaseDate": "1986-11-26",
+		"runtimeMinutes": 118,
+		"synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
+		"cast": [
+			"William Shatner",
+			"Leonard Nimoy",
+			"DeForest Kelley",
+			"James Doohan",
+			"George Takei"
+		],
+		"rating": 7.2,
+		"director": "Leonard Nimoy",
+		"posterPath": "/xY5TzGXJOB3L9rhZ1MbbPyVlW5J.jpg",
+		"backdropPath": "/2LiU13aDAWpU2mX25JdacTzBnyr.jpg"
+	},
+	"star-trek-nemesis-2002": {
+		"title": "Star Trek: Nemesis",
+		"releaseDate": "2002-12-13",
+		"runtimeMinutes": 116,
+		"synopsis": "En route to the honeymoon of William Riker to Deanna Troi on her home planet of Betazed, Captain Jean-Luc Picard and the crew of the U.S.S. Enterprise receives word from Starfleet that a coup has resulted in the installation of a new Romulan political leader, Shinzon, who claims to seek peace with the human-backed United Federation of Planets. Once in enemy territory, the captain and his crew make a startling discovery: Shinzon is human, a slave from the Romulan sister planet of Remus, and has a secret, shocking relationship to Picard himself.",
+		"cast": [
+			"Patrick Stewart",
+			"Jonathan Frakes",
+			"Brent Spiner",
+			"LeVar Burton",
+			"Michael Dorn"
+		],
+		"rating": 6.3,
+		"director": "Stuart Baird",
+		"posterPath": "/cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg",
+		"backdropPath": "/6z9w8eidKWDDXwZNSVNaRolAYEP.jpg"
+	},
+	"star-trek-picard-2020": {
+		"title": "Star Trek: Picard",
+		"releaseDate": "2020-01-23",
+		"endDate": "2023-04-20",
+		"seasons": 3,
+		"episodes": 30,
+		"synopsis": "Set twenty years after the events of Star Trek Nemesis, we follow the now-retired Admiral Picard into the next chapter of his life.",
+		"cast": [
+			"Patrick Stewart",
+			"Jeri Ryan",
+			"Michelle Hurd",
+			"Ed Speleers"
+		],
+		"rating": 7.2,
+		"posterPath": "/nIlAKIrLKxOeoEnc0Urb65yNCp.jpg",
+		"backdropPath": "/lodNd9ITHf32q8ybHArHqoWOcXf.jpg"
+	},
+	"star-trek-the-motion-picture-1979": {
+		"title": "Star Trek: The Motion Picture",
+		"releaseDate": "1979-12-07",
+		"runtimeMinutes": 131,
+		"synopsis": "When an unidentified alien destroys three powerful Klingon cruisers, Captain James T. Kirk returns to the newly transformed U.S.S. Enterprise to take command.",
+		"cast": [
+			"William Shatner",
+			"Leonard Nimoy",
+			"DeForest Kelley",
+			"James Doohan",
+			"George Takei"
+		],
+		"rating": 6.5,
+		"director": "Robert Wise",
+		"posterPath": "/wfiAfNwH6CMKxz4vRaW8CPTabtk.jpg",
+		"backdropPath": "/rPaOAtK6OpnHQ9r61WPM4WWNxaH.jpg"
+	},
+	"star-trek-v-the-final-frontier-1989": {
+		"title": "Star Trek V: The Final Frontier",
+		"releaseDate": "1989-06-09",
+		"runtimeMinutes": 106,
+		"synopsis": "A renegade Vulcan with a startling secret hijacks the U.S.S. Enterprise in order to find a mythical planet.",
+		"cast": [
+			"William Shatner",
+			"Leonard Nimoy",
+			"DeForest Kelley",
+			"James Doohan",
+			"George Takei"
+		],
+		"rating": 5.7,
+		"director": "William Shatner",
+		"posterPath": "/uiXr41VLYsuug3CZbFrKLSNahuZ.jpg",
+		"backdropPath": "/y0klN15XPVyYtd4P7HYecgJXSsZ.jpg"
+	},
+	"star-trek-vi-the-undiscovered-country-1991": {
+		"title": "Star Trek VI: The Undiscovered Country",
+		"releaseDate": "1991-12-06",
+		"runtimeMinutes": 110,
+		"synopsis": "After years of war, the Federation and the Klingon empire find themselves on the brink of a peace summit when a Klingon ship is nearly destroyed by an apparent attack from the Enterprise. Both worlds brace for what may be their deadliest encounter.",
+		"cast": [
+			"William Shatner",
+			"Leonard Nimoy",
+			"DeForest Kelley",
+			"James Doohan",
+			"Walter Koenig"
+		],
+		"rating": 7,
+		"director": "Nicholas Meyer",
+		"posterPath": "/tvTOJD7Gz668GLy2nNdLRQvpPsv.jpg",
+		"backdropPath": "/nGJTamFPZ9V4JX5YpiOS0UDuwmx.jpg"
+	}
+}

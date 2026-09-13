@@ -424,7 +424,7 @@
 		],
 		"rating": 7.8,
 		"posterPath": "/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
-		"backdropPath": "/9QNv2Al3GfCND8BwuLmu2GwVht7.jpg"
+		"backdropPath": "/1R68vl3d5s86JsS2NPjl8UoMqIS.jpg"
 	},
 	"iron-man-2-2010": {
 		"title": "Iron Man 2",
@@ -494,6 +494,42 @@
 		"rating": 5.3,
 		"posterPath": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg",
 		"backdropPath": "/vno2LrEQr3lTOk3U1G1ihZsy64b.jpg"
+	},
+	"loki-season-1-2021": {
+		"title": "Season 1",
+		"releaseDate": "2021-06-09",
+		"runtimeMinutes": 50,
+		"episodes": 6,
+		"seasons": 1,
+		"synopsis": "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of \"Avengers: Endgame.\"",
+		"cast": [
+			"Tom Hiddleston",
+			"Sophia Di Martino",
+			"Wunmi Mosaku",
+			"Eugene Cordero",
+			"Ke Huy Quan"
+		],
+		"rating": 7.8,
+		"posterPath": "/8uVqe9ThcuYVNdh4O0kuijIWMLL.jpg",
+		"backdropPath": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg"
+	},
+	"loki-season-2-2023": {
+		"title": "Season 2",
+		"releaseDate": "2023-10-05",
+		"runtimeMinutes": 52,
+		"episodes": 6,
+		"seasons": 1,
+		"synopsis": "In the aftermath of Season 1, Loki finds himself in a battle for the soul of the Time Variance Authority. Along with Mobius, Hunter B-15 and a team of new and returning characters, Loki navigates an ever-expanding and increasingly dangerous multiverse in search of Sylvie, Judge Renslayer, Miss Minutes and the truth of what it means to possess free will and glorious purpose.",
+		"cast": [
+			"Tom Hiddleston",
+			"Sophia Di Martino",
+			"Wunmi Mosaku",
+			"Eugene Cordero",
+			"Ke Huy Quan"
+		],
+		"rating": 7.8,
+		"posterPath": "/oJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
+		"backdropPath": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg"
 	},
 	"moon-knight-2022": {
 		"title": "Moon Knight",
@@ -857,5 +893,18 @@
 		"director": "Michael Giacchino",
 		"posterPath": "/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
 		"backdropPath": "/l1ORpdYr8uFZ9MNYKoq1p6fIc4M.jpg"
+	},
+	"what-if-season-1-2021": {
+		"title": "Season 1",
+		"releaseDate": "2021-08-11",
+		"runtimeMinutes": 36,
+		"episodes": 9,
+		"seasons": 1,
+		"cast": [
+			"Jeffrey Wright"
+		],
+		"rating": 7,
+		"posterPath": "/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+		"backdropPath": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg"
 	}
 }

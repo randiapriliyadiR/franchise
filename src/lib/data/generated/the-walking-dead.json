@@ -99,12 +99,12 @@
 		"backdropPath": "/vlxHVv236ehbde3qXc5R1ewAn4B.jpg"
 	},
 	"twd-s01": {
-		"title": "The Walking Dead",
+		"title": "Season 1",
 		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"runtimeMinutes": 49,
+		"episodes": 6,
+		"seasons": 1,
+		"synopsis": "Rick Grimes wakes up from a coma to a world overrun by zombies, on a journey to find his family he must learn to survive the streets of post-apocalyptic Atlanta.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -112,17 +112,17 @@
 			"Melissa McBride",
 			"Christian Serratos"
 		],
-		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"rating": 8.3,
+		"posterPath": "/wAXeO9Qyne3C6LEibz3zOQc2Y70.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s02": {
-		"title": "The Walking Dead",
-		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"title": "Season 2",
+		"releaseDate": "2011-10-16",
+		"runtimeMinutes": 45,
+		"episodes": 13,
+		"seasons": 1,
+		"synopsis": "Under Rick's leadership, the group leave Atlanta in search of sanctuary and find a possible safe haven.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -130,17 +130,17 @@
 			"Melissa McBride",
 			"Christian Serratos"
 		],
-		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"rating": 8.5,
+		"posterPath": "/9bpP0gsdNH9o7rwe0dlIG67vb2r.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s03": {
-		"title": "The Walking Dead",
-		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"title": "Season 3",
+		"releaseDate": "2012-10-14",
+		"runtimeMinutes": 43,
+		"episodes": 16,
+		"seasons": 1,
+		"synopsis": "Having seemingly found a place of security, the group are faced with an unprecedented new threat.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -148,17 +148,17 @@
 			"Melissa McBride",
 			"Christian Serratos"
 		],
-		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"rating": 8.6,
+		"posterPath": "/waWZO9WlZkh7rXKjLtzttoQDsew.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s04": {
-		"title": "The Walking Dead",
-		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"title": "Season 4",
+		"releaseDate": "2013-10-13",
+		"runtimeMinutes": 44,
+		"episodes": 16,
+		"seasons": 1,
+		"synopsis": "As the group settle into life in a stable shelter, a new danger threatens disaster.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -166,17 +166,17 @@
 			"Melissa McBride",
 			"Christian Serratos"
 		],
-		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"rating": 8.5,
+		"posterPath": "/oqd5sPeG6hun1YJjDIAs4CTBnOO.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s05": {
-		"title": "The Walking Dead",
-		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"title": "Season 5",
+		"releaseDate": "2014-10-12",
+		"runtimeMinutes": 45,
+		"episodes": 16,
+		"seasons": 1,
+		"synopsis": "After the season 4 finale left most of the main characters at the mercy of the sadistic inhabitants of Terminus. Season 5 will offer new directions for the group of survivors as scientist Eugene Porter promises a cure to the zombie virus if he can be safely escorted to Washington DC, but getting there is easier said than done.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -184,64 +184,89 @@
 			"Melissa McBride",
 			"Christian Serratos"
 		],
-		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"rating": 8.5,
+		"posterPath": "/3KrJgEwqopoWdpEmI7U7GfU6gNT.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s06": {
-		"title": "Fear the Walking Dead",
-		"releaseDate": "2015-08-23",
-		"endDate": "2023-11-19",
-		"seasons": 8,
-		"episodes": 113,
-		"synopsis": "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
+		"title": "Season 6",
+		"releaseDate": "2015-10-11",
+		"runtimeMinutes": 47,
+		"episodes": 16,
+		"seasons": 1,
+		"synopsis": "Rick attempts to use his authority in Alexandria to keep the inhabitants safe, even as a new threat looms.",
 		"cast": [
-			"Lennie James",
-			"Kim Dickens",
-			"Colman Domingo",
-			"Danay García",
-			"Austin Amelio"
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
 		],
-		"rating": 7.6,
-		"posterPath": "/eKt4ELpQZUKGZCKIDobEbwHwk3I.jpg",
-		"backdropPath": "/dvDkq5Mcv27vpHRvF1ywFGroh03.jpg"
+		"rating": 8.3,
+		"posterPath": "/aboSwNwG3yRvWCTneJKe84t4DNg.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s07": {
-		"title": "Fear the Walking Dead: Passage",
-		"releaseDate": "2016-10-18",
-		"endDate": "2017-03-26",
-		"runtimeMinutes": 16,
-		"seasons": 1,
+		"title": "Season 7",
+		"releaseDate": "2016-10-23",
+		"runtimeMinutes": 50,
 		"episodes": 16,
-		"synopsis": "A fearsome survivor agrees to help an injured woman in exchange for apocalyptic sanctuary.",
+		"seasons": 1,
+		"synopsis": "Rick and his group's world becomes even more brutal due to Negan's deadly example of what happens if they don't live under his rules. Everyone must begin again.",
 		"cast": [
-			"Kelsey Scott",
-			"Mishel Prada"
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
 		],
-		"rating": 7,
-		"posterPath": "/rY26hqI27wqS46HK4oKLV5GZZ6C.jpg",
-		"backdropPath": "/7fZQ7bb44r8KDcP5ODv5F6BnJsf.jpg"
+		"rating": 7.8,
+		"posterPath": "/7ybDi9walY123sSJUk54qSo69Rv.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s08": {
-		"title": "The Walking Dead: Red Machete",
+		"title": "Season 8",
 		"releaseDate": "2017-10-22",
-		"endDate": "2017-11-26",
-		"runtimeMinutes": 3,
+		"runtimeMinutes": 49,
+		"episodes": 16,
 		"seasons": 1,
-		"episodes": 6,
-		"synopsis": "Follow the path of the red-handled weapon from its innocent beginnings, as it lands in the hands of survivors good and evil, familiar and new.",
-		"cast": [],
-		"rating": 7.1,
-		"posterPath": "/8gILQcNOrMFNzKqN307vih44G7a.jpg",
-		"backdropPath": "/4oIQOf84yq0KmAvKsYjx2HFlLvp.jpg"
+		"synopsis": "Rick and his survivors bring \"All-Out War\" to Negan and his forces. The Saviors are larger, better-equipped, and ruthless - but Rick and the unified communities are fighting for the promise of a brighter future. The battle lines are drawn as they launch into a kinetic, action-packed offensive.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 7.8,
+		"posterPath": "/xlNMc7TZFB9DTkg3cTihAHoZPOu.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
 	"twd-s09": {
-		"title": "The Walking Dead",
-		"releaseDate": "2010-10-31",
-		"endDate": "2022-11-20",
-		"seasons": 11,
-		"episodes": 177,
-		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"title": "Season 9",
+		"releaseDate": "2018-10-07",
+		"runtimeMinutes": 48,
+		"episodes": 16,
+		"seasons": 1,
+		"synopsis": "With the defeat of Negan and the Saviors, the survivors are now rebuilding civilisation under Rick’s leadership. However, the group are forced to face their biggest threat yet as the walkers around them have started whispering.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.3,
+		"posterPath": "/imGXSogCCOtzjHMFDsN6gh0mRcD.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s10": {
+		"title": "Season 10",
+		"releaseDate": "2019-10-06",
+		"runtimeMinutes": 46,
+		"episodes": 22,
+		"seasons": 1,
+		"synopsis": "It is now Spring, a few months after the end of Season 9, when our group of survivors dared to cross into Whisperer territory during the harsh winter. The collected communities are still dealing with the after effects of Alpha’s horrific display of power, reluctantly respecting the new borderlines being imposed on them, all while organizing themselves into a militia-style fighting force, preparing for a battle that may be unavoidable. But the Whisperers are a threat unlike any they have ever faced. Backed by a massive horde of the dead it is seemingly a fight they cannot win.",
 		"cast": [
 			"Lauren Cohan",
 			"Norman Reedus",
@@ -250,38 +275,25 @@
 			"Christian Serratos"
 		],
 		"rating": 8.1,
-		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"posterPath": "/u6FPHNGPj6ebTKc7LbQc974CQm2.jpg",
 		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	},
-	"twd-s10": {
-		"title": "The Althea Tapes",
-		"releaseDate": "2019-07-27",
-		"endDate": "2019-08-08",
-		"seasons": 1,
-		"episodes": 6,
-		"synopsis": "In this digital companion series, Al interviews survivors and reveals why her interviews are so important.",
-		"cast": [
-			"Maggie Grace"
-		],
-		"rating": 7.2,
-		"posterPath": "/zk5Z3UpnrW0wkXI30dvSz0vmdoD.jpg",
-		"backdropPath": "/6AoMi0NkhNjJjOzMaX4zScv0zd2.jpg"
-	},
 	"twd-s11": {
-		"title": "The Walking Dead: Origins",
-		"releaseDate": "2021-07-15",
-		"endDate": "2021-08-05",
+		"title": "Season 11",
+		"releaseDate": "2021-08-22",
+		"runtimeMinutes": 46,
+		"episodes": 24,
 		"seasons": 1,
-		"episodes": 4,
-		"synopsis": "The Walking Dead: Origins is a series of specials exploring the journeys of the series' most celebrated characters. Each episode charts the story of the zombie apocalypse from the point of view of a single character and features new interviews and narrations from the actors that portray these iconic characters, interwoven with clips from the most pivotal moments of their journeys so far.",
+		"synopsis": "Alexandria has more people than it can manage to feed and protect. They must secure more food while they attempt to restore Alexandria before it collapses like countless other communities they have come across throughout the years. More haggard and hungrier than ever before, they must dig deeper to find the effort and strength to safeguard the lives of their children, even if it means losing their own.",
 		"cast": [
+			"Lauren Cohan",
 			"Norman Reedus",
-			"Melissa McBride",
 			"Jeffrey Dean Morgan",
-			"Lauren Cohan"
+			"Melissa McBride",
+			"Christian Serratos"
 		],
-		"rating": 7.7,
-		"posterPath": "/6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg",
-		"backdropPath": "/mFAiusk8yF0GeBK0xIcte4GdWWE.jpg"
+		"rating": 8,
+		"posterPath": "/rUsoyn4Y7KdPcgfaFAi6wj0JoQz.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
 	}
 }

@@ -14,6 +14,7 @@ export const load: LayoutLoad = ({ params }) => {
 
 	const franchiseEntries = getEntries(franchise.id);
 	const stats = computeStats(franchiseEntries);
+	const heroEntry = franchiseEntries.find((e) => e.id === franchise.heroEntryId) ?? null;
 
-	return { franchise, entries: franchiseEntries, stats };
+	return { franchise, entries: franchiseEntries, stats, heroEntry };
 };

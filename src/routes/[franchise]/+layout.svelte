@@ -30,7 +30,7 @@
 
 <div class="franchise-scope" style={themeVars}>
 	{#if view}
-		<FranchiseHero franchise={data.franchise} stats={data.stats} />
+		<FranchiseHero franchise={data.franchise} stats={data.stats} heroEntry={data.heroEntry} />
 		<ViewTabs franchiseId={data.franchise.id} current={view} />
 	{/if}
 

@@ -199,42 +199,195 @@ export const twdEntries: Entry[] = [
 		tmdb: { type: 'tv', query: 'The Walking Dead', year: 2010, season: 11 }
 	},
 	{
-		id: 'fear-the-walking-dead',
+		id: 'fear-twd-s01',
 		franchise: 'the-walking-dead',
-		title: 'Fear the Walking Dead',
+		title: 'Fear the Walking Dead: Season 1',
 		type: 'series',
 		status: 'released',
-		chronology: 0.5,
-		chronologyNote: 'begins days before TWD Season 1, in Los Angeles',
+		chronology: 0.3,
+		chronologyNote: 'days before TWD Season 1, in Los Angeles',
 		branch: 'Los Angeles (Fear the Walking Dead)',
 		branchNote:
 			'Starts before the outbreak reaches Rick in Georgia — runs parallel through the main series, then continues past its finale.',
 		group: 'Spin-offs',
-		tags: ['companion-series'],
-		seasons: 8,
+		tags: ['companion-series', 'origin'],
+		seasons: 1,
 		synopsis:
-			'A blended Los Angeles family lives through the earliest, most chaotic days of the outbreak, years before it reaches Rick Grimes in Georgia.',
+			'A blended Los Angeles family confronts the first, most chaotic days of the outbreak, years before it reaches Rick Grimes in Georgia.',
 		cast: ['Kim Dickens', 'Cliff Curtis', 'Alycia Debnam-Carey'],
-		tmdb: { type: 'tv', year: 2015 }
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 1 }
 	},
 	{
-		id: 'the-walking-dead-world-beyond',
+		id: 'fear-twd-s02',
 		franchise: 'the-walking-dead',
-		title: 'The Walking Dead: World Beyond',
+		title: 'Fear the Walking Dead: Season 2',
 		type: 'series',
 		status: 'released',
-		chronology: 9.5,
+		chronology: 0.6,
+		chronologyNote: 'weeks after the outbreak, fleeing by boat',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series'],
+		seasons: 1,
+		synopsis:
+			'With Los Angeles collapsing, the family flees south by boat along the California coast as society breaks down entirely.',
+		cast: ['Kim Dickens', 'Cliff Curtis', 'Alycia Debnam-Carey'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 2 }
+	},
+	{
+		id: 'fear-twd-s03',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 3',
+		type: 'series',
+		status: 'released',
+		chronology: 1.8,
+		chronologyNote: 'months in, a ranch in Texas',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series'],
+		seasons: 1,
+		synopsis:
+			'Survivors regroup at a besieged Texas ranch as factional conflict over dwindling resources turns deadly.',
+		cast: ['Kim Dickens', 'Cliff Curtis', 'Alycia Debnam-Carey'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 3 }
+	},
+	{
+		id: 'fear-twd-s04',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 4',
+		type: 'series',
+		status: 'released',
+		chronology: 3.5,
+		chronologyNote: 'a year or more in, Texas',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series', 'crossover'],
+		seasons: 1,
+		synopsis:
+			'New and old survivors converge — including a crossover with Morgan Jones — as a catastrophic dam failure reshapes the region.',
+		cast: ['Lennie James', 'Alycia Debnam-Carey', 'Colman Domingo'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 4 }
+	},
+	{
+		id: 'fear-twd-s05',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 5',
+		type: 'series',
+		status: 'released',
+		chronology: 5.5,
+		chronologyNote: 'years in, still in Texas',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series'],
+		seasons: 1,
+		synopsis:
+			'Turning outward, the group undertakes increasingly dangerous rescue missions to help other survivors across a changed Texas.',
+		cast: ['Lennie James', 'Alycia Debnam-Carey', 'Colman Domingo'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 5 }
+	},
+	{
+		id: 'fear-twd-s06',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 6',
+		type: 'series',
+		status: 'released',
+		chronology: 7.5,
+		chronologyNote: 'a growing nuclear threat',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series'],
+		seasons: 1,
+		synopsis:
+			'A faction hoarding weapons and supplies threatens the group with a deadly nuclear standoff.',
+		cast: ['Lennie James', 'Colman Domingo', 'Danay García'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 6 }
+	},
+	{
+		id: 'fear-twd-s07',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 7',
+		type: 'series',
+		status: 'released',
+		chronology: 9.3,
+		chronologyNote: 'after a nuclear apocalypse reshapes the region',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series', 'time-jump'],
+		seasons: 1,
+		synopsis:
+			'Years after a nuclear exchange devastates the region, survivors adapt to a harsher, transformed world.',
+		cast: ['Lennie James', 'Colman Domingo', 'Danay García'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 7 }
+	},
+	{
+		id: 'fear-twd-s08',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Season 8',
+		type: 'series',
+		status: 'released',
+		chronology: 11.6,
+		chronologyNote: 'the series finale, after TWD ends',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series', 'finale'],
+		seasons: 1,
+		synopsis:
+			'Madison Clark returns as the extended-length series finale brings the companion series to a close.',
+		cast: ['Kim Dickens', 'Lennie James', 'Colman Domingo'],
+		tmdb: { type: 'tv', query: 'Fear the Walking Dead', year: 2015, season: 8 }
+	},
+	{
+		id: 'fear-twd-dead-in-the-water',
+		franchise: 'the-walking-dead',
+		title: 'Fear the Walking Dead: Dead in the Water',
+		type: 'film',
+		status: 'released',
+		// Placement is a best-effort guess pending the TMDB sync filling in a
+		// real release date — see the note left for the user about this entry.
+		chronology: 11.65,
+		chronologyNote: 'a prequel/coda tied to Alicia Clark, around the Fear the Walking Dead finale',
+		branch: 'Los Angeles (Fear the Walking Dead)',
+		group: 'Spin-offs',
+		tags: ['companion-series'],
+		synopsis: 'A feature-length continuation of Fear the Walking Dead centered on Alicia Clark.',
+		cast: ['Alycia Debnam-Carey'],
+		tmdb: { type: 'movie', query: 'Fear the Walking Dead: Dead in the Water' }
+	},
+	{
+		id: 'world-beyond-s01',
+		franchise: 'the-walking-dead',
+		title: 'The Walking Dead: World Beyond — Season 1',
+		type: 'series',
+		status: 'released',
+		chronology: 9.4,
 		chronologyNote: 'year 10, a fortified civilization inland',
 		branch: 'The Campus Colony (World Beyond)',
 		branchNote:
 			'A separate, well-supplied settlement discovered a decade into the outbreak — briefly intersects the main line in Season 10.',
 		group: 'Spin-offs',
 		tags: ['coming-of-age', 'limited-series'],
-		seasons: 2,
+		seasons: 1,
 		synopsis:
-			'A generation raised entirely inside the walls of a hidden, well-supplied settlement ventures out to rescue a missing father, and finds out what the world actually is.',
+			'A generation raised entirely inside the walls of a hidden, well-supplied settlement ventures out to rescue a missing father.',
 		cast: ['Aliyah Royale', 'Alexa Mansour', 'Nicolas Cantu'],
-		tmdb: { type: 'tv', year: 2020 }
+		tmdb: { type: 'tv', query: 'The Walking Dead: World Beyond', year: 2020, season: 1 }
+	},
+	{
+		id: 'world-beyond-s02',
+		franchise: 'the-walking-dead',
+		title: 'The Walking Dead: World Beyond — Season 2',
+		type: 'series',
+		status: 'released',
+		chronology: 9.7,
+		chronologyNote: 'shortly after, nearing the Civic Republic',
+		branch: 'The Campus Colony (World Beyond)',
+		group: 'Spin-offs',
+		tags: ['coming-of-age', 'limited-series'],
+		seasons: 1,
+		synopsis:
+			'The group closes in on the Civic Republic and uncovers the truth behind what it has been hiding all along.',
+		cast: ['Aliyah Royale', 'Alexa Mansour', 'Nicolas Cantu'],
+		tmdb: { type: 'tv', query: 'The Walking Dead: World Beyond', year: 2020, season: 2 }
 	},
 	{
 		id: 'tales-of-the-walking-dead',
@@ -252,45 +405,79 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'A one-off anthology telling six self-contained stories scattered across the outbreak, some featuring familiar faces from the flagship series.',
 		cast: ['Samantha Morton', 'Terry Crews', 'Olivia Munn'],
-		tmdb: { type: 'tv', year: 2022 }
+		tmdb: { type: 'tv', query: 'Tales of the Walking Dead', year: 2022, season: 1 }
 	},
 	{
-		id: 'the-walking-dead-dead-city',
+		id: 'dead-city-s01',
 		franchise: 'the-walking-dead',
-		title: 'The Walking Dead: Dead City',
+		title: 'The Walking Dead: Dead City — Season 1',
 		type: 'series',
 		status: 'released',
 		chronology: 12,
-		chronologyNote: 'after the Season 11 finale',
+		chronologyNote: 'shortly after the Season 11 finale',
 		branch: 'New York (Dead City)',
 		branchNote:
 			'One of three parallel stories picking up right after the flagship series ends, each following different survivors in a different place.',
 		group: 'Spin-offs',
 		tags: ['crime'],
-		seasons: 2,
+		seasons: 1,
 		synopsis:
 			'Maggie strikes an uneasy truce with Negan to track her kidnapped son into the ruins of a walled-off, gang-ruled Manhattan.',
 		cast: ['Lauren Cohan', 'Jeffrey Dean Morgan', 'Gaius Charles'],
-		tmdb: { type: 'tv', year: 2023 }
+		tmdb: { type: 'tv', query: 'The Walking Dead: Dead City', year: 2023, season: 1 }
 	},
 	{
-		id: 'the-walking-dead-daryl-dixon',
+		id: 'dead-city-s02',
 		franchise: 'the-walking-dead',
-		title: 'The Walking Dead: Daryl Dixon',
+		title: 'The Walking Dead: Dead City — Season 2',
+		type: 'series',
+		status: 'released',
+		chronology: 12.5,
+		chronologyNote: 'the following months, still New York',
+		branch: 'New York (Dead City)',
+		group: 'Spin-offs',
+		tags: ['crime'],
+		seasons: 1,
+		synopsis:
+			"Maggie and Negan's uneasy alliance is tested further as new threats emerge from the ruins of New York.",
+		cast: ['Lauren Cohan', 'Jeffrey Dean Morgan', 'Gaius Charles'],
+		tmdb: { type: 'tv', query: 'The Walking Dead: Dead City', year: 2023, season: 2 }
+	},
+	{
+		id: 'daryl-dixon-s01',
+		franchise: 'the-walking-dead',
+		title: 'The Walking Dead: Daryl Dixon — Season 1',
 		type: 'series',
 		status: 'released',
 		chronology: 12.2,
-		chronologyNote: 'after the Season 11 finale',
+		chronologyNote: 'shortly after the Season 11 finale',
 		branch: 'France (Daryl Dixon)',
 		branchNote:
 			'One of three parallel stories picking up right after the flagship series ends, each following different survivors in a different place.',
 		group: 'Spin-offs',
 		tags: [],
-		seasons: 2,
+		seasons: 1,
 		synopsis:
 			'Washed up on the coast of France with no memory of how he got there, Daryl Dixon is pulled into a very different, unfamiliar apocalypse.',
 		cast: ['Norman Reedus', 'Clémence Poésy', 'Adam Nagaitis'],
-		tmdb: { type: 'tv', year: 2023 }
+		tmdb: { type: 'tv', query: 'The Walking Dead: Daryl Dixon', year: 2023, season: 1 }
+	},
+	{
+		id: 'daryl-dixon-s02',
+		franchise: 'the-walking-dead',
+		title: 'The Walking Dead: Daryl Dixon — The Book of Carol',
+		type: 'series',
+		status: 'released',
+		chronology: 12.7,
+		chronologyNote: 'months later, France and Spain',
+		branch: 'France (Daryl Dixon)',
+		group: 'Spin-offs',
+		tags: [],
+		seasons: 1,
+		synopsis:
+			'Carol arrives in France in search of Daryl, and their reunion leads both toward Spain and new dangers.',
+		cast: ['Norman Reedus', 'Melissa McBride', 'Clémence Poésy'],
+		tmdb: { type: 'tv', query: 'The Walking Dead: Daryl Dixon', year: 2023, season: 2 }
 	},
 	{
 		id: 'the-walking-dead-the-ones-who-live',
@@ -309,7 +496,7 @@ export const twdEntries: Entry[] = [
 		synopsis:
 			'Separated for years and each presumed dead by the other, Rick and Michonne finally close the distance between them and everything that kept them apart.',
 		cast: ['Andrew Lincoln', 'Danai Gurira'],
-		tmdb: { type: 'tv', year: 2024 }
+		tmdb: { type: 'tv', query: 'The Walking Dead: The Ones Who Live', year: 2024, season: 1 }
 	},
 	{
 		id: 'the-walking-dead-issue-1',

@@ -1,20 +1,28 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
-	import type { Franchise, FranchiseStats } from '$lib/data/types';
+	import type { Entry, Franchise, FranchiseStats } from '$lib/data/types';
+	import Poster from './Poster.svelte';
 	import { duration } from '$lib/utils/motion';
 
 	let {
 		franchise,
-		stats
+		stats,
+		heroEntry
 	}: {
 		franchise: Franchise;
 		stats: FranchiseStats;
+		heroEntry: Entry | null;
 	} = $props();
 </script>
 
 {#key franchise.id}
-	<section class="hero" style="background-image: {franchise.theme.gradient}">
+	<section class="hero">
+		{#if heroEntry?.backdropPath}
+			<div class="backdrop" aria-hidden="true" in:fade={{ duration: duration(500) }}>
+				<Poster entry={heroEntry} kind="backdrop" size="w780" eager />
+			</div>
+		{/if}
 		<div class="container">
 			<p class="eyebrow" in:fly={{ y: 10, duration: duration(400), easing: cubicOut }}>
 				{franchise.publisher} · since {franchise.startYear}
@@ -56,10 +64,38 @@
 
 <style>
 	.hero {
+		position: relative;
+		overflow: hidden;
 		padding-block: var(--space-8) var(--space-7);
 		border-bottom: 1px solid var(--border);
+		background-image: var(--gradient);
 		background-size: 200% 200%;
 		animation: shimmer 16s ease-in-out infinite;
+	}
+
+	.backdrop {
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		mask-image: linear-gradient(to bottom, black 20%, transparent 95%);
+	}
+
+	.backdrop :global(.poster) {
+		border-radius: 0;
+		height: 100%;
+	}
+
+	.backdrop::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: var(--gradient);
+		opacity: 0.72;
+	}
+
+	.hero .container {
+		position: relative;
+		z-index: 1;
 	}
 
 	@media (prefers-reduced-motion: reduce) {

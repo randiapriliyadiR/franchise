@@ -2,11 +2,14 @@
 	import type { Entry, EntryOrder } from '$lib/data/types';
 	import { buildTimelineGraph } from '$lib/data';
 	import TimelineItem from './TimelineItem.svelte';
+	import EntryDetailModal from './EntryDetailModal.svelte';
 
 	let { entries }: { entries: Entry[] } = $props();
 
 	let order = $state<EntryOrder>('release');
 	const graph = $derived(buildTimelineGraph(entries, order));
+
+	let selected = $state<Entry | null>(null);
 
 	// Fixed-size grid: node position is pure arithmetic from (column, row),
 	// no DOM measurement needed — that's what lets the connectors and nodes
@@ -42,27 +45,39 @@
 
 	// Drag-to-pan the board horizontally (native touch scroll already
 	// handles this on phones/tablets — this adds the same for mouse/desktop).
+	// Capture only kicks in past a small movement threshold so a plain click
+	// on a card underneath the pointer isn't swallowed by the pan gesture.
+	const DRAG_THRESHOLD = 6;
 	let viewport: HTMLDivElement;
 	let panning = $state(false);
+	let activePointerId: number | null = null;
 	let panStartX = 0;
 	let panScrollStart = 0;
 
 	function startPan(event: PointerEvent) {
 		if (event.button !== 0) return;
-		panning = true;
+		activePointerId = event.pointerId;
 		panStartX = event.clientX;
 		panScrollStart = viewport.scrollLeft;
-		viewport.setPointerCapture(event.pointerId);
 	}
 
 	function movePan(event: PointerEvent) {
-		if (!panning) return;
-		viewport.scrollLeft = panScrollStart - (event.clientX - panStartX);
+		if (activePointerId === null || event.pointerId !== activePointerId) return;
+		const dx = event.clientX - panStartX;
+		if (!panning) {
+			if (Math.abs(dx) < DRAG_THRESHOLD) return;
+			panning = true;
+			viewport.setPointerCapture(activePointerId);
+		}
+		viewport.scrollLeft = panScrollStart - dx;
 	}
 
-	function endPan(event: PointerEvent) {
+	function endPan() {
+		if (panning && activePointerId !== null) {
+			viewport.releasePointerCapture(activePointerId);
+		}
 		panning = false;
-		viewport.releasePointerCapture(event.pointerId);
+		activePointerId = null;
 	}
 </script>
 
@@ -129,11 +144,13 @@
 					node.row
 				)}px; width: {NODE_WIDTH}px; height: {NODE_HEIGHT}px"
 			>
-				<TimelineItem entry={node.entry} {order} />
+				<TimelineItem entry={node.entry} {order} onSelect={() => (selected = node.entry)} />
 			</div>
 		{/each}
 	</div>
 </div>
+
+<EntryDetailModal entry={selected} onClose={() => (selected = null)} />
 
 <style>
 	.toggle {

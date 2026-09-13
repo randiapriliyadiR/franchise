@@ -2,21 +2,20 @@
 	import type { Entry, EntryOrder } from '$lib/data/types';
 	import Poster from './Poster.svelte';
 	import { formatYear, typeLabel } from '$lib/utils/format';
-	import { resolve } from '$app/paths';
 
 	let {
 		entry,
-		order
+		order,
+		onSelect
 	}: {
 		entry: Entry;
 		order: EntryOrder;
+		/** Opens this entry's detail modal (see `TimelineRail`). */
+		onSelect: () => void;
 	} = $props();
 </script>
 
-<a
-	class="node"
-	href={resolve('/[franchise]/[entry]', { franchise: entry.franchise, entry: entry.id })}
->
+<button type="button" class="node" onclick={onSelect}>
 	<div class="thumb">
 		<Poster {entry} size="w185" />
 	</div>
@@ -31,7 +30,7 @@
 			{/if}
 		</span>
 	</div>
-</a>
+</button>
 
 <style>
 	.node {
@@ -41,7 +40,10 @@
 		width: 100%;
 		height: 100%;
 		text-decoration: none;
+		text-align: left;
+		font: inherit;
 		color: inherit;
+		cursor: pointer;
 		background: var(--surface-raised);
 		border: 1px solid var(--border);
 		border-radius: var(--radius-md);

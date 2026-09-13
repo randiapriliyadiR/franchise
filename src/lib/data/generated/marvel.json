@@ -1,1 +1,861 @@
-{}
+{
+	"agatha-all-along-2024": {
+		"title": "Agatha All Along",
+		"releaseDate": "2024-09-18",
+		"endDate": "2024-10-30",
+		"seasons": 1,
+		"episodes": 9,
+		"synopsis": "Agatha Harkness gathers a coven of witches and sets off down, down, down The Witches' Road.",
+		"cast": [
+			"Kathryn Hahn",
+			"Joe Locke",
+			"Sasheer Zamata",
+			"Ali Ahn",
+			"Debra Jo Rupp"
+		],
+		"rating": 7.4,
+		"posterPath": "/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg",
+		"backdropPath": "/tYLXJW1sZQU09VWY1BhSVPKGIwc.jpg"
+	},
+	"ant-man-2015": {
+		"title": "Ant-Man",
+		"releaseDate": "2015-07-14",
+		"runtimeMinutes": 117,
+		"synopsis": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
+		"cast": [
+			"Paul Rudd",
+			"Michael Douglas",
+			"Evangeline Lilly",
+			"Corey Stoll",
+			"Bobby Cannavale"
+		],
+		"rating": 7.1,
+		"director": "Peyton Reed",
+		"posterPath": "/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
+		"backdropPath": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg"
+	},
+	"ant-man-and-the-wasp-2018": {
+		"title": "Ant-Man and the Wasp",
+		"releaseDate": "2018-07-04",
+		"runtimeMinutes": 119,
+		"synopsis": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
+		"cast": [
+			"Paul Rudd",
+			"Evangeline Lilly",
+			"Michael Douglas",
+			"Hannah John-Kamen",
+			"Randall Park"
+		],
+		"rating": 6.9,
+		"director": "Peyton Reed",
+		"posterPath": "/cFQEO687n1K6umXbInzocxcnAQz.jpg",
+		"backdropPath": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg"
+	},
+	"ant-man-and-the-wasp-quantumania-2023": {
+		"title": "Ant-Man and the Wasp: Quantumania",
+		"releaseDate": "2023-02-15",
+		"runtimeMinutes": 125,
+		"synopsis": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+		"cast": [
+			"Paul Rudd",
+			"Evangeline Lilly",
+			"Michael Douglas",
+			"Michelle Pfeiffer",
+			"Jonathan Majors"
+		],
+		"rating": 6.2,
+		"director": "Peyton Reed",
+		"posterPath": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+		"backdropPath": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg"
+	},
+	"avengers-age-of-ultron-2015": {
+		"title": "Avengers: Age of Ultron",
+		"releaseDate": "2015-04-22",
+		"runtimeMinutes": 141,
+		"synopsis": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Chris Hemsworth",
+			"Mark Ruffalo",
+			"Chris Evans",
+			"Scarlett Johansson"
+		],
+		"rating": 7.3,
+		"director": "Joss Whedon",
+		"posterPath": "/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+		"backdropPath": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg"
+	},
+	"avengers-doomsday-2026": {
+		"title": "Avengers: Doomsday",
+		"releaseDate": "2026-12-16",
+		"runtimeMinutes": 165,
+		"synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Chris Evans",
+			"Chris Hemsworth",
+			"Pedro Pascal",
+			"Paul Rudd"
+		],
+		"rating": 0,
+		"director": "Joe Russo",
+		"posterPath": "/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+		"backdropPath": "/s4v0UX1anfXm0UvloLsTTJ4v222.jpg"
+	},
+	"avengers-endgame-2019": {
+		"title": "Avengers: Endgame",
+		"releaseDate": "2019-04-24",
+		"runtimeMinutes": 181,
+		"synopsis": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Chris Evans",
+			"Mark Ruffalo",
+			"Chris Hemsworth",
+			"Scarlett Johansson"
+		],
+		"rating": 8.2,
+		"director": "Anthony Russo",
+		"posterPath": "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+		"backdropPath": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg"
+	},
+	"avengers-infinity-war-2018": {
+		"title": "Avengers: Infinity War",
+		"releaseDate": "2018-04-25",
+		"runtimeMinutes": 149,
+		"synopsis": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Chris Evans",
+			"Chris Hemsworth",
+			"Josh Brolin",
+			"Mark Ruffalo"
+		],
+		"rating": 8.2,
+		"director": "Joe Russo",
+		"posterPath": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+		"backdropPath": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg"
+	},
+	"black-panther-2018": {
+		"title": "Black Panther",
+		"releaseDate": "2018-02-13",
+		"runtimeMinutes": 135,
+		"synopsis": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+		"cast": [
+			"Chadwick Boseman",
+			"Michael B. Jordan",
+			"Lupita Nyong'o",
+			"Danai Gurira",
+			"Martin Freeman"
+		],
+		"rating": 7.4,
+		"director": "Ryan Coogler",
+		"posterPath": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+		"backdropPath": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg"
+	},
+	"black-panther-wakanda-forever-2022": {
+		"title": "Black Panther: Wakanda Forever",
+		"releaseDate": "2022-11-09",
+		"runtimeMinutes": 162,
+		"synopsis": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+		"cast": [
+			"Letitia Wright",
+			"Tenoch Huerta Mejía",
+			"Lupita Nyong'o",
+			"Danai Gurira",
+			"Winston Duke"
+		],
+		"rating": 7,
+		"director": "Ryan Coogler",
+		"posterPath": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+		"backdropPath": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg"
+	},
+	"black-widow-2021": {
+		"title": "Black Widow",
+		"releaseDate": "2021-07-07",
+		"runtimeMinutes": 134,
+		"synopsis": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+		"cast": [
+			"Scarlett Johansson",
+			"Florence Pugh",
+			"Rachel Weisz",
+			"David Harbour",
+			"Ray Winstone"
+		],
+		"rating": 7.2,
+		"director": "Cate Shortland",
+		"posterPath": "/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+		"backdropPath": "/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg"
+	},
+	"captain-america-brave-new-world-2025": {
+		"title": "Captain America: Brave New World",
+		"releaseDate": "2025-02-12",
+		"runtimeMinutes": 119,
+		"synopsis": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+		"cast": [
+			"Anthony Mackie",
+			"Harrison Ford",
+			"Danny Ramirez",
+			"Shira Haas",
+			"Tim Blake Nelson"
+		],
+		"rating": 6,
+		"director": "Julius Onah",
+		"posterPath": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+		"backdropPath": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg"
+	},
+	"captain-america-civil-war-2016": {
+		"title": "Captain America: Civil War",
+		"releaseDate": "2016-04-27",
+		"runtimeMinutes": 147,
+		"synopsis": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+		"cast": [
+			"Chris Evans",
+			"Robert Downey Jr.",
+			"Scarlett Johansson",
+			"Sebastian Stan",
+			"Anthony Mackie"
+		],
+		"rating": 7.5,
+		"director": "Joe Russo",
+		"posterPath": "/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+		"backdropPath": "/7FWlcZq3r6525LWOcvO9kNWurN1.jpg"
+	},
+	"captain-america-the-first-avenger-2011": {
+		"title": "Captain America: The First Avenger",
+		"releaseDate": "2011-07-22",
+		"runtimeMinutes": 124,
+		"synopsis": "During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull – Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.",
+		"cast": [
+			"Chris Evans",
+			"Hayley Atwell",
+			"Sebastian Stan",
+			"Tommy Lee Jones",
+			"Hugo Weaving"
+		],
+		"rating": 7,
+		"director": "Joe Johnston",
+		"posterPath": "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+		"backdropPath": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg"
+	},
+	"captain-america-the-winter-soldier-2014": {
+		"title": "Captain America: The Winter Soldier",
+		"releaseDate": "2014-03-20",
+		"runtimeMinutes": 136,
+		"synopsis": "After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy—the Winter Soldier.",
+		"cast": [
+			"Chris Evans",
+			"Samuel L. Jackson",
+			"Scarlett Johansson",
+			"Robert Redford",
+			"Sebastian Stan"
+		],
+		"rating": 7.7,
+		"director": "Joe Russo",
+		"posterPath": "/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+		"backdropPath": "/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg"
+	},
+	"captain-marvel-2019": {
+		"title": "Captain Marvel",
+		"releaseDate": "2019-03-06",
+		"runtimeMinutes": 124,
+		"synopsis": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+		"cast": [
+			"Brie Larson",
+			"Samuel L. Jackson",
+			"Ben Mendelsohn",
+			"Jude Law",
+			"Annette Bening"
+		],
+		"rating": 6.8,
+		"director": "Ryan Fleck",
+		"posterPath": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+		"backdropPath": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg"
+	},
+	"daredevil-born-again-2025": {
+		"title": "Daredevil: Born Again",
+		"releaseDate": "2025-03-04",
+		"seasons": 2,
+		"episodes": 17,
+		"synopsis": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+		"cast": [
+			"Charlie Cox",
+			"Vincent D'Onofrio",
+			"Wilson Bethel",
+			"Deborah Ann Woll",
+			"Margarita Levieva"
+		],
+		"rating": 8.2,
+		"posterPath": "/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
+		"backdropPath": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg"
+	},
+	"deadpool-and-wolverine-2024": {
+		"title": "Deadpool & Wolverine",
+		"releaseDate": "2024-07-24",
+		"runtimeMinutes": 128,
+		"synopsis": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+		"cast": [
+			"Ryan Reynolds",
+			"Hugh Jackman",
+			"Emma Corrin",
+			"Matthew Macfadyen",
+			"Dafne Keen"
+		],
+		"rating": 7.6,
+		"director": "Shawn Levy",
+		"posterPath": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+		"backdropPath": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg"
+	},
+	"doctor-strange-2016": {
+		"title": "Doctor Strange",
+		"releaseDate": "2016-10-25",
+		"runtimeMinutes": 115,
+		"synopsis": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+		"cast": [
+			"Benedict Cumberbatch",
+			"Chiwetel Ejiofor",
+			"Rachel McAdams",
+			"Benedict Wong",
+			"Mads Mikkelsen"
+		],
+		"rating": 7.4,
+		"director": "Scott Derrickson",
+		"posterPath": "/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg",
+		"backdropPath": "/kkoiH8ZWxJ9WSAjOadGtuHUQxbm.jpg"
+	},
+	"doctor-strange-in-the-multiverse-of-madness-2022": {
+		"title": "Doctor Strange in the Multiverse of Madness",
+		"releaseDate": "2022-05-04",
+		"runtimeMinutes": 126,
+		"synopsis": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+		"cast": [
+			"Benedict Cumberbatch",
+			"Xochitl Gomez",
+			"Elizabeth Olsen",
+			"Chiwetel Ejiofor",
+			"Benedict Wong"
+		],
+		"rating": 7.2,
+		"director": "Sam Raimi",
+		"posterPath": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+		"backdropPath": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg"
+	},
+	"eternals-2021": {
+		"title": "Eternals",
+		"releaseDate": "2021-11-03",
+		"runtimeMinutes": 156,
+		"synopsis": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+		"cast": [
+			"Gemma Chan",
+			"Richard Madden",
+			"Angelina Jolie",
+			"Salma Hayek Pinault",
+			"Kumail Nanjiani"
+		],
+		"rating": 6.8,
+		"director": "Chloé Zhao",
+		"posterPath": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+		"backdropPath": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg"
+	},
+	"guardians-of-the-galaxy-2014": {
+		"title": "Guardians of the Galaxy",
+		"releaseDate": "2014-07-30",
+		"runtimeMinutes": 121,
+		"synopsis": "Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.",
+		"cast": [
+			"Chris Pratt",
+			"Zoe Saldaña",
+			"Dave Bautista",
+			"Vin Diesel",
+			"Bradley Cooper"
+		],
+		"rating": 7.9,
+		"director": "James Gunn",
+		"posterPath": "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+		"backdropPath": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg"
+	},
+	"guardians-of-the-galaxy-vol-2-2017": {
+		"title": "Guardians of the Galaxy Vol. 2",
+		"releaseDate": "2017-04-25",
+		"runtimeMinutes": 137,
+		"synopsis": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+		"cast": [
+			"Chris Pratt",
+			"Zoe Saldaña",
+			"Dave Bautista",
+			"Vin Diesel",
+			"Bradley Cooper"
+		],
+		"rating": 7.6,
+		"director": "James Gunn",
+		"posterPath": "/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+		"backdropPath": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg"
+	},
+	"guardians-of-the-galaxy-vol-3-2023": {
+		"title": "Guardians of the Galaxy Vol. 3",
+		"releaseDate": "2023-05-03",
+		"runtimeMinutes": 150,
+		"synopsis": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+		"cast": [
+			"Chris Pratt",
+			"Zoe Saldaña",
+			"Dave Bautista",
+			"Karen Gillan",
+			"Pom Klementieff"
+		],
+		"rating": 7.9,
+		"director": "James Gunn",
+		"posterPath": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+		"backdropPath": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg"
+	},
+	"hawkeye-2021": {
+		"title": "Hawkeye",
+		"releaseDate": "2021-11-24",
+		"endDate": "2021-12-22",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "Former Avenger Clint Barton has a seemingly simple mission: get back to his family for Christmas. Possible? Maybe with the help of Kate Bishop, a 22-year-old archer with dreams of becoming a superhero. The two are forced to work together when a presence from Barton’s past threatens to derail far more than the festive spirit.",
+		"cast": [
+			"Jeremy Renner",
+			"Hailee Steinfeld",
+			"Tony Dalton",
+			"Alaqua Cox",
+			"Fra Fee"
+		],
+		"rating": 7.8,
+		"posterPath": "/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
+		"backdropPath": "/9QNv2Al3GfCND8BwuLmu2GwVht7.jpg"
+	},
+	"iron-man-2-2010": {
+		"title": "Iron Man 2",
+		"releaseDate": "2010-04-28",
+		"runtimeMinutes": 124,
+		"synopsis": "With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press and the public to share his technology with the military. Unwilling to let go of his invention, Stark, with Pepper Potts and James 'Rhodey' Rhodes at his side, must forge new alliances – and confront powerful enemies.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Gwyneth Paltrow",
+			"Don Cheadle",
+			"Scarlett Johansson",
+			"Sam Rockwell"
+		],
+		"rating": 6.9,
+		"director": "Jon Favreau",
+		"posterPath": "/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
+		"backdropPath": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg"
+	},
+	"iron-man-2008": {
+		"title": "Iron Man",
+		"releaseDate": "2008-04-30",
+		"runtimeMinutes": 126,
+		"synopsis": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Terrence Howard",
+			"Jeff Bridges",
+			"Gwyneth Paltrow",
+			"Leslie Bibb"
+		],
+		"rating": 7.7,
+		"director": "Jon Favreau",
+		"posterPath": "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+		"backdropPath": "/cKvDv2LpwVEqbdXWoQl4XgGN6le.jpg"
+	},
+	"iron-man-3-2013": {
+		"title": "Iron Man 3",
+		"releaseDate": "2013-04-18",
+		"runtimeMinutes": 130,
+		"synopsis": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Gwyneth Paltrow",
+			"Don Cheadle",
+			"Guy Pearce",
+			"Rebecca Hall"
+		],
+		"rating": 6.9,
+		"director": "Shane Black",
+		"posterPath": "/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
+		"backdropPath": "/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg"
+	},
+	"ironheart-2025": {
+		"title": "Ironheart",
+		"releaseDate": "2025-06-24",
+		"endDate": "2025-07-01",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "After the events of Black Panther: Wakanda Forever, technology is pitted against magic when Riri Williams, a young, genius inventor determined to make her mark on the world, returns to her hometown of Chicago. Her unique take on building iron suits is brilliant, but in pursuit of her ambitions, she finds herself wrapped up with the mysterious yet charming Parker Robbins aka \"The Hood.\"",
+		"cast": [
+			"Dominique Thorne",
+			"Lyric Ross",
+			"Manny Montana",
+			"Matthew Elam",
+			"Anji White"
+		],
+		"rating": 5.3,
+		"posterPath": "/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg",
+		"backdropPath": "/vno2LrEQr3lTOk3U1G1ihZsy64b.jpg"
+	},
+	"moon-knight-2022": {
+		"title": "Moon Knight",
+		"releaseDate": "2022-03-30",
+		"endDate": "2022-05-04",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+		"cast": [
+			"Oscar Isaac",
+			"Ethan Hawke",
+			"May Calamawy",
+			"Ann Akinjirin",
+			"David Ganly"
+		],
+		"rating": 7.6,
+		"posterPath": "/x6FsYvt33846IQnDSFxla9j0RX8.jpg",
+		"backdropPath": "/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg"
+	},
+	"ms-marvel-2022": {
+		"title": "Ms. Marvel",
+		"releaseDate": "2022-06-08",
+		"endDate": "2022-07-13",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+		"cast": [
+			"Iman Vellani",
+			"Matt Lintz",
+			"Yasmeen Fletcher",
+			"Zenobia Shroff",
+			"Mohan Kapur"
+		],
+		"rating": 6.3,
+		"posterPath": "/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
+		"backdropPath": "/mfcLUWASJghU8MTNK38eYktfE83.jpg"
+	},
+	"secret-invasion-2023": {
+		"title": "Secret Invasion",
+		"releaseDate": "2023-06-21",
+		"endDate": "2023-07-26",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "Nick Fury and Talos discover a faction of shapeshifting Skrulls who have been infiltrating Earth for years.",
+		"cast": [
+			"Samuel L. Jackson",
+			"Ben Mendelsohn",
+			"Kingsley Ben-Adir",
+			"Killian Scott",
+			"Samuel Adewunmi"
+		],
+		"rating": 6.4,
+		"posterPath": "/3rINdUPSy9AklJg74jWHOyUXuZd.jpg",
+		"backdropPath": "/6mOK9j99OFlxGc3ird2jWUeUha9.jpg"
+	},
+	"shang-chi-and-the-legend-of-the-ten-rings-2021": {
+		"title": "Shang-Chi and the Legend of the Ten Rings",
+		"releaseDate": "2021-09-01",
+		"runtimeMinutes": 132,
+		"synopsis": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+		"cast": [
+			"Simu Liu",
+			"Tony Leung Chiu-wai",
+			"Awkwafina",
+			"Ben Kingsley",
+			"Zhang Meng'er"
+		],
+		"rating": 7.5,
+		"director": "Destin Daniel Cretton",
+		"posterPath": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
+		"backdropPath": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg"
+	},
+	"she-hulk-attorney-at-law-2022": {
+		"title": "She-Hulk: Attorney at Law",
+		"releaseDate": "2022-08-18",
+		"endDate": "2022-10-13",
+		"seasons": 1,
+		"episodes": 9,
+		"synopsis": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
+		"cast": [
+			"Tatiana Maslany",
+			"Ginger Gonzaga",
+			"Jameela Jamil",
+			"Renée Elise Goldsberry",
+			"Josh Segarra"
+		],
+		"rating": 6.1,
+		"posterPath": "/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
+		"backdropPath": "/eljErfkQUcFUgQkI4I1soZcH8MW.jpg"
+	},
+	"spider-man-brand-new-day-2026": {
+		"title": "Spider-Man: Brand New Day",
+		"releaseDate": "2026-07-29",
+		"runtimeMinutes": 145,
+		"synopsis": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+		"cast": [
+			"Tom Holland",
+			"Zendaya",
+			"Mark Ruffalo",
+			"Jon Bernthal",
+			"Jacob Batalon"
+		],
+		"rating": 7.8,
+		"director": "Destin Daniel Cretton",
+		"posterPath": "/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+		"backdropPath": "/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg"
+	},
+	"spider-man-far-from-home-2019": {
+		"title": "Spider-Man: Far From Home",
+		"releaseDate": "2019-06-28",
+		"runtimeMinutes": 129,
+		"synopsis": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
+		"cast": [
+			"Tom Holland",
+			"Jake Gyllenhaal",
+			"Samuel L. Jackson",
+			"Marisa Tomei",
+			"Jon Favreau"
+		],
+		"rating": 7.4,
+		"director": "Jon Watts",
+		"posterPath": "/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
+		"backdropPath": "/vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg"
+	},
+	"spider-man-homecoming-2017": {
+		"title": "Spider-Man: Homecoming",
+		"releaseDate": "2017-07-05",
+		"runtimeMinutes": 133,
+		"synopsis": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+		"cast": [
+			"Tom Holland",
+			"Michael Keaton",
+			"Robert Downey Jr.",
+			"Marisa Tomei",
+			"Jon Favreau"
+		],
+		"rating": 7.3,
+		"director": "Jon Watts",
+		"posterPath": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+		"backdropPath": "/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg"
+	},
+	"spider-man-no-way-home-2021": {
+		"title": "Spider-Man: No Way Home",
+		"releaseDate": "2021-12-15",
+		"runtimeMinutes": 148,
+		"synopsis": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+		"cast": [
+			"Tom Holland",
+			"Zendaya",
+			"Benedict Cumberbatch",
+			"Jacob Batalon",
+			"Jon Favreau"
+		],
+		"rating": 7.9,
+		"director": "Jon Watts",
+		"posterPath": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+		"backdropPath": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg"
+	},
+	"the-avengers-2012": {
+		"title": "The Avengers",
+		"releaseDate": "2012-04-25",
+		"runtimeMinutes": 143,
+		"synopsis": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+		"cast": [
+			"Robert Downey Jr.",
+			"Chris Evans",
+			"Mark Ruffalo",
+			"Chris Hemsworth",
+			"Scarlett Johansson"
+		],
+		"rating": 8.1,
+		"director": "Joss Whedon",
+		"posterPath": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+		"backdropPath": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg"
+	},
+	"the-falcon-and-the-winter-soldier-2021": {
+		"title": "The Falcon and the Winter Soldier",
+		"releaseDate": "2021-03-19",
+		"endDate": "2021-04-23",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+		"cast": [
+			"Anthony Mackie",
+			"Sebastian Stan",
+			"Wyatt Russell",
+			"Erin Kellyman",
+			"Daniel Brühl"
+		],
+		"rating": 7.6,
+		"posterPath": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+		"backdropPath": "/aTjbqMONy77fHJrIYu14g1F0d5h.jpg"
+	},
+	"the-fantastic-four-first-steps-2025": {
+		"title": "The Fantastic 4: First Steps",
+		"releaseDate": "2025-07-23",
+		"runtimeMinutes": 115,
+		"synopsis": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
+		"cast": [
+			"Pedro Pascal",
+			"Vanessa Kirby",
+			"Ebon Moss-Bachrach",
+			"Joseph Quinn",
+			"Ralph Ineson"
+		],
+		"rating": 6.9,
+		"director": "Matt Shakman",
+		"posterPath": "/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
+		"backdropPath": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg"
+	},
+	"the-incredible-hulk-2008": {
+		"title": "The Incredible Hulk",
+		"releaseDate": "2008-06-12",
+		"runtimeMinutes": 114,
+		"synopsis": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+		"cast": [
+			"Edward Norton",
+			"Liv Tyler",
+			"Tim Roth",
+			"William Hurt",
+			"Tim Blake Nelson"
+		],
+		"rating": 6.3,
+		"director": "Louis Leterrier",
+		"posterPath": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+		"backdropPath": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg"
+	},
+	"the-marvels-2023": {
+		"title": "The Marvels",
+		"releaseDate": "2023-11-08",
+		"runtimeMinutes": 105,
+		"synopsis": "When her duties send her to an anomalous wormhole linked to a Kree revolutionary, Carol's powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+		"cast": [
+			"Brie Larson",
+			"Teyonah Parris",
+			"Iman Vellani",
+			"Samuel L. Jackson",
+			"Zawe Ashton"
+		],
+		"rating": 5.9,
+		"director": "Nia DaCosta",
+		"posterPath": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+		"backdropPath": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg"
+	},
+	"thor-2011": {
+		"title": "Thor",
+		"releaseDate": "2011-04-21",
+		"runtimeMinutes": 115,
+		"synopsis": "Against his father Odin's will, The Mighty Thor - a powerful but arrogant warrior god - recklessly reignites an ancient war. Thor is cast down to Earth and forced to live among humans as punishment. Once here, Thor learns what it takes to be a true hero when the most dangerous villain of his world sends the darkest forces of Asgard to invade Earth.",
+		"cast": [
+			"Chris Hemsworth",
+			"Natalie Portman",
+			"Tom Hiddleston",
+			"Anthony Hopkins",
+			"Stellan Skarsgård"
+		],
+		"rating": 6.8,
+		"director": "Kenneth Branagh",
+		"posterPath": "/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+		"backdropPath": "/cDJ61O1STtbWNBwefuqVrRe3d7l.jpg"
+	},
+	"thor-love-and-thunder-2022": {
+		"title": "Thor: Love and Thunder",
+		"releaseDate": "2022-07-06",
+		"runtimeMinutes": 119,
+		"synopsis": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+		"cast": [
+			"Chris Hemsworth",
+			"Natalie Portman",
+			"Christian Bale",
+			"Tessa Thompson",
+			"Taika Waititi"
+		],
+		"rating": 6.4,
+		"director": "Taika Waititi",
+		"posterPath": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+		"backdropPath": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg"
+	},
+	"thor-ragnarok-2017": {
+		"title": "Thor: Ragnarok",
+		"releaseDate": "2017-10-02",
+		"runtimeMinutes": 131,
+		"synopsis": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
+		"cast": [
+			"Chris Hemsworth",
+			"Mark Ruffalo",
+			"Tom Hiddleston",
+			"Cate Blanchett",
+			"Idris Elba"
+		],
+		"rating": 7.6,
+		"director": "Taika Waititi",
+		"posterPath": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+		"backdropPath": "/vLmHH8jAy8Jq8uBsLucd3592WGh.jpg"
+	},
+	"thor-the-dark-world-2013": {
+		"title": "Thor: The Dark World",
+		"releaseDate": "2013-10-30",
+		"runtimeMinutes": 112,
+		"synopsis": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+		"cast": [
+			"Chris Hemsworth",
+			"Natalie Portman",
+			"Tom Hiddleston",
+			"Christopher Eccleston",
+			"Anthony Hopkins"
+		],
+		"rating": 6.5,
+		"director": "Alan Taylor",
+		"posterPath": "/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+		"backdropPath": "/5QEOy0QEpad9QsXeMxuGHPXMale.jpg"
+	},
+	"thunderbolts-2025": {
+		"title": "Thunderbolts*",
+		"releaseDate": "2025-04-30",
+		"runtimeMinutes": 127,
+		"synopsis": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+		"cast": [
+			"Florence Pugh",
+			"Sebastian Stan",
+			"Julia Louis-Dreyfus",
+			"Lewis Pullman",
+			"David Harbour"
+		],
+		"rating": 7.3,
+		"director": "Jake Schreier",
+		"posterPath": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+		"backdropPath": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg"
+	},
+	"wandavision-2021": {
+		"title": "WandaVision",
+		"releaseDate": "2021-01-15",
+		"endDate": "2021-03-05",
+		"seasons": 1,
+		"episodes": 9,
+		"synopsis": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+		"cast": [
+			"Elizabeth Olsen",
+			"Paul Bettany",
+			"Kathryn Hahn",
+			"Teyonah Parris",
+			"Randall Park"
+		],
+		"rating": 8.2,
+		"posterPath": "/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
+		"backdropPath": "/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg"
+	},
+	"werewolf-by-night-2022": {
+		"title": "Werewolf by Night",
+		"releaseDate": "2022-09-25",
+		"runtimeMinutes": 55,
+		"synopsis": "On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.",
+		"cast": [
+			"Gael García Bernal",
+			"Laura Donnelly",
+			"Harriet Sansom Harris",
+			"Kirk R. Thatcher",
+			"Eugenie Bondurant"
+		],
+		"rating": 7,
+		"director": "Michael Giacchino",
+		"posterPath": "/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
+		"backdropPath": "/l1ORpdYr8uFZ9MNYKoq1p6fIc4M.jpg"
+	}
+}

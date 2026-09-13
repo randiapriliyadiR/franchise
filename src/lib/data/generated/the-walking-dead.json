@@ -1,1 +1,287 @@
-{}
+{
+	"fear-the-walking-dead": {
+		"title": "Fear the Walking Dead",
+		"releaseDate": "2015-08-23",
+		"endDate": "2023-11-19",
+		"seasons": 8,
+		"episodes": 113,
+		"synopsis": "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
+		"cast": [
+			"Lennie James",
+			"Kim Dickens",
+			"Colman Domingo",
+			"Danay García",
+			"Austin Amelio"
+		],
+		"rating": 7.6,
+		"posterPath": "/eKt4ELpQZUKGZCKIDobEbwHwk3I.jpg",
+		"backdropPath": "/dvDkq5Mcv27vpHRvF1ywFGroh03.jpg"
+	},
+	"tales-of-the-walking-dead": {
+		"title": "Tales of the Walking Dead",
+		"releaseDate": "2022-08-14",
+		"endDate": "2022-09-18",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "An episodic anthology series focused on both new and established characters set in the world of \"The Walking Dead.\"",
+		"cast": [],
+		"rating": 7,
+		"posterPath": "/zRMUHvTgQ79zteQafNI46Nd9XFm.jpg",
+		"backdropPath": "/uFU4ItwbxHnFHxntb76ASnZbWTN.jpg"
+	},
+	"the-walking-dead-daryl-dixon": {
+		"title": "The Walking Dead: Daryl Dixon",
+		"releaseDate": "2023-09-10",
+		"seasons": 4,
+		"episodes": 20,
+		"synopsis": "After washing ashore in France, Daryl struggles to piece together how he got there and why, as he navigates a fractured, walker-infested landscape to find his way home. During his journey, Daryl has to protect a young boy, Laurent, who is seen as a messiah, while facing new, dangerous walker variants and the \"Power of the Living\" paramilitary group, as the connections he forms along the way complicate his plan to return home.",
+		"cast": [
+			"Norman Reedus",
+			"Melissa McBride",
+			"Eduardo Noriega",
+			"Óscar Jaenada",
+			"Alexandra Masangkay"
+		],
+		"rating": 8,
+		"posterPath": "/sP5QdW9FN18XWcA4ROz3MPAQBTx.jpg",
+		"backdropPath": "/fkeVnvxVx4x2PdDOOzSblFUGTVt.jpg"
+	},
+	"the-walking-dead-dead-city": {
+		"title": "The Walking Dead: Dead City",
+		"releaseDate": "2023-06-18",
+		"seasons": 3,
+		"episodes": 22,
+		"synopsis": "Maggie and Negan travel to post-apocalyptic Manhattan - long ago cut off from the mainland. The crumbling city is filled with the dead and denizens who have made it a world full of anarchy, danger, beauty, and terror.",
+		"cast": [
+			"Lauren Cohan",
+			"Jeffrey Dean Morgan",
+			"Raúl Castillo",
+			"Logan Kim",
+			"Aimee Garcia"
+		],
+		"rating": 7.9,
+		"posterPath": "/wq3vuQzQgbS83zX3malAFWMsSwX.jpg",
+		"backdropPath": "/vV5LKWmuysEe5wsuZJGbdiL5XJ2.jpg"
+	},
+	"the-walking-dead-the-ones-who-live": {
+		"title": "The Walking Dead: The Ones Who Live",
+		"releaseDate": "2024-02-25",
+		"endDate": "2024-03-31",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "Rick and Michonne are thrown into another world, built on a war against the dead... And ultimately, a war against the living. Can they find each other and who they were in a place and situation unlike any they've ever known before? Are they enemies? Lovers? Victims? Victors? Without each other, are they even alive – or will they find that they, too, are the Walking Dead?",
+		"cast": [
+			"Andrew Lincoln",
+			"Danai Gurira",
+			"Pollyanna McIntosh"
+		],
+		"rating": 8,
+		"posterPath": "/ywbacot78IuNhGW4uVZPxxxVTkm.jpg",
+		"backdropPath": "/5PCKxpFcCTDFT3b1olJGPaAIM9e.jpg"
+	},
+	"the-walking-dead-world-beyond": {
+		"title": "The Walking Dead: World Beyond",
+		"releaseDate": "2020-10-04",
+		"endDate": "2021-12-05",
+		"runtimeMinutes": 43,
+		"seasons": 2,
+		"episodes": 20,
+		"synopsis": "A heroic group of teens sheltered from the dangers of the post-apocalyptic world receive a message that inspires them to leave the safety of the only home they have ever known and embark on a cross-country journey to find the one man who can possibly save the world.",
+		"cast": [
+			"Aliyah Royale",
+			"Alexa Mansour",
+			"Hal Cumpston",
+			"Nicolas Cantu",
+			"Nico Tortorella"
+		],
+		"rating": 7.3,
+		"posterPath": "/6HanIV2hTLE2w7A5bI1KJb3bTL7.jpg",
+		"backdropPath": "/vlxHVv236ehbde3qXc5R1ewAn4B.jpg"
+	},
+	"twd-s01": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s02": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s03": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s04": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s05": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s06": {
+		"title": "Fear the Walking Dead",
+		"releaseDate": "2015-08-23",
+		"endDate": "2023-11-19",
+		"seasons": 8,
+		"episodes": 113,
+		"synopsis": "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
+		"cast": [
+			"Lennie James",
+			"Kim Dickens",
+			"Colman Domingo",
+			"Danay García",
+			"Austin Amelio"
+		],
+		"rating": 7.6,
+		"posterPath": "/eKt4ELpQZUKGZCKIDobEbwHwk3I.jpg",
+		"backdropPath": "/dvDkq5Mcv27vpHRvF1ywFGroh03.jpg"
+	},
+	"twd-s07": {
+		"title": "Fear the Walking Dead: Passage",
+		"releaseDate": "2016-10-18",
+		"endDate": "2017-03-26",
+		"runtimeMinutes": 16,
+		"seasons": 1,
+		"episodes": 16,
+		"synopsis": "A fearsome survivor agrees to help an injured woman in exchange for apocalyptic sanctuary.",
+		"cast": [
+			"Kelsey Scott",
+			"Mishel Prada"
+		],
+		"rating": 7,
+		"posterPath": "/rY26hqI27wqS46HK4oKLV5GZZ6C.jpg",
+		"backdropPath": "/7fZQ7bb44r8KDcP5ODv5F6BnJsf.jpg"
+	},
+	"twd-s08": {
+		"title": "The Walking Dead: Red Machete",
+		"releaseDate": "2017-10-22",
+		"endDate": "2017-11-26",
+		"runtimeMinutes": 3,
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "Follow the path of the red-handled weapon from its innocent beginnings, as it lands in the hands of survivors good and evil, familiar and new.",
+		"cast": [],
+		"rating": 7.1,
+		"posterPath": "/8gILQcNOrMFNzKqN307vih44G7a.jpg",
+		"backdropPath": "/4oIQOf84yq0KmAvKsYjx2HFlLvp.jpg"
+	},
+	"twd-s09": {
+		"title": "The Walking Dead",
+		"releaseDate": "2010-10-31",
+		"endDate": "2022-11-20",
+		"seasons": 11,
+		"episodes": 177,
+		"synopsis": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+		"cast": [
+			"Lauren Cohan",
+			"Norman Reedus",
+			"Jeffrey Dean Morgan",
+			"Melissa McBride",
+			"Christian Serratos"
+		],
+		"rating": 8.1,
+		"posterPath": "/ng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+		"backdropPath": "/rAOjnEFTuNysY7bot8zonhImGMh.jpg"
+	},
+	"twd-s10": {
+		"title": "The Althea Tapes",
+		"releaseDate": "2019-07-27",
+		"endDate": "2019-08-08",
+		"seasons": 1,
+		"episodes": 6,
+		"synopsis": "In this digital companion series, Al interviews survivors and reveals why her interviews are so important.",
+		"cast": [
+			"Maggie Grace"
+		],
+		"rating": 7.2,
+		"posterPath": "/zk5Z3UpnrW0wkXI30dvSz0vmdoD.jpg",
+		"backdropPath": "/6AoMi0NkhNjJjOzMaX4zScv0zd2.jpg"
+	},
+	"twd-s11": {
+		"title": "The Walking Dead: Origins",
+		"releaseDate": "2021-07-15",
+		"endDate": "2021-08-05",
+		"seasons": 1,
+		"episodes": 4,
+		"synopsis": "The Walking Dead: Origins is a series of specials exploring the journeys of the series' most celebrated characters. Each episode charts the story of the zombie apocalypse from the point of view of a single character and features new interviews and narrations from the actors that portray these iconic characters, interwoven with clips from the most pivotal moments of their journeys so far.",
+		"cast": [
+			"Norman Reedus",
+			"Melissa McBride",
+			"Jeffrey Dean Morgan",
+			"Lauren Cohan"
+		],
+		"rating": 7.7,
+		"posterPath": "/6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg",
+		"backdropPath": "/mFAiusk8yF0GeBK0xIcte4GdWWE.jpg"
+	}
+}

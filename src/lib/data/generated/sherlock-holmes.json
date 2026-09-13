@@ -1,1 +1,121 @@
-{}
+{
+	"elementary-2012": {
+		"title": "Elementary",
+		"releaseDate": "2012-09-27",
+		"endDate": "2019-08-15",
+		"runtimeMinutes": 43,
+		"seasons": 7,
+		"episodes": 154,
+		"synopsis": "A modern-day drama about a crime-solving duo that cracks the NYPD's most impossible cases. Following his fall from grace in London and a stint in rehab, eccentric Sherlock escapes to Manhattan where his wealthy father forces him to live with his worst nightmare - a sober companion, Dr. Watson.",
+		"cast": [
+			"Jonny Lee Miller",
+			"Lucy Liu",
+			"Jon Michael Hill",
+			"Aidan Quinn"
+		],
+		"rating": 7.6,
+		"posterPath": "/q9dObe29W4bDpgzUfOOH3ZnzDbR.jpg",
+		"backdropPath": "/7sJrNKwzyJWnFPFpDL9wnZ859LZ.jpg"
+	},
+	"enola-holmes-2-2022": {
+		"title": "Enola Holmes 2",
+		"releaseDate": "2022-11-03",
+		"runtimeMinutes": 131,
+		"synopsis": "Enola takes on her first official case as a detective, but to solve the mystery of a missing girl, she'll need help from friends — and brother Sherlock.",
+		"cast": [
+			"Millie Bobby Brown",
+			"Henry Cavill",
+			"David Thewlis",
+			"Louis Partridge",
+			"Susan Wokoma"
+		],
+		"rating": 7.4,
+		"director": "Harry Bradbeer",
+		"posterPath": "/tegBpjM5ODoYoM1NjaiHVLEA0QM.jpg",
+		"backdropPath": "/rjlG7C5GZfXutoVoE3BJaYGUhk4.jpg"
+	},
+	"enola-holmes-2020": {
+		"title": "Enola Holmes",
+		"releaseDate": "2020-09-22",
+		"runtimeMinutes": 124,
+		"synopsis": "While searching for her missing mother, intrepid teen Enola Holmes uses her sleuthing skills to outsmart big brother Sherlock and help a runaway lord.",
+		"cast": [
+			"Millie Bobby Brown",
+			"Henry Cavill",
+			"Sam Claflin",
+			"Helena Bonham Carter",
+			"Louis Partridge"
+		],
+		"rating": 7.2,
+		"director": "Harry Bradbeer",
+		"posterPath": "/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
+		"backdropPath": "/kMe4TKMDNXTKptQPAdOF0oZHq3V.jpg"
+	},
+	"sherlock-2010": {
+		"title": "Sherlock",
+		"releaseDate": "2010-07-25",
+		"endDate": "2017-01-15",
+		"runtimeMinutes": 90,
+		"seasons": 4,
+		"episodes": 12,
+		"synopsis": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+		"cast": [
+			"Benedict Cumberbatch",
+			"Martin Freeman"
+		],
+		"rating": 8.5,
+		"posterPath": "/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg",
+		"backdropPath": "/8rvLEmdI4gLrMO1rLqbNdnNcPFE.jpg"
+	},
+	"sherlock-holmes-2009": {
+		"title": "Sherlock Holmes",
+		"releaseDate": "2009-12-23",
+		"runtimeMinutes": 129,
+		"synopsis": "Eccentric consulting detective Sherlock Holmes and Doctor John Watson battle to bring down a new nemesis and unravel a deadly plot that could destroy England.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Jude Law",
+			"Rachel McAdams",
+			"Mark Strong",
+			"Eddie Marsan"
+		],
+		"rating": 7.2,
+		"director": "Guy Ritchie",
+		"posterPath": "/momkKuWburNTqKBF6ez7rvhYVhE.jpg",
+		"backdropPath": "/85g84VtSf9tu1A9JqqruXEHspb7.jpg"
+	},
+	"sherlock-holmes-a-game-of-shadows-2011": {
+		"title": "Sherlock Holmes: A Game of Shadows",
+		"releaseDate": "2011-11-22",
+		"runtimeMinutes": 129,
+		"synopsis": "There is a new criminal mastermind at large (Professor Moriarty) and not only is he Holmes’ intellectual equal, but his capacity for evil and lack of conscience may give him an advantage over the detective.",
+		"cast": [
+			"Robert Downey Jr.",
+			"Jude Law",
+			"Noomi Rapace",
+			"Jared Harris",
+			"Rachel McAdams"
+		],
+		"rating": 7.1,
+		"director": "Guy Ritchie",
+		"posterPath": "/2HsHurlnTOyU6yUS14gY6BQCyRs.jpg",
+		"backdropPath": "/lWNASscWXn32Asr9vkB1wq6cKvD.jpg"
+	},
+	"the-adventures-of-sherlock-holmes-1939": {
+		"title": "The Adventures of Sherlock Holmes",
+		"releaseDate": "1939-09-01",
+		"runtimeMinutes": 85,
+		"synopsis": "Having once again avoided criminal conviction, Professor Moriarity develops a murderous plan to “finish off” his last major nemesis, Sherlock Holmes, by making him fail to prevent the perfect crime.  Does it involve a family curse, the crown jewels of England, or something else…",
+		"cast": [
+			"Basil Rathbone",
+			"Nigel Bruce",
+			"Ida Lupino",
+			"Alan Marshal",
+			"Terry Kilburn"
+		],
+		"rating": 6.9,
+		"director": "Alfred L. Werker",
+		"posterPath": "/oNE3GyeA9ZUCzI9jYTgNy7vYTfO.jpg",
+		"backdropPath": "/qpNgzjflNBqzp4kc5QtYIBceWoB.jpg"
+	}
+}

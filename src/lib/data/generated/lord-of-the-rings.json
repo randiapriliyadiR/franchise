@@ -1,1 +1,121 @@
-{}
+{
+	"the-hobbit-an-unexpected-journey-2012": {
+		"title": "The Hobbit: An Unexpected Journey",
+		"releaseDate": "2012-12-12",
+		"runtimeMinutes": 169,
+		"synopsis": "Bilbo Baggins, a hobbit enjoying his quiet life, is swept into an epic quest by Gandalf the Grey and thirteen dwarves who seek to reclaim their mountain home from Smaug, the dragon.",
+		"cast": [
+			"Martin Freeman",
+			"Ian McKellen",
+			"Richard Armitage",
+			"James Nesbitt",
+			"Ken Stott"
+		],
+		"rating": 7.4,
+		"director": "Peter Jackson",
+		"posterPath": "/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg",
+		"backdropPath": "/xyXmtuvsoM5J3yNad0nvcetpBdY.jpg"
+	},
+	"the-hobbit-the-battle-of-the-five-armies-2014": {
+		"title": "The Hobbit: The Battle of the Five Armies",
+		"releaseDate": "2014-12-10",
+		"runtimeMinutes": 144,
+		"synopsis": "Following Smaug's attack on Laketown, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
+		"cast": [
+			"Ian McKellen",
+			"Martin Freeman",
+			"Richard Armitage",
+			"Orlando Bloom",
+			"Evangeline Lilly"
+		],
+		"rating": 7.3,
+		"director": "Peter Jackson",
+		"posterPath": "/xT98tLqatZPQApyRmlPL12LtiWp.jpg",
+		"backdropPath": "/3UbaCMmqOd7mca4Y5DOzY2ZVTyX.jpg"
+	},
+	"the-hobbit-the-desolation-of-smaug-2013": {
+		"title": "The Hobbit: The Desolation of Smaug",
+		"releaseDate": "2013-12-11",
+		"runtimeMinutes": 161,
+		"synopsis": "The Dwarves, Bilbo and Gandalf have successfully escaped the Misty Mountains, and Bilbo has gained the One Ring. They all continue their journey to get their gold back from the Dragon, Smaug.",
+		"cast": [
+			"Ian McKellen",
+			"Martin Freeman",
+			"Richard Armitage",
+			"Benedict Cumberbatch",
+			"Orlando Bloom"
+		],
+		"rating": 7.6,
+		"director": "Peter Jackson",
+		"posterPath": "/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
+		"backdropPath": "/5ZYxL6k4ZHrEmrFvmY4HZVzerxG.jpg"
+	},
+	"the-lord-of-the-rings-the-fellowship-of-the-ring-2001": {
+		"title": "The Lord of the Rings: The Fellowship of the Ring",
+		"releaseDate": "2001-12-18",
+		"runtimeMinutes": 179,
+		"synopsis": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+		"cast": [
+			"Elijah Wood",
+			"Ian McKellen",
+			"Viggo Mortensen",
+			"Sean Astin",
+			"Ian Holm"
+		],
+		"rating": 8.4,
+		"director": "Peter Jackson",
+		"posterPath": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+		"backdropPath": "/oiwc338EoBgS4sEI2ixAny4KQKg.jpg"
+	},
+	"the-lord-of-the-rings-the-return-of-the-king-2003": {
+		"title": "The Lord of the Rings: The Return of the King",
+		"releaseDate": "2003-12-17",
+		"runtimeMinutes": 201,
+		"synopsis": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+		"cast": [
+			"Elijah Wood",
+			"Ian McKellen",
+			"Viggo Mortensen",
+			"Sean Astin",
+			"Andy Serkis"
+		],
+		"rating": 8.5,
+		"director": "Peter Jackson",
+		"posterPath": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+		"backdropPath": "/ctiw6FZK4N36LmkjSklWEbuvlq9.jpg"
+	},
+	"the-lord-of-the-rings-the-rings-of-power-2022": {
+		"title": "The Lord of the Rings: The Rings of Power",
+		"releaseDate": "2022-09-01",
+		"seasons": 3,
+		"episodes": 24,
+		"synopsis": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+		"cast": [
+			"Morfydd Clark",
+			"Robert Aramayo",
+			"Owain Arthur",
+			"Sophia Nomvete",
+			"Markella Kavenagh"
+		],
+		"rating": 7.2,
+		"posterPath": "/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
+		"backdropPath": "/o2wg8QiSCQrhj91tBfxunE3O5Ba.jpg"
+	},
+	"the-lord-of-the-rings-the-two-towers-2002": {
+		"title": "The Lord of the Rings: The Two Towers",
+		"releaseDate": "2002-12-18",
+		"runtimeMinutes": 179,
+		"synopsis": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor.",
+		"cast": [
+			"Elijah Wood",
+			"Ian McKellen",
+			"Viggo Mortensen",
+			"Sean Astin",
+			"Andy Serkis"
+		],
+		"rating": 8.4,
+		"director": "Peter Jackson",
+		"posterPath": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+		"backdropPath": "/6G73mNyooWAEQTpckPSnFxFoNmc.jpg"
+	}
+}

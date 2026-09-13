@@ -9,6 +9,11 @@ import type { Entry } from '../types';
  * the Rings, and The Rings of Power is set thousands of years earlier still
  * (the Second Age) — two separate branches, both running well before the
  * main line rather than after it.
+ *
+ * Before Peter Jackson's films, the whole saga was already adapted once as
+ * three separate animated productions (1977–1980) — a retelling, not a
+ * continuation, so it runs as its own branch alongside whichever film
+ * covers the same part of the story.
  */
 export const lotrEntries: Entry[] = [
 	{
@@ -126,6 +131,55 @@ export const lotrEntries: Entry[] = [
 			'Centuries before Frodo, elves, dwarves, and men face the growing shadow of a rising dark power and the forging of the Rings.',
 		cast: ['Morfydd Clark', 'Ismael Cruz Córdova', 'Robert Aramayo'],
 		tmdb: { type: 'tv', year: 2022 }
+	},
+	// ---- Animated Adaptations (1977–1980) — retells the whole saga across
+	// three separate productions, not a continuation of the live-action films ----
+	{
+		id: 'the-hobbit-1977',
+		franchise: 'lord-of-the-rings',
+		title: 'The Hobbit',
+		type: 'film',
+		status: 'released',
+		chronology: 0.25,
+		branch: 'Animated Adaptations (1977–1980)',
+		branchNote:
+			'The whole saga adapted once before, across three separate animated productions — a retelling, not a continuation of the live-action films.',
+		group: 'Animated Adaptations',
+		tags: ['remake', 'animated'],
+		synopsis:
+			'The 1977 animated television adaptation of a reluctant hobbit’s journey with thirteen dwarves to reclaim their mountain home from a dragon.',
+		cast: [],
+		tmdb: { type: 'movie', year: 1977 }
+	},
+	{
+		id: 'the-lord-of-the-rings-1978',
+		franchise: 'lord-of-the-rings',
+		title: 'The Lord of the Rings',
+		type: 'film',
+		status: 'released',
+		chronology: 1.5,
+		branch: 'Animated Adaptations (1977–1980)',
+		group: 'Animated Adaptations',
+		tags: ['remake', 'animated'],
+		synopsis:
+			'Ralph Bakshi’s rotoscoped animated adaptation, covering the Fellowship’s quest through roughly the first half of The Two Towers.',
+		cast: [],
+		tmdb: { type: 'movie', year: 1978 }
+	},
+	{
+		id: 'the-return-of-the-king-1980',
+		franchise: 'lord-of-the-rings',
+		title: 'The Return of the King',
+		type: 'film',
+		status: 'released',
+		chronology: 2.7,
+		branch: 'Animated Adaptations (1977–1980)',
+		group: 'Animated Adaptations',
+		tags: ['remake', 'animated', 'finale'],
+		synopsis:
+			'A 1980 animated television special completing the story where Bakshi’s film left off, covering the back half of The Two Towers through the Ring’s destruction.',
+		cast: [],
+		tmdb: { type: 'movie', year: 1980 }
 	},
 	// ---- Games ----
 	{

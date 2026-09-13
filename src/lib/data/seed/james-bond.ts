@@ -10,6 +10,11 @@ import type { Entry } from '../types';
  * release order and the "story order" timeline toggle isn't especially
  * meaningful except across the Daniel Craig era, which is a genuine
  * continuous arc. `group` tracks the actor's era instead of a story phase.
+ *
+ * Two Eon stories were remade outside the main series — Never Say Never
+ * Again retells Thunderball, and the 1967 Casino Royale retells the same
+ * novel as the 2006 film — so both run as a "Non-Eon Films" branch rather
+ * than sitting further down the main line.
  */
 export const bondEntries: Entry[] = [
 	// ---- Sean Connery ----
@@ -386,5 +391,40 @@ export const bondEntries: Entry[] = [
 		synopsis:
 			'The landmark N64 first-person shooter adaptation of GoldenEye, credited with popularizing console shooters and split-screen deathmatch.',
 		cast: []
+	},
+
+	// ---- Non-Eon remakes — retellings of an Eon story made outside the
+	// main series, not part of its continuity. ----
+	{
+		id: 'never-say-never-again-1983',
+		franchise: 'james-bond',
+		title: 'Never Say Never Again',
+		type: 'film',
+		status: 'released',
+		chronology: 4.5,
+		branch: 'Non-Eon Films',
+		branchNote:
+			'A retelling of Thunderball made outside the main Eon series, with Sean Connery returning outside his official run.',
+		group: 'Non-Eon Films',
+		tags: ['remake'],
+		synopsis:
+			'A retelling of Thunderball: Bond is sent to recover two stolen nuclear warheads held for ransom by SPECTRE.',
+		cast: ['Sean Connery', 'Klaus Maria Brandauer', 'Kim Basinger'],
+		tmdb: { type: 'movie', year: 1983 }
+	},
+	{
+		id: 'casino-royale-1967',
+		franchise: 'james-bond',
+		title: 'Casino Royale',
+		type: 'film',
+		status: 'released',
+		chronology: 21.5,
+		branch: 'Non-Eon Films',
+		group: 'Non-Eon Films',
+		tags: ['remake'],
+		synopsis:
+			'A spy spoof adaptation of the same novel as the 2006 film: a retired Bond is dragged back in, and chaos — including several other "James Bonds" — follows.',
+		cast: ['David Niven', 'Peter Sellers', 'Ursula Andress', 'Woody Allen'],
+		tmdb: { type: 'movie', year: 1967 }
 	}
 ];

@@ -7,7 +7,9 @@ import type { Entry } from '../types';
  *
  * Fantastic Beasts is a prequel trilogy set roughly 70 years before Harry
  * Potter's own story, so it's modeled as a branch that runs *before* the
- * main line rather than after it.
+ * main line rather than after it. HBO's Harry Potter series retells the
+ * same seven books from scratch (one season per book) rather than
+ * continuing the films' story, so it runs as its own branch too.
  */
 export const harryPotterEntries: Entry[] = [
 	{
@@ -180,6 +182,26 @@ export const harryPotterEntries: Entry[] = [
 			'Dumbledore asks Newt Scamander to lead a team against Grindelwald’s plan to seize control of the wizarding world.',
 		cast: ['Eddie Redmayne', 'Jude Law', 'Mads Mikkelsen'],
 		tmdb: { type: 'movie', year: 2022 }
+	},
+	// ---- HBO Harry Potter (remake branch — retells the books from scratch) ----
+	{
+		id: 'harry-potter-hbo-2026',
+		franchise: 'harry-potter',
+		title: 'Harry Potter',
+		type: 'series',
+		status: 'upcoming',
+		chronology: 1.5,
+		chronologyNote: '1991–1992, a season-per-book retelling',
+		branch: 'HBO Series (Remake)',
+		branchNote:
+			'A from-scratch, season-per-book retelling of the same seven books the films adapt — a new cast, not a continuation.',
+		group: 'HBO Series',
+		tags: ['remake'],
+		seasons: 1,
+		synopsis:
+			'An orphaned boy discovers he’s a wizard on his eleventh birthday and is whisked off to Hogwarts, in a new season-by-season retelling of the books.',
+		cast: ['Dominic McLaughlin', 'Arabella Stanton', 'Alastair Stout', 'John Lithgow'],
+		tmdb: { type: 'tv', year: 2026 }
 	},
 	// ---- Games ----
 	{

@@ -11,10 +11,12 @@ import type { Entry } from '../types';
  * a single timeline, so `chronology` matches release order for most of
  * them. The exception is the Derry cluster: IT: Welcome to Derry is set in
  * 1962, decades before It's 1989, so it's placed *before* It in story order
- * even though it released years later — the same idea as any other
- * prequel here, just without needing its own branch since it's still the
- * same single town's story. `group` tracks which corner of King's work
- * each adaptation belongs to.
+ * even though it released years later.
+ *
+ * Several stories have been adapted more than once — Carrie, The Shining,
+ * It, Pet Sematary, The Mist, Firestarter. Each remake is a retelling of
+ * the *same* story, not a sequel, so it runs as its own branch alongside
+ * the original rather than sitting further down the same line.
  */
 export const stephenKingEntries: Entry[] = [
 	{
@@ -88,12 +90,26 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1983 }
 	},
 	{
+		id: 'firestarter-1984',
+		franchise: 'stephen-king',
+		title: 'Firestarter',
+		type: 'film',
+		status: 'released',
+		chronology: 6,
+		group: 'Adaptations',
+		tags: ['origin'],
+		synopsis:
+			'A young girl with the power to start fires with her mind is hunted by a secretive government agency.',
+		cast: ['David Keith', 'Drew Barrymore', 'George C. Scott'],
+		tmdb: { type: 'movie', year: 1984 }
+	},
+	{
 		id: 'stand-by-me-1986',
 		franchise: 'stephen-king',
 		title: 'Stand by Me',
 		type: 'film',
 		status: 'released',
-		chronology: 6,
+		chronology: 7,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
@@ -107,9 +123,9 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Pet Sematary',
 		type: 'film',
 		status: 'released',
-		chronology: 7,
+		chronology: 8,
 		group: 'Adaptations',
-		tags: [],
+		tags: ['origin'],
 		synopsis:
 			'A family discovers a burial ground behind their new home with the power to bring the dead back — changed.',
 		cast: ['Dale Midkiff', 'Fred Gwynne', 'Denise Crosby'],
@@ -121,7 +137,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Misery',
 		type: 'film',
 		status: 'released',
-		chronology: 8,
+		chronology: 9,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
@@ -135,7 +151,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'The Shawshank Redemption',
 		type: 'film',
 		status: 'released',
-		chronology: 9,
+		chronology: 10,
 		group: 'Prison & Redemption',
 		tags: ['origin'],
 		synopsis:
@@ -149,7 +165,7 @@ export const stephenKingEntries: Entry[] = [
 		title: 'The Green Mile',
 		type: 'film',
 		status: 'released',
-		chronology: 10,
+		chronology: 11,
 		group: 'Prison & Redemption',
 		tags: ['finale'],
 		synopsis:
@@ -163,9 +179,9 @@ export const stephenKingEntries: Entry[] = [
 		title: 'The Mist',
 		type: 'film',
 		status: 'released',
-		chronology: 11,
+		chronology: 12,
 		group: 'Adaptations',
-		tags: [],
+		tags: ['origin'],
 		synopsis:
 			'A small town is trapped inside a supermarket by a mysterious mist hiding creatures — and its own fraying humanity.',
 		cast: ['Thomas Jane', 'Marcia Gay Harden', 'Laurie Holden'],
@@ -177,28 +193,13 @@ export const stephenKingEntries: Entry[] = [
 		title: '1408',
 		type: 'film',
 		status: 'released',
-		chronology: 12,
+		chronology: 13,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
 			'A skeptical author who debunks haunted locations checks into a hotel room that has killed everyone who ever stayed in it.',
 		cast: ['John Cusack', 'Samuel L. Jackson'],
 		tmdb: { type: 'movie', year: 2007 }
-	},
-	{
-		id: 'carrie-2013',
-		franchise: 'stephen-king',
-		title: 'Carrie',
-		type: 'film',
-		status: 'released',
-		chronology: 13,
-		chronologyNote: 'a modern-day remake',
-		group: 'Adaptations',
-		tags: ['remake'],
-		synopsis:
-			'A modern-day retelling: Carrie White’s telekinetic powers surface just as her mother’s religious fanaticism and her classmates’ cruelty peak.',
-		cast: ['Chloë Grace Moretz', 'Julianne Moore', 'Judy Greer'],
-		tmdb: { type: 'movie', year: 2013 }
 	},
 	{
 		id: 'under-the-dome-2013',
@@ -335,27 +336,12 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'tv', year: 2020 }
 	},
 	{
-		id: 'firestarter-2022',
-		franchise: 'stephen-king',
-		title: 'Firestarter',
-		type: 'film',
-		status: 'released',
-		chronology: 19,
-		chronologyNote: 'a modern-day remake',
-		group: 'Adaptations',
-		tags: ['remake'],
-		synopsis:
-			'A young girl with the power to start fires with her mind is hunted by a secretive government agency.',
-		cast: ['Zac Efron', 'Ryan Kiera Armstrong'],
-		tmdb: { type: 'movie', year: 2022 }
-	},
-	{
 		id: 'the-long-walk-2025',
 		franchise: 'stephen-king',
 		title: 'The Long Walk',
 		type: 'film',
 		status: 'released',
-		chronology: 20,
+		chronology: 19,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
@@ -363,14 +349,34 @@ export const stephenKingEntries: Entry[] = [
 		cast: ['Cooper Hoffman', 'David Jonsson', 'Mark Hamill'],
 		tmdb: { type: 'movie', year: 2025 }
 	},
+
+	// ---- Remakes — each a retelling of an earlier entry's story, not a
+	// sequel, so each runs as its own branch next to the original. ----
+	{
+		id: 'carrie-2013',
+		franchise: 'stephen-king',
+		title: 'Carrie',
+		type: 'film',
+		status: 'released',
+		chronology: 1.3,
+		branch: 'Carrie (Remakes)',
+		branchNote: 'Retellings of the same story as the 1976 film, not sequels to it.',
+		group: 'Adaptations',
+		tags: ['remake'],
+		synopsis:
+			'A modern-day retelling: Carrie White’s telekinetic powers surface just as her mother’s religious fanaticism and her classmates’ cruelty peak.',
+		cast: ['Chloë Grace Moretz', 'Julianne Moore', 'Judy Greer'],
+		tmdb: { type: 'movie', year: 2013 }
+	},
 	{
 		id: 'carrie-2026',
 		franchise: 'stephen-king',
 		title: 'Carrie',
 		type: 'series',
 		status: 'upcoming',
-		chronology: 21,
+		chronology: 1.6,
 		chronologyNote: 'a modern-day remake, set in the social-media age',
+		branch: 'Carrie (Remakes)',
 		group: 'Adaptations',
 		tags: ['remake'],
 		seasons: 1,
@@ -378,5 +384,90 @@ export const stephenKingEntries: Entry[] = [
 			'A social-media-era retelling: Carrie White’s home-schooled isolation collides with a viral bullying scandal as her telekinetic powers awaken.',
 		cast: ['Summer H. Howell', 'Samantha Sloyan', 'Siena Agudong'],
 		tmdb: { type: 'tv', year: 2026 }
+	},
+	{
+		id: 'the-shining-1997',
+		franchise: 'stephen-king',
+		title: "Stephen King's The Shining",
+		type: 'series',
+		status: 'released',
+		chronology: 2.5,
+		branch: 'The Shining (1997 Miniseries)',
+		branchNote:
+			'A more faithful retelling of the same novel — King himself wrote the script, partly in response to Kubrick’s changes.',
+		group: 'The Shining Saga',
+		tags: ['remake'],
+		seasons: 1,
+		synopsis:
+			'A recovering-alcoholic writer takes his family to an isolated hotel for the winter, where its violent past begins to take hold of him.',
+		cast: ['Steven Weber', 'Rebecca De Mornay', 'Courtland Mead'],
+		tmdb: { type: 'tv', year: 1997 }
+	},
+	{
+		id: 'the-mist-2017',
+		franchise: 'stephen-king',
+		title: 'The Mist',
+		type: 'series',
+		status: 'released',
+		chronology: 12.5,
+		branch: 'The Mist (2017 Series)',
+		branchNote: 'A retelling of the same novella as the 2007 film, not a sequel to it.',
+		group: 'Adaptations',
+		tags: ['remake'],
+		seasons: 1,
+		synopsis:
+			'A small Maine town is cut off by a mysterious fog hiding nightmarish creatures, its residents turning on each other as much as the mist itself.',
+		cast: ['Morgan Spector', 'Alyssa Sutherland', 'Gus Birney'],
+		tmdb: { type: 'tv', year: 2017 }
+	},
+	{
+		id: 'it-1990',
+		franchise: 'stephen-king',
+		title: 'It',
+		type: 'series',
+		status: 'released',
+		chronology: 15.05,
+		branch: 'It (1990 Miniseries)',
+		branchNote:
+			'A single production covering both timelines the 2017/2019 films split into two — a retelling, not a sequel.',
+		group: 'Derry & Castle Rock',
+		tags: ['remake'],
+		seasons: 1,
+		synopsis:
+			'Seven childhood friends who once defeated a shapeshifting evil in Derry are drawn back decades later when it resurfaces.',
+		cast: ['Tim Curry', 'Richard Thomas', 'John Ritter'],
+		tmdb: { type: 'tv', year: 1990 }
+	},
+	{
+		id: 'pet-sematary-2019',
+		franchise: 'stephen-king',
+		title: 'Pet Sematary',
+		type: 'film',
+		status: 'released',
+		chronology: 8.5,
+		branch: 'Pet Sematary (Remake)',
+		branchNote: 'A retelling of the same novel as the 1989 film, not a sequel to it.',
+		group: 'Adaptations',
+		tags: ['remake'],
+		synopsis:
+			'A modern-day retelling: a family’s new home backs onto a burial ground with the power to bring the dead back — changed.',
+		cast: ['Jason Clarke', 'Amy Seimetz', 'John Lithgow'],
+		tmdb: { type: 'movie', year: 2019 }
+	},
+	{
+		id: 'firestarter-2022',
+		franchise: 'stephen-king',
+		title: 'Firestarter',
+		type: 'film',
+		status: 'released',
+		chronology: 6.5,
+		branch: 'Firestarter (Remake)',
+		branchNote: 'A retelling of the same novel as the 1984 film, not a sequel to it.',
+		group: 'Adaptations',
+		tags: ['remake'],
+		synopsis:
+			'A modern-day retelling: a young girl with the power to start fires with her mind is hunted by a secretive government agency.',
+		cast: ['Zac Efron', 'Ryan Kiera Armstrong'],
+		tmdb: { type: 'movie', year: 2022 }
 	}
 ];

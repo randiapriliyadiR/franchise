@@ -51,6 +51,21 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 1980 }
 	},
 	{
+		id: 'doctor-sleep-2019',
+		franchise: 'stephen-king',
+		title: 'Doctor Sleep',
+		type: 'film',
+		status: 'released',
+		chronology: 2.1,
+		chronologyNote: 'decades after The Shining — a direct sequel, not a remake',
+		group: 'The Shining Saga',
+		tags: ['finale'],
+		synopsis:
+			'A grown Danny Torrance, still scarred by the Overlook, uses his fading “shine” to protect a young girl from a cult that feeds on it.',
+		cast: ['Ewan McGregor', 'Rebecca Ferguson', 'Kyliegh Curran'],
+		tmdb: { type: 'movie', year: 2019 }
+	},
+	{
 		id: 'creepshow-1982',
 		franchise: 'stephen-king',
 		title: 'Creepshow',
@@ -251,12 +266,42 @@ export const stephenKingEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 2017 }
 	},
 	{
+		id: 'it-chapter-two-2019',
+		franchise: 'stephen-king',
+		title: 'It Chapter Two',
+		type: 'film',
+		status: 'released',
+		chronology: 15.1,
+		chronologyNote: '2016, the Losers Club as adults — directly follows It',
+		group: 'Derry & Castle Rock',
+		tags: ['finale'],
+		synopsis:
+			'Twenty-seven years later, the Losers Club reunites as adults to finish what they started against Pennywise.',
+		cast: ['Jessica Chastain', 'James McAvoy', 'Bill Skarsgård'],
+		tmdb: { type: 'movie', year: 2019 }
+	},
+	{
+		id: 'castle-rock-2018',
+		franchise: 'stephen-king',
+		title: 'Castle Rock',
+		type: 'series',
+		status: 'released',
+		chronology: 15.2,
+		group: 'Derry & Castle Rock',
+		tags: ['anthology'],
+		seasons: 2,
+		synopsis:
+			'An anthology series weaving together characters, settings, and mythology from across Stephen King’s body of work in one shared Maine town.',
+		cast: ['André Holland', 'Bill Skarsgård', 'Sissy Spacek'],
+		tmdb: { type: 'tv', year: 2018 }
+	},
+	{
 		id: 'the-dark-tower-2017',
 		franchise: 'stephen-king',
 		title: 'The Dark Tower',
 		type: 'film',
 		status: 'released',
-		chronology: 15.2,
+		chronology: 16,
 		group: 'The Dark Tower',
 		tags: [],
 		synopsis:
@@ -270,58 +315,13 @@ export const stephenKingEntries: Entry[] = [
 		title: "Gerald's Game",
 		type: 'film',
 		status: 'released',
-		chronology: 15.4,
+		chronology: 17,
 		group: 'Adaptations',
 		tags: [],
 		synopsis:
 			'Handcuffed to a bed after her husband’s sudden death during a remote getaway, a woman confronts her past to survive.',
 		cast: ['Carla Gugino', 'Bruce Greenwood'],
 		tmdb: { type: 'movie', year: 2017 }
-	},
-	{
-		id: 'castle-rock-2018',
-		franchise: 'stephen-king',
-		title: 'Castle Rock',
-		type: 'series',
-		status: 'released',
-		chronology: 15.7,
-		group: 'Derry & Castle Rock',
-		tags: ['anthology'],
-		seasons: 2,
-		synopsis:
-			'An anthology series weaving together characters, settings, and mythology from across Stephen King’s body of work in one shared Maine town.',
-		cast: ['André Holland', 'Bill Skarsgård', 'Sissy Spacek'],
-		tmdb: { type: 'tv', year: 2018 }
-	},
-	{
-		id: 'it-chapter-two-2019',
-		franchise: 'stephen-king',
-		title: 'It Chapter Two',
-		type: 'film',
-		status: 'released',
-		chronology: 16,
-		chronologyNote: '2016, the Losers Club as adults',
-		group: 'Derry & Castle Rock',
-		tags: ['finale'],
-		synopsis:
-			'Twenty-seven years later, the Losers Club reunites as adults to finish what they started against Pennywise.',
-		cast: ['Jessica Chastain', 'James McAvoy', 'Bill Skarsgård'],
-		tmdb: { type: 'movie', year: 2019 }
-	},
-	{
-		id: 'doctor-sleep-2019',
-		franchise: 'stephen-king',
-		title: 'Doctor Sleep',
-		type: 'film',
-		status: 'released',
-		chronology: 17,
-		chronologyNote: 'decades after The Shining',
-		group: 'The Shining Saga',
-		tags: ['finale'],
-		synopsis:
-			'A grown Danny Torrance, still scarred by the Overlook, uses his fading “shine” to protect a young girl from a cult that feeds on it.',
-		cast: ['Ewan McGregor', 'Rebecca Ferguson', 'Kyliegh Curran'],
-		tmdb: { type: 'movie', year: 2019 }
 	},
 	{
 		id: 'the-outsider-2020',

@@ -496,7 +496,6 @@
 		"backdropPath": "/vno2LrEQr3lTOk3U1G1ihZsy64b.jpg"
 	},
 	"loki-season-1-2021": {
-		"title": "Season 1",
 		"releaseDate": "2021-06-09",
 		"runtimeMinutes": 50,
 		"episodes": 6,
@@ -514,7 +513,6 @@
 		"backdropPath": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg"
 	},
 	"loki-season-2-2023": {
-		"title": "Season 2",
 		"releaseDate": "2023-10-05",
 		"runtimeMinutes": 52,
 		"episodes": 6,
@@ -895,7 +893,6 @@
 		"backdropPath": "/l1ORpdYr8uFZ9MNYKoq1p6fIc4M.jpg"
 	},
 	"what-if-season-1-2021": {
-		"title": "Season 1",
 		"releaseDate": "2021-08-11",
 		"runtimeMinutes": 36,
 		"episodes": 9,

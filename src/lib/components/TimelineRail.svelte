@@ -15,10 +15,10 @@
 	// no DOM measurement needed — that's what lets the connectors and nodes
 	// glide smoothly (via a plain CSS transition) when `order` toggles.
 	const PADDING = 28;
-	const COLUMN_WIDTH = 248;
-	const ROW_HEIGHT = 122;
-	const NODE_WIDTH = 224;
-	const NODE_HEIGHT = 106;
+	const COLUMN_WIDTH = 296;
+	const ROW_HEIGHT = 132;
+	const NODE_WIDTH = 272;
+	const NODE_HEIGHT = 116;
 
 	const x = (column: number) => PADDING + column * COLUMN_WIDTH;
 	const y = (row: number) => PADDING + row * ROW_HEIGHT;

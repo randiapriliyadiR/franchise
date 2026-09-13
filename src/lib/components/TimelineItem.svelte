@@ -62,13 +62,14 @@
 	}
 
 	.thumb {
-		width: 76px;
+		width: 84px;
 		flex-shrink: 0;
 	}
 
 	.thumb :global(.poster) {
-		border-radius: 0;
+		width: 100%;
 		height: 100%;
+		border-radius: 0;
 	}
 
 	.content {
@@ -93,8 +94,8 @@
 		font-size: 0.82rem;
 		line-height: 1.25;
 		display: -webkit-box;
-		-webkit-line-clamp: 3;
-		line-clamp: 3;
+		-webkit-line-clamp: 4;
+		line-clamp: 4;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;

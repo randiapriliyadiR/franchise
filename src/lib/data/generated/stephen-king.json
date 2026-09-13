@@ -1,4 +1,21 @@
 {
+	"1408-2007": {
+		"title": "1408",
+		"releaseDate": "2007-06-22",
+		"runtimeMinutes": 104,
+		"synopsis": "A man who specializes in debunking paranormal occurrences checks into the fabled room 1408 at the Dolphin Hotel. Soon after settling in, he confronts genuine terror.",
+		"cast": [
+			"John Cusack",
+			"Samuel L. Jackson",
+			"Mary McCormack",
+			"Jasmine Jessica Anthony",
+			"Tony Shalhoub"
+		],
+		"rating": 6.7,
+		"director": "Mikael Håfström",
+		"posterPath": "/yE9MCW7ZNxSw5SC1TMqm51pMBIV.jpg",
+		"backdropPath": "/9CaNCElCXrjdJoUadfXHiNTMFcR.jpg"
+	},
 	"carrie-1976": {
 		"title": "Carrie",
 		"releaseDate": "1976-11-03",
@@ -15,6 +32,40 @@
 		"director": "Brian De Palma",
 		"posterPath": "/bJJ3xK4pMnfao0wfzySfC47dp8G.jpg",
 		"backdropPath": "/zwJFfKQdfiptK2GY6N8GkZFrAxJ.jpg"
+	},
+	"carrie-2013": {
+		"title": "Carrie",
+		"releaseDate": "2013-10-16",
+		"runtimeMinutes": 101,
+		"synopsis": "An awkward, telekinetic teenage girl is the object of relentless bullying at school and an oppressively religious mother at home.",
+		"cast": [
+			"Chloë Grace Moretz",
+			"Julianne Moore",
+			"Gabriella Wilde",
+			"Ansel Elgort",
+			"Alex Russell"
+		],
+		"rating": 6.1,
+		"director": "Kimberly Peirce",
+		"posterPath": "/kloXz9qwO23z9Kbt3z3MgnjF4xO.jpg",
+		"backdropPath": "/zTwuMSZ8Tsf9k6r2lslemPs4m1H.jpg"
+	},
+	"carrie-2026": {
+		"title": "Carrie",
+		"releaseDate": "2026-10-07",
+		"seasons": 1,
+		"episodes": 8,
+		"synopsis": "Misfit high-schooler Carrie White has spent her life in seclusion with her domineering mother. After her father's sudden death, Carrie finds herself contending with the challenges of attending public high school, a bullying scandal, and the emergence of mysterious telekinetic powers.",
+		"cast": [
+			"Summer H. Howell",
+			"Samantha Sloyan",
+			"Siena Agudong",
+			"Alison Thornton",
+			"Joel Oulette"
+		],
+		"rating": 0,
+		"posterPath": "/b7aKxwPj3QM8YHZ8uDyqr50i96D.jpg",
+		"backdropPath": "/vVaNTaRHlL1i8JVsZsNtRHGBhPm.jpg"
 	},
 	"castle-rock-2018": {
 		"title": "Castle Rock",
@@ -35,6 +86,57 @@
 		"posterPath": "/6dnUpv9ghx84pgxlMOb4uuJrWDs.jpg",
 		"backdropPath": "/qyRJPtJkJz7wtS4UJnJez9S3WOM.jpg"
 	},
+	"christine-1983": {
+		"title": "Christine",
+		"releaseDate": "1983-12-09",
+		"runtimeMinutes": 110,
+		"synopsis": "Nerdy high schooler Arnie Cunningham falls for Christine, a rusty 1958 Plymouth Fury, and becomes obsessed with restoring the classic automobile to her former glory. As the car changes, so does Arnie, whose newfound confidence turns to arrogance behind the wheel of his exotic beauty. Arnie's girlfriend Leigh and best friend Dennis reach out to him, only to be met by a Fury like no other.",
+		"cast": [
+			"Keith Gordon",
+			"John Stockwell",
+			"Alexandra Paul",
+			"Robert Prosky",
+			"Harry Dean Stanton"
+		],
+		"rating": 6.9,
+		"director": "John Carpenter",
+		"posterPath": "/mMtUJke2TtIoT6JB9hkvERmsSu8.jpg",
+		"backdropPath": "/6goydaLavDu3d2g3kFJHECZiddt.jpg"
+	},
+	"creepshow-1982": {
+		"title": "Creepshow",
+		"releaseDate": "1982-11-10",
+		"runtimeMinutes": 120,
+		"synopsis": "Five grisly tales from a 1950s-style comic, including a murdered father rising from beyond, a bizarre meteor, a vengeful husband, a mysterious crate's occupant, and a plague of cockroaches.",
+		"cast": [
+			"Hal Holbrook",
+			"Adrienne Barbeau",
+			"Fritz Weaver",
+			"Leslie Nielsen",
+			"Carrie Nye"
+		],
+		"rating": 6.9,
+		"director": "George A. Romero",
+		"posterPath": "/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg",
+		"backdropPath": "/8aqTmCHLkktH7RZNALeaOMneHSl.jpg"
+	},
+	"cujo-1983": {
+		"title": "Cujo",
+		"releaseDate": "1983-08-10",
+		"runtimeMinutes": 93,
+		"synopsis": "A friendly St. Bernard named \"Cujo\" contracts rabies and conducts a reign of terror on a small American town.",
+		"cast": [
+			"Dee Wallace",
+			"Danny Pintauro",
+			"Daniel Hugh Kelly",
+			"Christopher Stone",
+			"Ed Lauter"
+		],
+		"rating": 6.2,
+		"director": "Lewis Teague",
+		"posterPath": "/uNBt2YxrQdyOjnm2rDQ5QiCmQ0K.jpg",
+		"backdropPath": "/8MHv31RHBbyvBiC4AjJx6opebTm.jpg"
+	},
 	"doctor-sleep-2019": {
 		"title": "Doctor Sleep",
 		"releaseDate": "2019-10-30",
@@ -51,6 +153,40 @@
 		"director": "Mike Flanagan",
 		"posterPath": "/p69QzIBbN06aTYqRRiCOY1emNBh.jpg",
 		"backdropPath": "/ap6Zc5NDOfbZaMhkRDyghbGeLf0.jpg"
+	},
+	"firestarter-2022": {
+		"title": "Firestarter",
+		"releaseDate": "2022-05-12",
+		"runtimeMinutes": 94,
+		"synopsis": "For more than a decade, parents Andy and Vicky have been on the run, desperate to hide their daughter Charlie from a shadowy federal agency that wants to harness her unprecedented gift for creating fire into a weapon of mass destruction. Andy has taught Charlie how to defuse her power, which is triggered by anger or pain. But as Charlie turns 11, the fire becomes harder and harder to control. After an incident reveals the family's location, a mysterious operative is deployed to hunt down the family and seize Charlie once and for all. Charlie has other plans.",
+		"cast": [
+			"Ryan Kiera Armstrong",
+			"Zac Efron",
+			"Sydney Lemmon",
+			"Kurtwood Smith",
+			"Michael Greyeyes"
+		],
+		"rating": 5.4,
+		"director": "Keith Thomas",
+		"posterPath": "/jjBdPcQ0bplBnv2XgElKLoeFDuM.jpg",
+		"backdropPath": "/lwFKeONjTUSbqaaGdJL8vJq2LK1.jpg"
+	},
+	"geralds-game-2017": {
+		"title": "Gerald's Game",
+		"releaseDate": "2017-09-29",
+		"runtimeMinutes": 104,
+		"synopsis": "When her husband's sex game goes wrong, Jessie (who is handcuffed to a bed in a remote lake house) faces warped visions, dark secrets and a dire choice.",
+		"cast": [
+			"Carla Gugino",
+			"Bruce Greenwood",
+			"Carel Struycken",
+			"Chiara Aurelia",
+			"Henry Thomas"
+		],
+		"rating": 6.4,
+		"director": "Mike Flanagan",
+		"posterPath": "/32dippiypDdaKv7XFEfUlQ7kPup.jpg",
+		"backdropPath": "/t9HChjSJi8B1PXSVh5Ec3pcDsAM.jpg"
 	},
 	"it-2017": {
 		"title": "It",
@@ -85,6 +221,23 @@
 		"director": "Andy Muschietti",
 		"posterPath": "/zfE0R94v1E8cuKAerbskfD3VfUt.jpg",
 		"backdropPath": "/6LVSrgm83UYWlrLTCVGmWhFKYO0.jpg"
+	},
+	"it-welcome-to-derry-2025": {
+		"title": "IT: Welcome to Derry",
+		"releaseDate": "2025-10-26",
+		"seasons": 2,
+		"episodes": 8,
+		"synopsis": "In 1962, amid a spate of unexplained disappearances of local children, a group of misfit friends begin to suspect a long-buried ancient evil lurking. As the kids set out to determine what's really going on, a rising unease prompts several townspeople to work together to restore peace – all while a U.S. military operation seeks to exploit Derry for its own objectives.",
+		"cast": [
+			"Taylour Paige",
+			"Jovan Adepo",
+			"James Remar",
+			"Stephen Rider",
+			"Matilda Lawler"
+		],
+		"rating": 8.2,
+		"posterPath": "/nyy3BITeIjviv6PFIXtqvc8i6xi.jpg",
+		"backdropPath": "/2fOKVDoc2O3eZmBZesWPuE5kgPN.jpg"
 	},
 	"misery-1990": {
 		"title": "Misery",
@@ -171,6 +324,59 @@
 		"posterPath": "/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
 		"backdropPath": "/amZavErrjrdgDwhsIdpWxHNenIx.jpg"
 	},
+	"the-long-walk-2025": {
+		"title": "The Long Walk",
+		"releaseDate": "2025-09-10",
+		"runtimeMinutes": 108,
+		"synopsis": "In a dystopian 1970s America, fifty teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
+		"cast": [
+			"Cooper Hoffman",
+			"David Jonsson",
+			"Garrett Wareing",
+			"Ben Wang",
+			"Tut Nyuot"
+		],
+		"rating": 6.9,
+		"director": "Francis Lawrence",
+		"posterPath": "/wobVTa99eW0ht6c1rNNzLkazPtR.jpg",
+		"backdropPath": "/2dlt9I2ga6hweywz9zsFUz1PVii.jpg"
+	},
+	"the-mist-2007": {
+		"title": "The Mist",
+		"releaseDate": "2007-11-21",
+		"runtimeMinutes": 126,
+		"synopsis": "After a violent storm, a dense cloud of mist envelops a small Maine town, trapping David Drayton and his five-year-old son in a local grocery store with other local residents. They soon discover that the mist conceals deadly horrors that threaten their lives, and worse, their sanity.",
+		"cast": [
+			"Thomas Jane",
+			"Laurie Holden",
+			"Toby Jones",
+			"Marcia Gay Harden",
+			"Andre Braugher"
+		],
+		"rating": 7,
+		"director": "Frank Darabont",
+		"posterPath": "/c4UgUKZjM0Qzy5t4hAXSOFHYsnb.jpg",
+		"backdropPath": "/76J14zgwVWyOciri7X7F3DGP3TA.jpg"
+	},
+	"the-outsider-2020": {
+		"title": "The Outsider",
+		"releaseDate": "2020-01-12",
+		"endDate": "2020-03-08",
+		"runtimeMinutes": 60,
+		"seasons": 1,
+		"episodes": 10,
+		"synopsis": "When an insidious supernatural force edges its way into a seemingly straightforward investigation into the gruesome murder of a young boy, it leads a seasoned cop and an unorthodox investigator to question everything they believe in.",
+		"cast": [
+			"Ben Mendelsohn",
+			"Bill Camp",
+			"Jeremy Bobb",
+			"Julianne Nicholson",
+			"Marc Menchaca"
+		],
+		"rating": 7.4,
+		"posterPath": "/aMiPwPQjQI1EZN3xP2V0sSU37dc.jpg",
+		"backdropPath": "/lmlsqpAfDZnZumcFhbsTrOy9uNZ.jpg"
+	},
 	"the-shawshank-redemption-1994": {
 		"title": "The Shawshank Redemption",
 		"releaseDate": "1994-09-23",
@@ -204,5 +410,24 @@
 		"director": "Stanley Kubrick",
 		"posterPath": "/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
 		"backdropPath": "/AdKA2F1SzYPhSZdEbjH1Zh75UVQ.jpg"
+	},
+	"under-the-dome-2013": {
+		"title": "Under the Dome",
+		"releaseDate": "2013-06-24",
+		"endDate": "2015-09-10",
+		"runtimeMinutes": 42,
+		"seasons": 3,
+		"episodes": 39,
+		"synopsis": "A small town is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. While military forces, the government and the media positioned outside of this surrounding barrier attempt to break it down, a small group of people inside attempt to figure out what the dome is, where it came from, and when (and if) it will go away.",
+		"cast": [
+			"Mike Vogel",
+			"Rachelle Lefevre",
+			"Alexander Koch",
+			"Eddie Cahill",
+			"Colin Ford"
+		],
+		"rating": 7.1,
+		"posterPath": "/fwH0ePhd7m3swtCuFeubtR49ZTd.jpg",
+		"backdropPath": "/qiDOjpLj2KGDwM5MGx9YZpOrBRX.jpg"
 	}
 }

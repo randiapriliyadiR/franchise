@@ -14,9 +14,12 @@ import type { Entry } from '../types';
  * even though it released years later.
  *
  * Several stories have been adapted more than once — Carrie, The Shining,
- * It, Pet Sematary, The Mist, Firestarter. Each remake is a retelling of
- * the *same* story, not a sequel, so it runs as its own branch alongside
- * the original rather than sitting further down the same line.
+ * It, Pet Sematary, The Mist, Firestarter. Each remake gets its own
+ * `branchKind: 'remake'` branch, drawn as an independent parallel line
+ * with no connector to the original: it didn't fork from anything, an
+ * unrelated production just told the same story again. Carrie's two
+ * remakes (2013, 2026) are unrelated to *each other* too, so each gets
+ * its own branch rather than sharing one.
  */
 export const stephenKingEntries: Entry[] = [
 	{
@@ -358,9 +361,10 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Carrie',
 		type: 'film',
 		status: 'released',
-		chronology: 1.3,
-		branch: 'Carrie (Remakes)',
-		branchNote: 'Retellings of the same story as the 1976 film, not sequels to it.',
+		chronology: 1,
+		branch: 'Carrie (2013 Film)',
+		branchKind: 'remake',
+		branchNote: 'An unrelated retelling of the same story as the 1976 film, not a sequel to it.',
 		group: 'Adaptations',
 		tags: ['remake'],
 		synopsis:
@@ -374,9 +378,12 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Carrie',
 		type: 'series',
 		status: 'upcoming',
-		chronology: 1.6,
+		chronology: 1,
 		chronologyNote: 'a modern-day remake, set in the social-media age',
-		branch: 'Carrie (Remakes)',
+		branch: 'Carrie (2026 Series)',
+		branchKind: 'remake',
+		branchNote:
+			'Another unrelated retelling of the same story — not connected to the 2013 film either.',
 		group: 'Adaptations',
 		tags: ['remake'],
 		seasons: 1,
@@ -391,10 +398,11 @@ export const stephenKingEntries: Entry[] = [
 		title: "Stephen King's The Shining",
 		type: 'series',
 		status: 'released',
-		chronology: 2.5,
+		chronology: 2,
 		branch: 'The Shining (1997 Miniseries)',
+		branchKind: 'remake',
 		branchNote:
-			'A more faithful retelling of the same novel — King himself wrote the script, partly in response to Kubrick’s changes.',
+			'An unrelated, more faithful retelling of the same novel — King himself wrote the script, partly in response to Kubrick’s changes.',
 		group: 'The Shining Saga',
 		tags: ['remake'],
 		seasons: 1,
@@ -409,9 +417,10 @@ export const stephenKingEntries: Entry[] = [
 		title: 'The Mist',
 		type: 'series',
 		status: 'released',
-		chronology: 12.5,
+		chronology: 12,
 		branch: 'The Mist (2017 Series)',
-		branchNote: 'A retelling of the same novella as the 2007 film, not a sequel to it.',
+		branchKind: 'remake',
+		branchNote: 'An unrelated retelling of the same novella as the 2007 film, not a sequel to it.',
 		group: 'Adaptations',
 		tags: ['remake'],
 		seasons: 1,
@@ -426,10 +435,11 @@ export const stephenKingEntries: Entry[] = [
 		title: 'It',
 		type: 'series',
 		status: 'released',
-		chronology: 15.05,
+		chronology: 15,
 		branch: 'It (1990 Miniseries)',
+		branchKind: 'remake',
 		branchNote:
-			'A single production covering both timelines the 2017/2019 films split into two — a retelling, not a sequel.',
+			'An unrelated production covering both timelines the 2017/2019 films split into two — a retelling, not a sequel.',
 		group: 'Derry & Castle Rock',
 		tags: ['remake'],
 		seasons: 1,
@@ -444,9 +454,10 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Pet Sematary',
 		type: 'film',
 		status: 'released',
-		chronology: 8.5,
+		chronology: 8,
 		branch: 'Pet Sematary (Remake)',
-		branchNote: 'A retelling of the same novel as the 1989 film, not a sequel to it.',
+		branchKind: 'remake',
+		branchNote: 'An unrelated retelling of the same novel as the 1989 film, not a sequel to it.',
 		group: 'Adaptations',
 		tags: ['remake'],
 		synopsis:
@@ -460,9 +471,10 @@ export const stephenKingEntries: Entry[] = [
 		title: 'Firestarter',
 		type: 'film',
 		status: 'released',
-		chronology: 6.5,
+		chronology: 6,
 		branch: 'Firestarter (Remake)',
-		branchNote: 'A retelling of the same novel as the 1984 film, not a sequel to it.',
+		branchKind: 'remake',
+		branchNote: 'An unrelated retelling of the same novel as the 1984 film, not a sequel to it.',
 		group: 'Adaptations',
 		tags: ['remake'],
 		synopsis:

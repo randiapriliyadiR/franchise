@@ -6,10 +6,12 @@ import type { Entry } from '../types';
  * output — the same rules apply here.
  *
  * Fantastic Beasts is a prequel trilogy set roughly 70 years before Harry
- * Potter's own story, so it's modeled as a branch that runs *before* the
- * main line rather than after it. HBO's Harry Potter series retells the
- * same seven books from scratch (one season per book) rather than
- * continuing the films' story, so it runs as its own branch too.
+ * Potter's own story, so it's modeled as a genuine story branch that runs
+ * *before* the main line rather than after it. HBO's Harry Potter series
+ * retells the same seven books from scratch (one season per book) rather
+ * than continuing the films' story, so it's a `branchKind: 'remake'`
+ * branch instead — an independent line with no connector, since it didn't
+ * fork from the films at all.
  */
 export const harryPotterEntries: Entry[] = [
 	{
@@ -190,11 +192,12 @@ export const harryPotterEntries: Entry[] = [
 		title: 'Harry Potter',
 		type: 'series',
 		status: 'upcoming',
-		chronology: 1.5,
+		chronology: 1,
 		chronologyNote: '1991–1992, a season-per-book retelling',
 		branch: 'HBO Series (Remake)',
+		branchKind: 'remake',
 		branchNote:
-			'A from-scratch, season-per-book retelling of the same seven books the films adapt — a new cast, not a continuation.',
+			'An unrelated, from-scratch, season-per-book retelling of the same seven books the films adapt — a new cast, not a continuation.',
 		group: 'HBO Series',
 		tags: ['remake'],
 		seasons: 1,

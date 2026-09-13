@@ -69,6 +69,19 @@ export interface Entry {
 	 * lane's subtitle on the timeline — every entry sharing a `branch` should
 	 * carry the same note. */
 	branchNote?: string;
+	/**
+	 * `'story'` (default): a genuine narrative branch — a spinoff, prequel,
+	 * or in-story fork (an alternate reality caused by time travel, say) —
+	 * drawn connected to the main line with a fork at the point it splits
+	 * off, because it really did split off from something.
+	 *
+	 * `'remake'`: an unrelated re-adaptation of the same story — a remake,
+	 * reboot, or alternate production with no narrative connection to the
+	 * original at all. Drawn as a fully independent parallel line with no
+	 * connector, since implying a fork would be factually wrong: nothing
+	 * split off from anything, two productions just told the same story.
+	 */
+	branchKind?: 'story' | 'remake';
 
 	/** Grouping used for filters and timeline sections, e.g. "Phase One", "Season 4". */
 	group?: string;

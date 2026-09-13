@@ -11,9 +11,9 @@ import type { Entry } from '../types';
  * main line rather than after it.
  *
  * Before Peter Jackson's films, the whole saga was already adapted once as
- * three separate animated productions (1977–1980) — a retelling, not a
- * continuation, so it runs as its own branch alongside whichever film
- * covers the same part of the story.
+ * three separate animated productions (1977–1980) — an unrelated retelling,
+ * not a continuation, so it's a `branchKind: 'remake'` branch: drawn as an
+ * independent line with no connector to the live-action films.
  */
 export const lotrEntries: Entry[] = [
 	{
@@ -140,10 +140,11 @@ export const lotrEntries: Entry[] = [
 		title: 'The Hobbit',
 		type: 'film',
 		status: 'released',
-		chronology: 0.25,
+		chronology: 0.2,
 		branch: 'Animated Adaptations (1977–1980)',
+		branchKind: 'remake',
 		branchNote:
-			'The whole saga adapted once before, across three separate animated productions — a retelling, not a continuation of the live-action films.',
+			'The whole saga adapted once before, across three separate animated productions — an unrelated retelling, not a continuation of the live-action films.',
 		group: 'Animated Adaptations',
 		tags: ['remake', 'animated'],
 		synopsis:
@@ -157,8 +158,9 @@ export const lotrEntries: Entry[] = [
 		title: 'The Lord of the Rings',
 		type: 'film',
 		status: 'released',
-		chronology: 1.5,
+		chronology: 1,
 		branch: 'Animated Adaptations (1977–1980)',
+		branchKind: 'remake',
 		group: 'Animated Adaptations',
 		tags: ['remake', 'animated'],
 		synopsis:
@@ -172,8 +174,9 @@ export const lotrEntries: Entry[] = [
 		title: 'The Return of the King',
 		type: 'film',
 		status: 'released',
-		chronology: 2.7,
+		chronology: 3,
 		branch: 'Animated Adaptations (1977–1980)',
+		branchKind: 'remake',
 		group: 'Animated Adaptations',
 		tags: ['remake', 'animated', 'finale'],
 		synopsis:

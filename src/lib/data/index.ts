@@ -143,6 +143,9 @@ export interface TimelineNode {
 	row: number;
 	isBranchStart: boolean;
 	branchNote?: string;
+	/** See `Entry.branchKind` — carried onto the node so the branch-start
+	 * label can word itself correctly ("Branch" vs "Remake"). */
+	branchKind?: 'story' | 'remake';
 }
 
 export interface TimelineColumn {
@@ -151,6 +154,10 @@ export interface TimelineColumn {
 	isMain: boolean;
 	startRow: number;
 	endRow: number;
+	/** See `Entry.branchKind` — a 'remake' column draws as an independent
+	 * line with no connector to the main column, since it didn't fork from
+	 * anything. Always 'story' for the main column itself. */
+	branchKind: 'story' | 'remake';
 }
 
 export interface TimelineGraph {
@@ -203,12 +210,20 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 			column,
 			row,
 			isBranchStart,
-			branchNote: entry.branchNote
+			branchNote: entry.branchNote,
+			branchKind: entry.branchKind
 		};
 	});
 
 	const columns: TimelineColumn[] = [
-		{ column: 0, branch: MAIN_BRANCH, isMain: true, startRow: 0, endRow: nodes.length - 1 }
+		{
+			column: 0,
+			branch: MAIN_BRANCH,
+			isMain: true,
+			startRow: 0,
+			endRow: nodes.length - 1,
+			branchKind: 'story'
+		}
 	];
 
 	for (const key of branchKeys) {
@@ -220,7 +235,8 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 				branch: key,
 				isMain: false,
 				startRow: Math.min(...rowsForColumn),
-				endRow: Math.max(...rowsForColumn)
+				endRow: Math.max(...rowsForColumn),
+				branchKind: byBranch.get(key)!.find((e) => e.branchKind)?.branchKind ?? 'story'
 			});
 		}
 	}

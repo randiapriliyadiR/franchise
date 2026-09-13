@@ -13,8 +13,10 @@ import type { Entry } from '../types';
  *
  * Two Eon stories were remade outside the main series — Never Say Never
  * Again retells Thunderball, and the 1967 Casino Royale retells the same
- * novel as the 2006 film — so both run as a "Non-Eon Films" branch rather
- * than sitting further down the main line.
+ * novel as the 2006 film. Each gets its own `branchKind: 'remake'` branch
+ * (they're unrelated to each other too, not just to Eon), drawn as an
+ * independent line with no connector — nothing forked, an unrelated
+ * production just told the same story again.
  */
 export const bondEntries: Entry[] = [
 	// ---- Sean Connery ----
@@ -393,18 +395,19 @@ export const bondEntries: Entry[] = [
 		cast: []
 	},
 
-	// ---- Non-Eon remakes — retellings of an Eon story made outside the
-	// main series, not part of its continuity. ----
+	// ---- Non-Eon remakes — unrelated retellings of an Eon story, made
+	// outside the main series and outside each other's continuity too. ----
 	{
 		id: 'never-say-never-again-1983',
 		franchise: 'james-bond',
 		title: 'Never Say Never Again',
 		type: 'film',
 		status: 'released',
-		chronology: 4.5,
-		branch: 'Non-Eon Films',
+		chronology: 4,
+		branch: 'Never Say Never Again (Non-Eon)',
+		branchKind: 'remake',
 		branchNote:
-			'A retelling of Thunderball made outside the main Eon series, with Sean Connery returning outside his official run.',
+			'An unrelated retelling of Thunderball made outside the main Eon series, with Sean Connery returning outside his official run.',
 		group: 'Non-Eon Films',
 		tags: ['remake'],
 		synopsis:
@@ -418,8 +421,10 @@ export const bondEntries: Entry[] = [
 		title: 'Casino Royale',
 		type: 'film',
 		status: 'released',
-		chronology: 21.5,
-		branch: 'Non-Eon Films',
+		chronology: 21,
+		branch: 'Casino Royale (1967, Non-Eon)',
+		branchKind: 'remake',
+		branchNote: 'An unrelated spy-spoof adaptation of the same novel as the 2006 film.',
 		group: 'Non-Eon Films',
 		tags: ['remake'],
 		synopsis:

@@ -31,6 +31,8 @@
 
 	const mainColumn = $derived(graph.columns.find((c) => c.isMain));
 
+	// A 'story' branch genuinely forked from the main line at some point, so
+	// it's drawn connected — a curved elbow from the main column into its own.
 	function branchPath(col: (typeof graph.columns)[number]): string {
 		const bx = centerX(col.column);
 		const startY = centerY(col.startRow);
@@ -41,6 +43,18 @@
 			return `M ${mx} ${startY} Q ${bx} ${startY} ${bx} ${startY}`;
 		}
 		return `M ${mx} ${startY} Q ${bx} ${startY} ${bx} ${startY + corner} L ${bx} ${endY}`;
+	}
+
+	// A 'remake' didn't fork from anything — it's a wholly independent
+	// retelling — so it's drawn as its own plain vertical line with no
+	// connector to the main column at all. Single-entry remakes still get a
+	// short visible stroke rather than nothing.
+	function remakePath(col: (typeof graph.columns)[number]): string {
+		const bx = centerX(col.column);
+		const pad = col.startRow === col.endRow ? NODE_HEIGHT / 2 + 14 : 0;
+		const startY = centerY(col.startRow) - pad;
+		const endY = centerY(col.endRow) + pad;
+		return `M ${bx} ${startY} L ${bx} ${endY}`;
 	}
 
 	// Drag-to-pan the board horizontally (native touch scroll already
@@ -96,8 +110,9 @@
 
 <p class="disclaimer">
 	Story order is a fan-friendly approximation for browsing, not an official studio document. The
-	main continuity runs down the left; branches — parallel places, timelines, or universes — peel off
-	to the right for as long as they last. Drag sideways (or scroll) if it doesn't fit.
+	main continuity runs down the left; dashed branches are genuine spinoffs, prequels, or in-story
+	forks, connected where they split off. Solid, unconnected lines are remakes — unrelated retellings
+	of the same story, not a continuation of anything. Drag sideways (or scroll) if it doesn't fit.
 </p>
 
 <div
@@ -124,7 +139,11 @@
 				/>
 			{/if}
 			{#each graph.columns.filter((c) => !c.isMain) as col (col.column)}
-				<path class="edge branch" d={branchPath(col)} fill="none" />
+				{#if col.branchKind === 'remake'}
+					<path class="edge remake" d={remakePath(col)} fill="none" />
+				{:else}
+					<path class="edge branch" d={branchPath(col)} fill="none" />
+				{/if}
 			{/each}
 		</svg>
 
@@ -132,10 +151,13 @@
 			{#if node.isBranchStart}
 				<div
 					class="branch-tag"
+					class:remake={node.branchKind === 'remake'}
 					style="left: {x(node.column)}px; top: {y(node.row) - 24}px; width: {NODE_WIDTH}px"
 				>
-					<span class="branch-icon" aria-hidden="true">⑂</span>
-					{node.entry.branch}
+					<span class="branch-icon" aria-hidden="true"
+						>{node.branchKind === 'remake' ? '∥' : '⑂'}</span
+					>
+					{node.branchKind === 'remake' ? 'Remake' : 'Branch'} — {node.entry.branch}
 				</div>
 			{/if}
 			<div
@@ -228,6 +250,14 @@
 		opacity: 0.8;
 	}
 
+	/* Solid rather than dashed, and not visually tied to the main line's
+	   x-position at all — a remake is an independent line, not a fork. */
+	.edge.remake {
+		stroke: var(--ink-faint);
+		stroke-width: 2;
+		opacity: 0.9;
+	}
+
 	.node-slot {
 		position: absolute;
 		transition:
@@ -251,6 +281,10 @@
 		transition:
 			left var(--duration-slow) var(--ease-out),
 			top var(--duration-slow) var(--ease-out);
+	}
+
+	.branch-tag.remake {
+		color: var(--ink-faint);
 	}
 
 	.branch-icon {

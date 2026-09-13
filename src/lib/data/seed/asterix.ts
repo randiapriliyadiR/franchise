@@ -9,10 +9,12 @@ import type { Entry } from '../types';
  * standalone adventure — and several entries are outright re-adaptations of
  * the same story rather than sequels (Asterix and Cleopatra ↔ Mission
  * Cleopatra; Asterix the Gaul ↔ vs. Caesar). So instead of pretending
- * they're one continuous timeline, the live-action films run as their own
- * branch alongside the animated ones, `chronology` placing each live-action
- * entry next to its closest animated counterpart to show the two tracks
- * side by side rather than end-to-end.
+ * they're one continuous timeline, the live-action films are a
+ * `branchKind: 'remake'` branch: drawn as their own independent line with
+ * no connector to the animated ones (nothing forked — an unrelated
+ * production just retold the same adventures), `chronology` placing each
+ * live-action entry next to its closest animated counterpart so the two
+ * tracks read side by side rather than end-to-end.
  */
 export const asterixEntries: Entry[] = [
 	{
@@ -120,10 +122,11 @@ export const asterixEntries: Entry[] = [
 		title: 'Asterix & Obelix vs. Caesar',
 		type: 'film',
 		status: 'released',
-		chronology: 1.5,
+		chronology: 1,
 		branch: 'Live-Action Adaptations',
+		branchKind: 'remake',
 		branchNote:
-			'The same loosely-ordered adventures retold in live action, decades later — a parallel version, not a sequel to the animated films.',
+			'An unrelated live-action retelling of the same loosely-ordered adventures, decades later — not a sequel to the animated films.',
 		group: 'Live-Action Films',
 		tags: ['origin'],
 		synopsis:
@@ -137,8 +140,9 @@ export const asterixEntries: Entry[] = [
 		title: 'Asterix & Obelix: Mission Cleopatra',
 		type: 'film',
 		status: 'released',
-		chronology: 2.5,
+		chronology: 2,
 		branch: 'Live-Action Adaptations',
+		branchKind: 'remake',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
@@ -154,6 +158,7 @@ export const asterixEntries: Entry[] = [
 		status: 'released',
 		chronology: 3.5,
 		branch: 'Live-Action Adaptations',
+		branchKind: 'remake',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
@@ -169,6 +174,7 @@ export const asterixEntries: Entry[] = [
 		status: 'released',
 		chronology: 4.5,
 		branch: 'Live-Action Adaptations',
+		branchKind: 'remake',
 		group: 'Live-Action Films',
 		tags: [],
 		synopsis:
@@ -184,6 +190,7 @@ export const asterixEntries: Entry[] = [
 		status: 'released',
 		chronology: 5.5,
 		branch: 'Live-Action Adaptations',
+		branchKind: 'remake',
 		group: 'Live-Action Films',
 		tags: ['finale'],
 		synopsis:

@@ -197,23 +197,48 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 	branchKeys.forEach((key, i) => columnOf.set(key, i + 1));
 
 	const sorted = orderedEntries(entries, order);
-	const seenBranch = new Set<string>();
 
-	const nodes: TimelineNode[] = sorted.map((entry, row) => {
-		const key = entry.branch ?? MAIN_BRANCH;
-		const column = columnOf.get(key)!;
-		const isBranchStart = key !== MAIN_BRANCH && !seenBranch.has(key);
-		if (isBranchStart) seenBranch.add(key);
-		return {
-			key: `e:${entry.id}`,
-			entry,
-			column,
-			row,
-			isBranchStart,
-			branchNote: entry.branchNote,
-			branchKind: entry.branchKind
-		};
-	});
+	// A remake retells a story at the exact point its chronology matches —
+	// "story chronology" is a from-beginning-to-end list, so a remake's
+	// timeline runs *in the same rows* as the story it retells, not further
+	// down the list. In release order this wouldn't make sense (a remake's
+	// real release date is usually decades apart), so grouping only
+	// applies in story order. It's also restricted to ties involving at
+	// least one 'remake' entry — a coincidental tie between two unrelated
+	// 'story' entries elsewhere in the data shouldn't accidentally merge.
+	const rowGroups: Entry[][] = [];
+	for (const entry of sorted) {
+		const last = rowGroups[rowGroups.length - 1];
+		const ties = last && last[0].chronology === entry.chronology;
+		const intentional =
+			order === 'chronology' &&
+			ties &&
+			(entry.branchKind === 'remake' || last!.some((e) => e.branchKind === 'remake'));
+		if (intentional) {
+			last!.push(entry);
+		} else {
+			rowGroups.push([entry]);
+		}
+	}
+
+	const seenBranch = new Set<string>();
+	const nodes: TimelineNode[] = rowGroups.flatMap((group, row) =>
+		group.map((entry) => {
+			const key = entry.branch ?? MAIN_BRANCH;
+			const column = columnOf.get(key)!;
+			const isBranchStart = key !== MAIN_BRANCH && !seenBranch.has(key);
+			if (isBranchStart) seenBranch.add(key);
+			return {
+				key: `e:${entry.id}`,
+				entry,
+				column,
+				row,
+				isBranchStart,
+				branchNote: entry.branchNote,
+				branchKind: entry.branchKind
+			};
+		})
+	);
 
 	const columns: TimelineColumn[] = [
 		{
@@ -221,7 +246,7 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 			branch: MAIN_BRANCH,
 			isMain: true,
 			startRow: 0,
-			endRow: nodes.length - 1,
+			endRow: rowGroups.length - 1,
 			branchKind: 'story'
 		}
 	];
@@ -241,7 +266,7 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 		}
 	}
 
-	return { nodes, columns, totalRows: nodes.length };
+	return { nodes, columns, totalRows: rowGroups.length };
 }
 
 /** Previous/next entry relative to `id`, following the given order — used

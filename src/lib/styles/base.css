@@ -1,0 +1,187 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--bg);
+	color-scheme: dark;
+}
+
+body {
+	margin: 0;
+	min-height: 100dvh;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: var(--fs-body);
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display);
+	font-weight: 600;
+	line-height: 1.08;
+	margin: 0;
+	letter-spacing: 0.01em;
+	text-wrap: balance;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+h2 {
+	font-size: var(--fs-h2);
+}
+h3 {
+	font-size: var(--fs-h3);
+}
+h4 {
+	font-size: var(--fs-h4);
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Consistent, visible focus ring for every interactive element, keyboard or not. */
+:focus-visible {
+	outline: 2px solid var(--accent-soft);
+	outline-offset: 3px;
+	border-radius: var(--radius-sm);
+}
+
+.container {
+	max-width: var(--container-max);
+	margin-inline: auto;
+	padding-inline: var(--space-5);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.skip-link {
+	position: absolute;
+	top: -48px;
+	left: var(--space-4);
+	z-index: 100;
+	background: var(--accent);
+	color: #fff;
+	padding: var(--space-2) var(--space-4);
+	border-radius: var(--radius-sm);
+	transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+	top: var(--space-4);
+}
+
+::selection {
+	background: var(--accent);
+	color: #fff;
+}
+
+/* Thin, muted scrollbar so it doesn't fight the dark theme (progressive
+   enhancement only — no functional dependency on it). */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--border-strong) transparent;
+}
+
+/* ---- Shared motion ---- */
+
+@keyframes shimmer {
+	0%,
+	100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+@keyframes pulse-glow {
+	0%,
+	100% {
+		opacity: 0.35;
+	}
+	50% {
+		opacity: 0.7;
+	}
+}
+
+/* Cross-fade between routes via the View Transitions API (Chromium today,
+   ignored elsewhere — see onNavigate in the root layout). */
+@media (prefers-reduced-motion: no-preference) {
+	::view-transition-old(root),
+	::view-transition-new(root) {
+		animation-duration: 220ms;
+		animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	::view-transition-old(root) {
+		animation-name: view-transition-fade-out;
+	}
+
+	::view-transition-new(root) {
+		animation-name: view-transition-fade-in;
+	}
+}
+
+@keyframes view-transition-fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes view-transition-fade-in {
+	from {
+		opacity: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}

@@ -23,7 +23,7 @@ export default defineConfig({
 			paths: {
 				// Set via the deploy workflow so links resolve correctly under
 				// https://<user>.github.io/franchises. Empty locally.
-				base: process.env.BASE_PATH ?? ''
+				base: (process.env.BASE_PATH as `/${string}` | undefined) ?? ''
 			}
 		})
 	]

@@ -7,7 +7,10 @@
 		data: { label: string; value: number }[];
 	} = $props();
 
-	const palette = ['var(--accent)', 'var(--accent-soft)', '#c2a866', '#7d8a9a', '#4f5a63'];
+	// accent-2 is a deliberately different hue from accent/accent-soft (which
+	// are the same hue two shades apart) — without it, the two biggest slices
+	// of most franchises' charts would be nearly indistinguishable.
+	const palette = ['var(--accent)', 'var(--accent-2)', 'var(--accent-soft)', '#8a94a6', '#5a6470'];
 
 	const total = $derived(data.reduce((sum, d) => sum + d.value, 0) || 1);
 	const radius = 70;

@@ -22,6 +22,7 @@
 	const themeVars = $derived(
 		`--accent:${data.franchise.theme.accent};` +
 			`--accent-soft:${data.franchise.theme.accentSoft};` +
+			`--accent-2:${data.franchise.theme.accent2};` +
 			`--surface:${data.franchise.theme.surface};` +
 			`--surface-raised:${data.franchise.theme.surfaceRaised};` +
 			`--gradient:${data.franchise.theme.gradient};`

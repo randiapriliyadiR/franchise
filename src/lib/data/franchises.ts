@@ -13,6 +13,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#e0242f',
 			accentSoft: '#ff6a52',
+			accent2: '#3d7fd6',
 			surface: '#150808',
 			surfaceRaised: '#1f0e0e',
 			gradient: 'linear-gradient(160deg, #2b0a0a 0%, #150808 55%, #0b0505 100%)'
@@ -31,6 +32,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#8f2b23',
 			accentSoft: '#c2a866',
+			accent2: '#4d7a78',
 			surface: '#0e0f0a',
 			surfaceRaised: '#171810',
 			gradient: 'linear-gradient(160deg, #201d10 0%, #0e0f0a 55%, #08090a 100%)'
@@ -49,6 +51,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#b8860b',
 			accentSoft: '#e8d18a',
+			accent2: '#2f6b4f',
 			surface: '#0f0a05',
 			surfaceRaised: '#1a130a',
 			gradient: 'linear-gradient(160deg, #241a0a 0%, #0f0a05 55%, #0a0705 100%)'
@@ -67,6 +70,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#4fc3f7',
 			accentSoft: '#ffe81f',
+			accent2: '#d1383f',
 			surface: '#05070d',
 			surfaceRaised: '#0d1220',
 			gradient: 'linear-gradient(160deg, #0a1428 0%, #05070d 55%, #030408 100%)'
@@ -85,6 +89,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#d4a017',
 			accentSoft: '#5b9bd5',
+			accent2: '#c0392b',
 			surface: '#050a14',
 			surfaceRaised: '#0d1420',
 			gradient: 'linear-gradient(160deg, #0a1626 0%, #050a14 55%, #04060c 100%)'
@@ -103,6 +108,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#a8172c',
 			accentSoft: '#c9a227',
+			accent2: '#2e4057',
 			surface: '#0a0a0a',
 			surfaceRaised: '#161414',
 			gradient: 'linear-gradient(160deg, #1a0a0d 0%, #0a0a0a 55%, #050505 100%)'
@@ -121,6 +127,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#2e6b3e',
 			accentSoft: '#c9a227',
+			accent2: '#a13d1f',
 			surface: '#070d08',
 			surfaceRaised: '#0f1810',
 			gradient: 'linear-gradient(160deg, #10200f 0%, #070d08 55%, #050a06 100%)'
@@ -139,6 +146,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#c41230',
 			accentSoft: '#f4a13c',
+			accent2: '#2b8c8c',
 			surface: '#0a0808',
 			surfaceRaised: '#161010',
 			gradient: 'linear-gradient(160deg, #1c0a0a 0%, #0a0808 55%, #060404 100%)'
@@ -157,6 +165,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#d4a017',
 			accentSoft: '#3b6ea5',
+			accent2: '#a8322a',
 			surface: '#0c0a06',
 			surfaceRaised: '#181409',
 			gradient: 'linear-gradient(160deg, #221c0d 0%, #0c0a06 55%, #070603 100%)'
@@ -175,6 +184,7 @@ export const franchises: Franchise[] = [
 		theme: {
 			accent: '#8b6914',
 			accentSoft: '#4a6670',
+			accent2: '#7a2e2e',
 			surface: '#0a0906',
 			surfaceRaised: '#16130d',
 			gradient: 'linear-gradient(160deg, #1c170e 0%, #0a0906 55%, #060502 100%)'

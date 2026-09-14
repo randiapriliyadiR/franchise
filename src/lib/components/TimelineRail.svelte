@@ -212,6 +212,11 @@
 	}
 
 	.viewport {
+		/* Shrink to the board's actual width (capped at the available space) so
+		   a small graph doesn't leave a huge dead expanse of dotted background —
+		   it only spans full-width, and pans, once content actually needs it. */
+		width: fit-content;
+		max-width: 100%;
 		margin-top: var(--space-6);
 		overflow-x: auto;
 		overflow-y: hidden;

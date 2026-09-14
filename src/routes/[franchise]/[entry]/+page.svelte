@@ -157,6 +157,10 @@
 <style>
 	.entry {
 		position: relative;
+		/* Without this, the backdrop's z-index: -1 escapes .entry entirely
+		   (position: relative alone doesn't create a stacking context) and
+		   paints behind the page background instead of behind this content. */
+		isolation: isolate;
 	}
 
 	.backdrop {

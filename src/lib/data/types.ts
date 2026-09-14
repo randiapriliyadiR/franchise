@@ -107,6 +107,11 @@ export interface Entry {
 export interface FranchiseTheme {
 	accent: string;
 	accentSoft: string;
+	/** A secondary hue, deliberately different from `accent`/`accentSoft`
+	 * rather than a tint of the same one — used where a single palette needs
+	 * a second, distinguishable color (chart segments, secondary emphasis)
+	 * instead of two shades of the same red/gold/etc. */
+	accent2: string;
 	surface: string;
 	surfaceRaised: string;
 	gradient: string;

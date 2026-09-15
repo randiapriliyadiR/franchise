@@ -17,13 +17,14 @@
 </script>
 
 <nav class="tabs" aria-label="Franchise views">
-	<ul>
+	<ul class="container-wide">
 		<li>
 			<a
 				href={resolve('/[franchise]', { franchise: franchiseId })}
 				aria-current={isCurrent('grid')}
 			>
-				Grid
+				<span class="idx" aria-hidden="true">01</span>
+				<span class="label">Grid</span>
 			</a>
 		</li>
 		<li>
@@ -31,7 +32,8 @@
 				href={resolve('/[franchise]/timeline', { franchise: franchiseId })}
 				aria-current={isCurrent('timeline')}
 			>
-				Timeline
+				<span class="idx" aria-hidden="true">02</span>
+				<span class="label">Timeline</span>
 			</a>
 		</li>
 		<li>
@@ -39,7 +41,8 @@
 				href={resolve('/[franchise]/stats', { franchise: franchiseId })}
 				aria-current={isCurrent('stats')}
 			>
-				Stats
+				<span class="idx" aria-hidden="true">03</span>
+				<span class="label">Stats</span>
 			</a>
 		</li>
 	</ul>
@@ -49,47 +52,94 @@
 	.tabs {
 		position: sticky;
 		top: 0;
-		z-index: 10;
-		background: color-mix(in srgb, var(--bg) 88%, transparent);
-		backdrop-filter: blur(8px);
-		border-bottom: 1px solid var(--border);
+		z-index: 15;
+		background: color-mix(in srgb, var(--bg) 84%, transparent);
+		backdrop-filter: blur(14px) saturate(1.2);
+		border-bottom: 1px solid var(--border-strong);
 	}
 
 	ul {
 		display: flex;
-		gap: var(--space-2);
-		max-width: var(--container-max);
-		margin-inline: auto;
-		padding-inline: var(--space-5);
+		gap: 0;
+	}
+
+	li + li a {
+		border-left: 1px solid var(--border);
 	}
 
 	a {
-		display: inline-block;
-		padding: var(--space-4) var(--space-4) calc(var(--space-4) - 2px);
+		position: relative;
+		display: flex;
+		align-items: baseline;
+		gap: var(--space-3);
+		padding: var(--space-4) var(--space-6);
 		text-decoration: none;
-		color: var(--ink-dim);
-		font-family: var(--font-display);
-		font-size: var(--fs-h4);
-		letter-spacing: 0.02em;
-		border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-		border-bottom: 2px solid transparent;
+		color: var(--ink-faint);
+		font-family: var(--font-franchise);
+		font-weight: var(--franchise-weight);
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		font-size: calc(var(--fs-h4) * var(--franchise-scale, 1));
 		transition:
-			background var(--duration-fast) var(--ease-out),
-			color var(--duration-fast) var(--ease-out),
-			border-color var(--duration-fast) var(--ease-out);
+			color var(--duration-base) var(--ease-out),
+			background var(--duration-base) var(--ease-out);
+	}
+
+	/* The active rule grows out from the left rather than just appearing. */
+	a::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -1px;
+		height: 2px;
+		background: var(--accent);
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform var(--duration-base) var(--ease-expo);
 	}
 
 	a:hover {
 		color: var(--ink);
-		background: color-mix(in srgb, var(--ink) 5%, transparent);
+		background: color-mix(in srgb, var(--ink) 4%, transparent);
 	}
 
-	/* Same "active = filled" language as the filter chips, just scaled down to
-	   a tint rather than a solid fill — these tabs sit much larger and more
-	   prominently than a chip, so a full accent fill would overpower the page. */
+	a:hover::after {
+		transform: scaleX(0.35);
+	}
+
 	a[aria-current='page'] {
 		color: var(--ink);
-		border-color: var(--accent);
-		background: color-mix(in srgb, var(--accent) 14%, transparent);
+		background: color-mix(in srgb, var(--accent) 12%, transparent);
+	}
+
+	a[aria-current='page']::after {
+		transform: scaleX(1);
+	}
+
+	.idx {
+		font-family: var(--font-body);
+		font-size: var(--fs-micro);
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		color: var(--accent-soft);
+		opacity: 0.75;
+	}
+
+	@media (max-width: 560px) {
+		a {
+			padding: var(--space-3) var(--space-4);
+			gap: var(--space-2);
+		}
+
+		.idx {
+			display: none;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		a::after {
+			transition: none;
+		}
 	}
 </style>

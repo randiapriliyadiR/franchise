@@ -177,22 +177,26 @@
 <style>
 	.toggle {
 		display: inline-flex;
-		gap: var(--space-2);
-		background: var(--surface-raised);
+		gap: 0;
 		border: 1px solid var(--border-strong);
 		border-radius: 999px;
-		padding: var(--space-1);
-		margin-top: var(--space-5);
+		padding: 3px;
+		margin-top: var(--space-7);
+		background: color-mix(in srgb, var(--surface-raised) 60%, transparent);
+		backdrop-filter: blur(8px);
 	}
 
 	.toggle button {
 		background: transparent;
 		border: none;
 		border-radius: 999px;
-		padding: var(--space-2) var(--space-5);
-		color: var(--ink-dim);
-		font-weight: 600;
-		font-size: var(--fs-small);
+		padding: var(--space-3) var(--space-6);
+		color: var(--ink-faint);
+		font-family: var(--font-franchise);
+		font-weight: var(--franchise-weight);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: calc(var(--fs-small) * var(--franchise-scale, 1));
 		cursor: pointer;
 		transition:
 			background var(--duration-fast) var(--ease-out),
@@ -204,10 +208,18 @@
 		color: #fff;
 	}
 
+	.toggle button:hover[aria-pressed='false'] {
+		color: var(--ink);
+		background: color-mix(in srgb, var(--ink) 6%, transparent);
+	}
+
 	.disclaimer {
-		margin-top: var(--space-3);
-		max-width: 60rem;
+		margin-top: var(--space-5);
+		max-width: 64rem;
+		padding-left: var(--space-5);
+		border-left: 2px solid var(--accent);
 		font-size: var(--fs-small);
+		line-height: 1.6;
 		color: var(--ink-faint);
 	}
 
@@ -274,12 +286,13 @@
 		position: absolute;
 		display: flex;
 		align-items: center;
-		gap: 4px;
-		font-size: 0.65rem;
-		font-weight: 700;
+		gap: var(--space-2);
+		font-family: var(--font-franchise);
+		font-weight: var(--franchise-weight);
+		font-size: 0.68rem;
 		color: var(--accent-soft);
 		text-transform: uppercase;
-		letter-spacing: 0.04em;
+		letter-spacing: 0.14em;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;

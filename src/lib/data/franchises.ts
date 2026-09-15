@@ -1,5 +1,12 @@
 import type { Franchise } from './types';
 
+/**
+ * Each franchise carries its own identity: a palette, a display typeface, and
+ * an atmospheric treatment. Nothing here is shared — a Gaulish village and a
+ * Starfleet bridge have no business being set in the same type or lit the same
+ * way. `type.scale` / `type.tracking` normalise faces of very different widths
+ * so they land at a comparable optical weight on the page.
+ */
 export const franchises: Franchise[] = [
 	{
 		id: 'marvel',
@@ -10,6 +17,8 @@ export const franchises: Franchise[] = [
 			'From a billionaire in a cave with a box of scraps to a multiverse of variants, the MCU is the largest shared-continuity franchise ever attempted on screen — dozens of films and series woven into a single ongoing story.',
 		publisher: 'Marvel Studios',
 		startYear: 2008,
+		motto: 'Assemble',
+		atmosphere: 'halftone',
 		theme: {
 			accent: '#e0242f',
 			accentSoft: '#ff6a52',
@@ -17,6 +26,14 @@ export const franchises: Franchise[] = [
 			surface: '#150808',
 			surfaceRaised: '#1f0e0e',
 			gradient: 'linear-gradient(160deg, #2b0a0a 0%, #150808 55%, #0b0505 100%)'
+		},
+		type: {
+			family: "'Anton', 'Arial Narrow', sans-serif",
+			query: 'Anton',
+			weight: 400,
+			tracking: '-0.015em',
+			scale: 1,
+			uppercase: true
 		},
 		heroEntryId: 'the-avengers-2012'
 	},
@@ -29,6 +46,8 @@ export const franchises: Franchise[] = [
 			'What began as Rick Grimes waking from a coma into the apocalypse grew into a sprawling universe of survivors, splinter communities, and spin-offs spanning two decades of story.',
 		publisher: 'AMC Studios',
 		startYear: 2010,
+		motto: 'Survive',
+		atmosphere: 'decay',
 		theme: {
 			accent: '#8f2b23',
 			accentSoft: '#c2a866',
@@ -36,6 +55,14 @@ export const franchises: Franchise[] = [
 			surface: '#0e0f0a',
 			surfaceRaised: '#171810',
 			gradient: 'linear-gradient(160deg, #201d10 0%, #0e0f0a 55%, #08090a 100%)'
+		},
+		type: {
+			family: "'Special Elite', 'Courier New', monospace",
+			query: 'Special+Elite',
+			weight: 400,
+			tracking: '0.005em',
+			scale: 0.9,
+			uppercase: true
 		},
 		heroEntryId: 'twd-s01'
 	},
@@ -48,6 +75,8 @@ export const franchises: Franchise[] = [
 			'An orphaned boy discovers he’s a wizard and enters a hidden world of spells, houses, and an old evil returning to power — eight films spanning his years at Hogwarts, plus the prequel adventures of Newt Scamander decades earlier.',
 		publisher: 'Warner Bros. Pictures',
 		startYear: 2001,
+		motto: 'Mischief Managed',
+		atmosphere: 'parchment',
 		theme: {
 			accent: '#b8860b',
 			accentSoft: '#e8d18a',
@@ -55,6 +84,14 @@ export const franchises: Franchise[] = [
 			surface: '#0f0a05',
 			surfaceRaised: '#1a130a',
 			gradient: 'linear-gradient(160deg, #241a0a 0%, #0f0a05 55%, #0a0705 100%)'
+		},
+		type: {
+			family: "'IM Fell English SC', Georgia, serif",
+			query: 'IM+Fell+English+SC',
+			weight: 400,
+			tracking: '0.01em',
+			scale: 1,
+			uppercase: false
 		},
 		heroEntryId: 'harry-potter-and-the-sorcerers-stone-2001'
 	},
@@ -67,6 +104,8 @@ export const franchises: Franchise[] = [
 			'Three trilogies chart the rise and fall of the Skywalker line, from a boy on a desert planet to a war between the Rebellion and the Empire, alongside a growing constellation of side stories about the rebels, smugglers, and Jedi in between.',
 		publisher: 'Lucasfilm',
 		startYear: 1977,
+		motto: 'The Force',
+		atmosphere: 'starfield',
 		theme: {
 			accent: '#4fc3f7',
 			accentSoft: '#ffe81f',
@@ -74,6 +113,14 @@ export const franchises: Franchise[] = [
 			surface: '#05070d',
 			surfaceRaised: '#0d1220',
 			gradient: 'linear-gradient(160deg, #0a1428 0%, #05070d 55%, #030408 100%)'
+		},
+		type: {
+			family: "'Michroma', 'Trebuchet MS', sans-serif",
+			query: 'Michroma',
+			weight: 400,
+			tracking: '-0.035em',
+			scale: 0.68,
+			uppercase: true
 		},
 		heroEntryId: 'star-wars-episode-iv-a-new-hope-1977'
 	},
@@ -86,6 +133,8 @@ export const franchises: Franchise[] = [
 			'Six decades of Starfleet crews exploring the galaxy — the original crew’s big-screen voyages, the Next Generation’s, and a modern era split between the prime timeline and an alternate reality forged by a single act of time travel.',
 		publisher: 'Paramount Pictures',
 		startYear: 1979,
+		motto: 'Boldly Go',
+		atmosphere: 'lcars',
 		theme: {
 			accent: '#d4a017',
 			accentSoft: '#5b9bd5',
@@ -93,6 +142,14 @@ export const franchises: Franchise[] = [
 			surface: '#050a14',
 			surfaceRaised: '#0d1420',
 			gradient: 'linear-gradient(160deg, #0a1626 0%, #050a14 55%, #04060c 100%)'
+		},
+		type: {
+			family: "'Audiowide', 'Trebuchet MS', sans-serif",
+			query: 'Audiowide',
+			weight: 400,
+			tracking: '-0.02em',
+			scale: 0.76,
+			uppercase: true
 		},
 		heroEntryId: 'star-trek-ii-the-wrath-of-khan-1982'
 	},
@@ -105,6 +162,8 @@ export const franchises: Franchise[] = [
 			'Six decades and six actors as Agent 007 — Britain’s most famous spy, on a run of mostly-standalone missions against megalomaniacs, spies, and SPECTRE, culminating in one continuous story across the Daniel Craig era.',
 		publisher: 'EON Productions',
 		startYear: 1962,
+		motto: 'Shaken, Not Stirred',
+		atmosphere: 'deco',
 		theme: {
 			accent: '#a8172c',
 			accentSoft: '#c9a227',
@@ -112,6 +171,14 @@ export const franchises: Franchise[] = [
 			surface: '#0a0a0a',
 			surfaceRaised: '#161414',
 			gradient: 'linear-gradient(160deg, #1a0a0d 0%, #0a0a0a 55%, #050505 100%)'
+		},
+		type: {
+			family: "'Poiret One', 'Century Gothic', sans-serif",
+			query: 'Poiret+One',
+			weight: 400,
+			tracking: '0.05em',
+			scale: 1.06,
+			uppercase: true
 		},
 		heroEntryId: 'goldfinger-1964'
 	},
@@ -124,6 +191,8 @@ export const franchises: Franchise[] = [
 			'A hobbit’s quest to destroy a ring of terrible power, decades after a much smaller adventure to reclaim a dwarf kingdom — and, millennia earlier still, the forging of the rings that started it all.',
 		publisher: 'New Line Cinema',
 		startYear: 2001,
+		motto: 'One Ring',
+		atmosphere: 'ember',
 		theme: {
 			accent: '#2e6b3e',
 			accentSoft: '#c9a227',
@@ -131,6 +200,14 @@ export const franchises: Franchise[] = [
 			surface: '#070d08',
 			surfaceRaised: '#0f1810',
 			gradient: 'linear-gradient(160deg, #10200f 0%, #070d08 55%, #050a06 100%)'
+		},
+		type: {
+			family: "'Cinzel Decorative', Georgia, serif",
+			query: 'Cinzel+Decorative:wght@400;700;900',
+			weight: 700,
+			tracking: '0.015em',
+			scale: 0.88,
+			uppercase: true
 		},
 		heroEntryId: 'the-lord-of-the-rings-the-fellowship-of-the-ring-2001'
 	},
@@ -143,6 +220,8 @@ export const franchises: Franchise[] = [
 			'A shelf of standalone film and TV adaptations spanning five decades, loosely tied together by recurring Maine towns, a shared mythology, and one very prolific author.',
 		publisher: 'Various Studios',
 		startYear: 1976,
+		motto: 'You’ll Float Too',
+		atmosphere: 'vhs',
 		theme: {
 			accent: '#c41230',
 			accentSoft: '#f4a13c',
@@ -150,6 +229,14 @@ export const franchises: Franchise[] = [
 			surface: '#0a0808',
 			surfaceRaised: '#161010',
 			gradient: 'linear-gradient(160deg, #1c0a0a 0%, #0a0808 55%, #060404 100%)'
+		},
+		type: {
+			family: "'Grenze Gotisch', Georgia, serif",
+			query: 'Grenze+Gotisch:wght@400;600;800',
+			weight: 700,
+			tracking: '0.005em',
+			scale: 1.08,
+			uppercase: true
 		},
 		heroEntryId: 'it-2017'
 	},
@@ -162,6 +249,8 @@ export const franchises: Franchise[] = [
 			'A small Gaulish village, protected by a druid’s magic potion, holds out against the Roman Empire across a comic series and its animated and live-action film adaptations.',
 		publisher: 'Les Éditions Albert René',
 		startYear: 1961,
+		motto: 'By Toutatis',
+		atmosphere: 'comic',
 		theme: {
 			accent: '#d4a017',
 			accentSoft: '#3b6ea5',
@@ -169,6 +258,14 @@ export const franchises: Franchise[] = [
 			surface: '#0c0a06',
 			surfaceRaised: '#181409',
 			gradient: 'linear-gradient(160deg, #221c0d 0%, #0c0a06 55%, #070603 100%)'
+		},
+		type: {
+			family: "'Bangers', 'Comic Sans MS', cursive",
+			query: 'Bangers',
+			weight: 400,
+			tracking: '0.02em',
+			scale: 1.04,
+			uppercase: true
 		},
 		heroEntryId: 'asterix-and-obelix-mission-cleopatra-2002'
 	},
@@ -181,6 +278,8 @@ export const franchises: Franchise[] = [
 			'The world’s most-adapted detective, reinvented across more than a century of film and television — from 1930s London to modern-day New York, plus a spinoff following his own detective sister.',
 		publisher: 'Various Studios',
 		startYear: 1939,
+		motto: 'The Game Is Afoot',
+		atmosphere: 'fog',
 		theme: {
 			accent: '#8b6914',
 			accentSoft: '#4a6670',
@@ -188,6 +287,14 @@ export const franchises: Franchise[] = [
 			surface: '#0a0906',
 			surfaceRaised: '#16130d',
 			gradient: 'linear-gradient(160deg, #1c170e 0%, #0a0906 55%, #060502 100%)'
+		},
+		type: {
+			family: "'Bevan', Georgia, serif",
+			query: 'Bevan',
+			weight: 400,
+			tracking: '-0.01em',
+			scale: 0.84,
+			uppercase: true
 		},
 		heroEntryId: 'sherlock-holmes-2009'
 	}

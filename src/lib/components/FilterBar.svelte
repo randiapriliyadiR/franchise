@@ -124,7 +124,7 @@
 <style>
 	.filter-bar {
 		padding-block: var(--space-5);
-		border-bottom: 1px solid var(--border);
+		border-block: 1px solid var(--border);
 	}
 
 	.row {
@@ -145,15 +145,15 @@
 		display: inline-flex;
 		align-items: center;
 		gap: var(--space-2);
-		/* A faint fill rather than flat transparent — idle chips should read as
-		   "interactive control" against the page background, not as a label. */
 		background: color-mix(in srgb, var(--ink) 5%, transparent);
 		border: 1px solid var(--border-strong);
 		color: var(--ink-dim);
 		border-radius: 999px;
 		padding: var(--space-2) var(--space-4);
-		font-size: var(--fs-small);
-		font-weight: 600;
+		font-size: var(--fs-micro);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
 		cursor: pointer;
 		transition:
 			background var(--duration-fast) var(--ease-out),
@@ -196,11 +196,11 @@
 
 	.field select,
 	.field input {
-		background: var(--surface-raised);
+		background: color-mix(in srgb, var(--surface-raised) 70%, transparent);
 		border: 1px solid var(--border-strong);
 		color: var(--ink);
-		border-radius: var(--radius-sm);
-		padding: var(--space-2) var(--space-3);
+		border-radius: 999px;
+		padding: var(--space-2) var(--space-4);
 		font-size: var(--fs-small);
 	}
 
@@ -209,8 +209,10 @@
 	}
 
 	.result-count {
-		margin-top: var(--space-4);
-		font-size: var(--fs-small);
+		margin-top: var(--space-5);
+		font-size: var(--fs-micro);
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
 		color: var(--ink-faint);
 	}
 </style>

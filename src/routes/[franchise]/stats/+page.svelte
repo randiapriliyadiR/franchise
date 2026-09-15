@@ -72,11 +72,14 @@
 	description={`Numbers behind ${data.franchise.name}: releases per year, ratings by era, and total runtime.`}
 />
 
-<div class="container">
-	<p class="intro">
-		A few things the grid and timeline don't spell out directly — the standout entries, and how the
-		franchise's output is actually distributed.
-	</p>
+<div class="container-wide page">
+	<header class="section-head">
+		<p class="kicker">By The Numbers</p>
+		<p class="intro">
+			A few things the grid and timeline don't spell out directly — the standout entries, and how
+			the franchise's output is actually distributed.
+		</p>
+	</header>
 
 	<div class="stat-row">
 		{#each highlightCards as stat, i (stat.label)}
@@ -110,31 +113,46 @@
 </div>
 
 <style>
-	.container {
-		padding-block: var(--space-6) var(--space-8);
+	.page {
+		padding-block: var(--space-8) var(--space-9);
 		display: flex;
 		flex-direction: column;
+		gap: var(--space-8);
+	}
+
+	.section-head {
+		display: grid;
+		grid-template-columns: minmax(0, 14rem) minmax(0, 46rem);
 		gap: var(--space-6);
+		align-items: start;
 	}
 
 	.intro {
-		max-width: 60ch;
 		color: var(--ink-dim);
+		font-size: var(--fs-h4);
+		text-wrap: pretty;
 	}
 
 	.stat-row {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-		gap: var(--space-4);
+		grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+		gap: var(--space-6) var(--space-5);
 	}
 
 	.chart-row {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 		gap: var(--space-5);
 	}
 
 	.chart-row.single {
 		grid-template-columns: 1fr;
+	}
+
+	@media (max-width: 860px) {
+		.section-head {
+			grid-template-columns: 1fr;
+			gap: var(--space-3);
+		}
 	}
 </style>

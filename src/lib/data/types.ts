@@ -117,6 +117,46 @@ export interface FranchiseTheme {
 	gradient: string;
 }
 
+/**
+ * The typographic half of a franchise's identity. Each franchise gets its own
+ * display face — a Gaulish comic and a Starfleet manual should not be set in
+ * the same type — loaded only on that franchise's own pages.
+ *
+ * The extra knobs exist because these faces are wildly different shapes: a
+ * single size and tracking that flatters Anton (narrow, heavy) turns Michroma
+ * (very wide, single weight) into an unreadable banner. `scale` and `tracking`
+ * normalise them back to the same optical weight on the page.
+ */
+export interface FranchiseType {
+	/** CSS font-family list, e.g. `'Anton', 'Arial Narrow', sans-serif`. */
+	family: string;
+	/** Google Fonts `family=` query fragment — the only part that differs
+	 * between franchises in the stylesheet URL. */
+	query: string;
+	/** Most of these display faces ship a single weight; forcing 700 on them
+	 * just triggers ugly synthetic bolding. */
+	weight: number;
+	/** Per-face tracking correction for large display sizes. */
+	tracking: string;
+	/** Multiplier applied to display sizes so wide faces don't overpower. */
+	scale: number;
+	uppercase: boolean;
+}
+
+/** Which atmospheric treatment paints behind a franchise — see
+ * `FranchiseAtmosphere.svelte`, where each id maps to its own CSS. */
+export type AtmosphereKind =
+	| 'halftone'
+	| 'decay'
+	| 'parchment'
+	| 'starfield'
+	| 'lcars'
+	| 'deco'
+	| 'ember'
+	| 'vhs'
+	| 'comic'
+	| 'fog';
+
 export interface Franchise {
 	id: string;
 	name: string;
@@ -126,6 +166,10 @@ export interface Franchise {
 	publisher: string;
 	startYear: number;
 	theme: FranchiseTheme;
+	type: FranchiseType;
+	atmosphere: AtmosphereKind;
+	/** Short all-caps phrase repeated in the hero marquee, e.g. "ASSEMBLE". */
+	motto: string;
 	/** Entry whose backdrop art anchors the franchise hero. */
 	heroEntryId: string;
 }

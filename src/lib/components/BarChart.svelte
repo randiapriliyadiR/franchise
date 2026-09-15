@@ -78,18 +78,20 @@
 <style>
 	.bar-chart {
 		margin: 0;
-		background: var(--surface-raised);
+		background: color-mix(in srgb, var(--surface-raised) 66%, transparent);
 		border: 1px solid var(--border);
 		border-radius: var(--radius-lg);
-		padding: var(--space-5);
+		padding: clamp(var(--space-5), 2.4vw, var(--space-6));
+		backdrop-filter: blur(10px);
 	}
 
 	figcaption {
-		font-size: var(--fs-small);
+		font-size: var(--fs-micro);
 		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: var(--ink-faint);
-		margin-bottom: var(--space-4);
+		letter-spacing: 0.22em;
+		font-weight: 700;
+		color: var(--accent-soft);
+		margin-bottom: var(--space-5);
 	}
 
 	svg {

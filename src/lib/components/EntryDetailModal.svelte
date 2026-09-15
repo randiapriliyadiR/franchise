@@ -107,7 +107,7 @@
 							<span aria-hidden="true">·</span> {e.group}
 						{/if}
 					</p>
-					<h2 id="entry-modal-title">{e.title}</h2>
+					<h2 id="entry-modal-title" class="type-franchise">{e.title}</h2>
 
 					<ul class="meta-row">
 						{#if e.status === 'upcoming'}
@@ -165,16 +165,17 @@
 		align-items: center;
 		justify-content: center;
 		padding: var(--space-5);
-		background: rgba(0, 0, 0, 0.65);
-		backdrop-filter: blur(2px);
+		background: rgba(0, 0, 0, 0.74);
+		backdrop-filter: blur(6px);
 	}
 
 	.dialog {
 		position: relative;
-		width: min(720px, 100%);
+		width: min(760px, 100%);
 		max-height: min(88vh, 900px);
 		overflow-y: auto;
-		background: var(--surface);
+		background: color-mix(in srgb, var(--surface) 94%, transparent);
+		backdrop-filter: blur(16px);
 		border: 1px solid var(--border-strong);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-raised);
@@ -237,16 +238,17 @@
 	}
 
 	.crumb {
-		font-size: var(--fs-small);
-		color: var(--ink-dim);
+		font-size: var(--fs-micro);
+		color: var(--accent-soft);
 		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.2em;
+		font-weight: 700;
 	}
 
 	h2 {
-		font-family: var(--font-display);
-		font-size: var(--fs-h3);
-		margin-top: var(--space-1);
+		font-size: calc(var(--fs-h3) * var(--franchise-scale, 1));
+		line-height: 1.02;
+		margin-top: var(--space-2);
 	}
 
 	.meta-row {
@@ -301,13 +303,27 @@
 	}
 
 	.full-link {
-		display: inline-block;
-		margin-top: var(--space-5);
-		font-size: var(--fs-small);
-		font-weight: 600;
-		color: var(--accent-soft);
-		text-decoration: underline;
-		text-underline-offset: 3px;
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+		margin-top: var(--space-6);
+		padding: var(--space-3) var(--space-5);
+		border: 1px solid var(--accent);
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--accent) 12%, transparent);
+		font-size: var(--fs-micro);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		color: var(--ink);
+		text-decoration: none;
+		transition: background var(--duration-base) var(--ease-out);
+	}
+
+	.full-link:hover,
+	.full-link:focus-visible {
+		background: var(--accent);
+		color: #fff;
 	}
 
 	@media (max-width: 560px) {

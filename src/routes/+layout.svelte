@@ -6,6 +6,7 @@
 	import { page } from '$app/state';
 	import Footer from '$lib/components/Footer.svelte';
 	import BackButton from '$lib/components/BackButton.svelte';
+	import CustomCursor from '$lib/components/CustomCursor.svelte';
 	import { navState } from '$lib/utils/navigation.svelte';
 
 	let { children } = $props();
@@ -55,11 +56,14 @@
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 
+<CustomCursor />
+<div class="grain" aria-hidden="true"></div>
+
 <header class="site-header">
-	<div class="container header-row">
+	<div class="container-wide header-row">
 		<a class="brand" href={resolve('/')}>
 			<span class="brand-mark" aria-hidden="true">◆</span>
-			Franchise Explorer
+			<span class="brand-name">Franchise Explorer</span>
 		</a>
 		{#if backHref}
 			<BackButton href={backHref} />
@@ -75,6 +79,8 @@
 
 <style>
 	.site-header {
+		position: relative;
+		z-index: 20;
 		padding-block: var(--space-5);
 	}
 
@@ -88,15 +94,30 @@
 	.brand {
 		display: inline-flex;
 		align-items: center;
-		gap: var(--space-2);
+		gap: var(--space-3);
 		font-family: var(--font-display);
-		font-size: var(--fs-h4);
-		font-weight: 600;
+		font-size: var(--fs-small);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.22em;
 		text-decoration: none;
 		color: var(--ink);
 	}
 
 	.brand-mark {
 		color: var(--accent);
+		font-size: 0.7em;
+		transition: transform var(--duration-base) var(--ease-spring);
+	}
+
+	.brand:hover .brand-mark {
+		transform: rotate(90deg) scale(1.2);
+	}
+
+	@media (max-width: 480px) {
+		.brand-name {
+			font-size: 0.72rem;
+			letter-spacing: 0.16em;
+		}
 	}
 </style>

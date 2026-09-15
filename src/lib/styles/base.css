@@ -20,6 +20,7 @@ body {
 	font-size: var(--fs-body);
 	line-height: 1.55;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
 }
 
 h1,
@@ -27,10 +28,10 @@ h2,
 h3,
 h4 {
 	font-family: var(--font-display);
-	font-weight: 600;
-	line-height: 1.08;
+	font-weight: 700;
+	line-height: 1.02;
 	margin: 0;
-	letter-spacing: 0.01em;
+	letter-spacing: -0.02em;
 	text-wrap: balance;
 }
 
@@ -86,6 +87,13 @@ ol {
 	padding-inline: var(--space-5);
 }
 
+/* Wider gutter variant for full-bleed editorial sections. */
+.container-wide {
+	max-width: 1600px;
+	margin-inline: auto;
+	padding-inline: clamp(var(--space-5), 4vw, var(--space-8));
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -126,6 +134,73 @@ ol {
 	scrollbar-color: var(--border-strong) transparent;
 }
 
+/* ---- Display type helpers ----
+
+   `.type-franchise` is how any component opts into the *current* franchise's
+   face. Outside a franchise scope the tokens fall back to the site's own
+   display font, so this is always safe to apply. */
+.type-franchise {
+	font-family: var(--font-franchise);
+	font-weight: var(--franchise-weight);
+	letter-spacing: var(--franchise-tracking);
+	text-transform: var(--franchise-transform);
+}
+
+/* An eyebrow/kicker: small, tracked-out, uppercase. */
+.kicker {
+	font-size: var(--fs-micro);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.24em;
+	color: var(--accent-soft);
+}
+
+/* ---- Scroll reveal ----
+
+   Elements decorated with `use:reveal` start hidden and animate in once they
+   enter the viewport. The no-JS / reduced-motion path never sets
+   `data-reveal`, so content is simply visible — never trapped invisible. */
+[data-reveal] {
+	opacity: 0;
+	transform: translate3d(0, var(--reveal-y, 28px), 0) scale(var(--reveal-scale, 1));
+	transition:
+		opacity var(--duration-reveal) var(--ease-expo),
+		transform var(--duration-reveal) var(--ease-expo);
+	transition-delay: var(--reveal-delay, 0ms);
+	will-change: opacity, transform;
+}
+
+[data-reveal='in'] {
+	opacity: 1;
+	transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* ---- Custom cursor ----
+
+   Only engaged on real pointing devices, and only once JS has mounted the
+   cursor element — otherwise the native cursor stays exactly where it is. */
+@media (hover: hover) and (pointer: fine) {
+	html.has-custom-cursor,
+	html.has-custom-cursor * {
+		cursor: none !important;
+	}
+}
+
+/* ---- Film grain ----
+
+   A single fixed overlay across the whole site. The noise is an inline SVG
+   turbulence so there's no image request, and it sits above content but
+   below any interaction. */
+.grain {
+	position: fixed;
+	inset: -50%;
+	z-index: 9998;
+	pointer-events: none;
+	opacity: 0.16;
+	mix-blend-mode: overlay;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
 /* ---- Shared motion ---- */
 
 @keyframes shimmer {
@@ -148,13 +223,22 @@ ol {
 	}
 }
 
+@keyframes marquee-track {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(-50%, 0, 0);
+	}
+}
+
 /* Cross-fade between routes via the View Transitions API (Chromium today,
    ignored elsewhere — see onNavigate in the root layout). */
 @media (prefers-reduced-motion: no-preference) {
 	::view-transition-old(root),
 	::view-transition-new(root) {
-		animation-duration: 220ms;
-		animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+		animation-duration: 320ms;
+		animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	}
 
 	::view-transition-old(root) {
@@ -175,6 +259,7 @@ ol {
 @keyframes view-transition-fade-in {
 	from {
 		opacity: 0;
+		transform: scale(1.015);
 	}
 }
 
@@ -183,5 +268,10 @@ ol {
 	::view-transition-old(*),
 	::view-transition-new(*) {
 		animation: none !important;
+	}
+
+	[data-reveal] {
+		opacity: 1;
+		transform: none;
 	}
 }

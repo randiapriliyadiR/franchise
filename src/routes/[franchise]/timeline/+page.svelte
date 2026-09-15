@@ -15,7 +15,15 @@
 	description={`Browse ${data.franchise.name} in release order or story chronology.`}
 />
 
-<div class="container">
+<div class="container-wide page">
+	<header class="section-head">
+		<p class="kicker">The Timeline</p>
+		<p class="blurb">
+			The same catalogue, laid out twice: the order it was made in, and the order the story actually
+			happens in. Drag the board sideways to follow a branch.
+		</p>
+	</header>
+
 	<TimelineRail entries={timelineEntries} />
 
 	{#if excludedCount > 0}
@@ -27,13 +35,33 @@
 </div>
 
 <style>
-	.container {
-		padding-block: var(--space-6) var(--space-8);
+	.page {
+		padding-block: var(--space-8) var(--space-9);
+	}
+
+	.section-head {
+		display: grid;
+		grid-template-columns: minmax(0, 14rem) minmax(0, 46rem);
+		gap: var(--space-6);
+		align-items: start;
+	}
+
+	.blurb {
+		color: var(--ink-dim);
+		font-size: var(--fs-h4);
+		text-wrap: pretty;
 	}
 
 	.note {
 		margin-top: var(--space-6);
 		font-size: var(--fs-small);
 		color: var(--ink-faint);
+	}
+
+	@media (max-width: 860px) {
+		.section-head {
+			grid-template-columns: 1fr;
+			gap: var(--space-3);
+		}
 	}
 </style>

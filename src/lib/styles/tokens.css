@@ -1,9 +1,9 @@
 /**
  * Design tokens. The base palette is a neutral dark cinematic theme;
- * `--accent` / `--accent-soft` / `--surface` / `--gradient` get overridden
- * per-franchise in [franchise]/+layout.svelte so every component downstream
- * automatically picks up the right identity without knowing which
- * franchise it's in.
+ * `--accent` / `--accent-soft` / `--accent-2` / `--surface` / `--gradient` get
+ * overridden per-franchise in [franchise]/+layout.svelte, together with the
+ * `--franchise-*` type tokens, so every component downstream automatically
+ * picks up the right identity without knowing which franchise it's in.
  */
 :root {
 	/* Base neutrals */
@@ -24,14 +24,26 @@
 	--gradient: linear-gradient(160deg, #2b0a0a 0%, #150808 55%, #0b0505 100%);
 
 	/* Typography */
-	--font-display: 'Oswald', 'Arial Narrow', sans-serif;
-	--font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+	--font-display: 'Bricolage Grotesque', 'Arial Narrow', sans-serif;
+	--font-body: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+	/* The franchise's own display face. Outside a franchise scope it falls
+	   back to the site's own display font, so shared components (cards, tabs,
+	   charts) can always reach for it without a guard. */
+	--font-franchise: var(--font-display);
+	--franchise-weight: 700;
+	--franchise-tracking: -0.02em;
+	--franchise-scale: 1;
+	--franchise-transform: none;
 
 	--fs-body: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
 	--fs-small: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
-	--fs-h1: clamp(2.4rem, 1.8rem + 3vw, 5rem);
-	--fs-h2: clamp(1.7rem, 1.4rem + 1.6vw, 2.75rem);
-	--fs-h3: clamp(1.25rem, 1.1rem + 0.8vw, 1.75rem);
+	--fs-micro: 0.68rem;
+	/* Deliberately enormous — the landing and hero type is the whole point. */
+	--fs-mega: clamp(3.5rem, 1.5rem + 11vw, 13rem);
+	--fs-h1: clamp(2.6rem, 1.6rem + 4.4vw, 6rem);
+	--fs-h2: clamp(1.9rem, 1.4rem + 2.2vw, 3.4rem);
+	--fs-h3: clamp(1.3rem, 1.1rem + 0.9vw, 1.9rem);
 	--fs-h4: clamp(1.05rem, 1rem + 0.3vw, 1.25rem);
 
 	/* Spacing scale */
@@ -44,6 +56,7 @@
 	--space-7: 3rem;
 	--space-8: 4.5rem;
 	--space-9: 6.5rem;
+	--space-10: 10rem;
 
 	/* Shape */
 	--radius-sm: 4px;
@@ -53,13 +66,17 @@
 
 	/* Motion */
 	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+	--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 	--duration-fast: 150ms;
 	--duration-base: 280ms;
 	--duration-slow: 500ms;
+	--duration-reveal: 900ms;
 
 	/* Shadow */
 	--shadow-card: 0 12px 32px -16px rgba(0, 0, 0, 0.6);
 	--shadow-raised: 0 24px 64px -24px rgba(0, 0, 0, 0.7);
+	--shadow-glow: 0 0 60px -10px color-mix(in srgb, var(--accent) 55%, transparent);
 
 	color-scheme: dark;
 }
@@ -69,5 +86,6 @@
 		--duration-fast: 0ms;
 		--duration-base: 0ms;
 		--duration-slow: 0ms;
+		--duration-reveal: 0ms;
 	}
 }

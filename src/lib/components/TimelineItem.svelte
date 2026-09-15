@@ -21,7 +21,7 @@
 	</div>
 	<div class="content">
 		<span class="type-badge">{typeLabel(entry.type)}</span>
-		<h4>{entry.title}</h4>
+		<h4 class="type-franchise">{entry.title}</h4>
 		<span class="marker">
 			{#if order === 'release'}
 				{formatYear(entry.releaseDate)}
@@ -34,9 +34,10 @@
 
 <style>
 	.node {
+		position: relative;
 		display: flex;
 		align-items: stretch;
-		gap: var(--space-2);
+		gap: var(--space-3);
 		width: 100%;
 		height: 100%;
 		text-decoration: none;
@@ -44,9 +45,10 @@
 		font: inherit;
 		color: inherit;
 		cursor: pointer;
-		background: var(--surface-raised);
+		background: color-mix(in srgb, var(--surface-raised) 82%, transparent);
+		backdrop-filter: blur(8px);
 		border: 1px solid var(--border);
-		border-radius: var(--radius-md);
+		border-radius: var(--radius-sm);
 		overflow: hidden;
 		transition:
 			border-color var(--duration-fast) var(--ease-out),
@@ -54,15 +56,35 @@
 			box-shadow var(--duration-fast) var(--ease-out);
 	}
 
+	/* Accent spine down the left edge, filling in on hover. */
+	.node::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: var(--accent);
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: transform var(--duration-base) var(--ease-expo);
+		z-index: 2;
+	}
+
 	.node:hover,
 	.node:focus-visible {
-		border-color: var(--accent-soft);
-		transform: translateY(-2px);
+		border-color: var(--accent);
+		transform: translateY(-3px);
 		box-shadow: var(--shadow-card);
 	}
 
+	.node:hover::before,
+	.node:focus-visible::before {
+		transform: scaleY(1);
+	}
+
 	.thumb {
-		width: 84px;
+		width: 80px;
 		flex-shrink: 0;
 	}
 
@@ -72,38 +94,61 @@
 		border-radius: 0;
 	}
 
+	.thumb :global(.poster img) {
+		filter: saturate(0.8) contrast(1.06);
+		transition: filter var(--duration-base) var(--ease-out);
+	}
+
+	.node:hover .thumb :global(.poster img) {
+		filter: saturate(1.05) contrast(1);
+	}
+
 	.content {
 		flex: 1;
 		min-width: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 3px;
+		gap: 4px;
 		padding: var(--space-2) var(--space-3) var(--space-2) 0;
 	}
 
 	.type-badge {
-		font-size: 0.65rem;
+		font-size: 0.6rem;
 		font-weight: 700;
 		color: var(--accent-soft);
 		text-transform: uppercase;
-		letter-spacing: 0.06em;
+		letter-spacing: 0.18em;
 	}
 
 	h4 {
-		font-size: 0.82rem;
-		line-height: 1.25;
+		font-size: calc(0.86rem * var(--franchise-scale, 1));
+		line-height: 1.2;
 		display: -webkit-box;
-		-webkit-line-clamp: 4;
-		line-clamp: 4;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		word-break: break-word;
+		transition: color var(--duration-fast) var(--ease-out);
+	}
+
+	.node:hover h4 {
+		color: var(--accent-soft);
 	}
 
 	.marker {
-		font-size: 0.7rem;
+		font-size: 0.68rem;
 		color: var(--ink-faint);
+		letter-spacing: 0.04em;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.node,
+		.node::before,
+		h4 {
+			transition: none;
+		}
 	}
 </style>

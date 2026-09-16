@@ -9,10 +9,16 @@
 	let order = $state<EntryOrder>('release');
 	const graph = $derived(buildTimelineGraph(entries, order));
 
-	// How each lane names itself. A remake retells one story; a universe is a
-	// whole separate continuity of its own.
-	const LANE_LABEL = { story: 'Branch', remake: 'Remake', universe: 'Universe' };
-	const LANE_GLYPH = { story: '⑂', remake: '∥', universe: '◈' };
+	// How each lane names itself. A remake retells one story with a different
+	// production; a universe is a whole separate continuity; a cut is another
+	// version of one particular film.
+	const LANE_LABEL = {
+		story: 'Branch',
+		remake: 'Remake',
+		universe: 'Universe',
+		cut: 'Alternate cut'
+	};
+	const LANE_GLYPH = { story: '⑂', remake: '∥', universe: '◈', cut: '⇌' };
 
 	let selected = $state<Entry | null>(null);
 
@@ -60,6 +66,46 @@
 		const startY = centerY(col.startRow) - pad;
 		const endY = centerY(col.endRow) + pad;
 		return `M ${bx} ${startY} L ${bx} ${endY}`;
+	}
+
+	// An alternate cut is the one lane that really is tied to something else
+	// on the board, so it gets a connector drawn between the two releases
+	// rather than a line of its own. Same row in story order (they're the
+	// same story) collapses it to a short bar; in release order the two sit
+	// years apart and it runs down the gutter between them.
+	const nodeById = $derived(new Map(graph.nodes.map((n) => [n.entry.id, n])));
+	const versionLinks = $derived(
+		graph.nodes
+			.filter((n) => n.entry.versionOf)
+			.map((n) => ({ key: n.key, from: nodeById.get(n.entry.versionOf!), to: n }))
+			.filter(
+				(
+					link
+				): link is {
+					key: string;
+					from: (typeof graph.nodes)[number];
+					to: (typeof graph.nodes)[number];
+				} => Boolean(link.from)
+			)
+	);
+
+	function versionPath(
+		from: (typeof graph.nodes)[number],
+		to: (typeof graph.nodes)[number]
+	): string {
+		const [left, right] = from.column <= to.column ? [from, to] : [to, from];
+		const x1 = x(left.column) + NODE_WIDTH;
+		const x2 = x(right.column);
+		const y1 = centerY(left.row);
+		const y2 = centerY(right.row);
+		if (left.row === right.row) return `M ${x1} ${y1} H ${x2}`;
+		const mid = (x1 + x2) / 2;
+		const r = 8;
+		const dir = y2 > y1 ? 1 : -1;
+		return (
+			`M ${x1} ${y1} H ${mid - r} Q ${mid} ${y1} ${mid} ${y1 + r * dir} ` +
+			`V ${y2 - r * dir} Q ${mid} ${y2} ${mid + r} ${y2} H ${x2}`
+		);
 	}
 
 	// Drag-to-pan the board horizontally (native touch scroll already
@@ -118,8 +164,10 @@
 	there is a main continuity it runs down the left, and dashed branches are genuine spinoffs,
 	prequels, or in-story forks, connected where they split off. Unconnected lines never forked from
 	anything: a <strong>remake</strong> retells one story a second time, while a
-	<strong>universe</strong> is a whole separate continuity recasting the same characters — DC runs several
-	side by side with no main line at all. Drag sideways (or scroll) if it doesn't fit.
+	<strong>universe</strong> is a whole separate continuity recasting the same characters — DC runs
+	several side by side with no main line at all. An <strong>alternate cut</strong> is the exception: a
+	second version of one particular film, joined to it by a short connector. Drag sideways (or scroll)
+	if it doesn't fit.
 </p>
 
 <div
@@ -146,11 +194,21 @@
 				/>
 			{/if}
 			{#each graph.columns.filter((c) => !c.isMain) as col (col.column)}
-				{#if col.branchKind === 'remake' || col.branchKind === 'universe'}
+				{#if col.branchKind === 'cut'}
+					<!-- Its connector does the work; a spine only helps if the lane
+					     actually spans more than one row. -->
+					{#if col.startRow !== col.endRow}
+						<path class="edge cut" d={remakePath(col)} fill="none" />
+					{/if}
+				{:else if col.branchKind === 'remake' || col.branchKind === 'universe'}
 					<path class="edge {col.branchKind}" d={remakePath(col)} fill="none" />
 				{:else}
 					<path class="edge branch" d={branchPath(col)} fill="none" />
 				{/if}
+			{/each}
+
+			{#each versionLinks as link (link.key)}
+				<path class="edge cut" d={versionPath(link.from, link.to)} fill="none" />
 			{/each}
 		</svg>
 
@@ -287,6 +345,17 @@
 		stroke: color-mix(in srgb, var(--accent-soft) 70%, transparent);
 		stroke-width: 2;
 		opacity: 0.95;
+	}
+
+	/* The tie between a film and its alternate cut. Drawn heavier than any
+	   other edge because in story order it's only as long as the gap between
+	   two cards, and it's the one connector that means "these two are the
+	   same film". */
+	.edge.cut {
+		stroke: var(--accent);
+		stroke-width: 3;
+		stroke-linecap: round;
+		opacity: 1;
 	}
 
 	.node-slot {

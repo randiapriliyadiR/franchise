@@ -151,7 +151,7 @@ export interface TimelineNode {
 	branchNote?: string;
 	/** See `Entry.branchKind` — carried onto the node so the branch-start
 	 * label can word itself correctly ("Branch" / "Remake" / "Universe"). */
-	branchKind?: 'story' | 'remake' | 'universe';
+	branchKind?: 'story' | 'remake' | 'universe' | 'cut';
 }
 
 export interface TimelineColumn {
@@ -163,7 +163,7 @@ export interface TimelineColumn {
 	/** See `Entry.branchKind` — a 'remake' or 'universe' column draws as an
 	 * independent line with no connector to the main column, since it didn't
 	 * fork from anything. Always 'story' for the main column itself. */
-	branchKind: 'story' | 'remake' | 'universe';
+	branchKind: 'story' | 'remake' | 'universe' | 'cut';
 }
 
 export interface TimelineGraph {
@@ -215,17 +215,17 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 	// timeline runs *in the same rows* as the story it retells, not further
 	// down the list. In release order this wouldn't make sense (a remake's
 	// real release date is usually decades apart), so grouping only
-	// applies in story order. It's also restricted to ties involving at
-	// least one 'remake' entry — a coincidental tie between two unrelated
-	// 'story' entries elsewhere in the data shouldn't accidentally merge.
+	// applies in story order. It's also restricted to ties involving a
+	// 'remake' or an alternate 'cut' — a coincidental tie between two
+	// unrelated 'story' entries elsewhere shouldn't accidentally merge.
+	const sharesRow = (e: Entry) => e.branchKind === 'remake' || e.branchKind === 'cut';
+
 	const rowGroups: Entry[][] = [];
 	for (const entry of sorted) {
 		const last = rowGroups[rowGroups.length - 1];
 		const ties = last && last[0].chronology === entry.chronology;
 		const intentional =
-			order === 'chronology' &&
-			ties &&
-			(entry.branchKind === 'remake' || last!.some((e) => e.branchKind === 'remake'));
+			order === 'chronology' && ties && (sharesRow(entry) || last!.some(sharesRow));
 		if (intentional) {
 			last!.push(entry);
 		} else {

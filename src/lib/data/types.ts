@@ -86,8 +86,18 @@ export interface Entry {
 	 * screen universes, say. Drawn independently like a remake, but labelled
 	 * differently, because Nolan's Batman isn't a remake of any one Snyder
 	 * film; it's a different world entirely.
+	 *
+	 * `'cut'`: another version of one particular film — a director's cut or
+	 * restoration, largely the same production rather than a fresh one.
+	 * Unlike a remake it *is* related to what it came from, so it sits level
+	 * with it and is drawn joined to it (see `versionOf`).
 	 */
-	branchKind?: 'story' | 'remake' | 'universe';
+	branchKind?: 'story' | 'remake' | 'universe' | 'cut';
+
+	/** For a `branchKind: 'cut'` entry, the id of the release it's another
+	 * version of. The timeline draws a connector between the two, so this has
+	 * to point at an entry in the same franchise. */
+	versionOf?: string;
 
 	/** Grouping used for filters and timeline sections, e.g. "Phase One", "Season 4". */
 	group?: string;

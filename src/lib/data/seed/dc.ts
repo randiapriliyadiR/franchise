@@ -550,7 +550,7 @@ export const dcEntries: Entry[] = [
 		tmdb: { type: 'movie', year: 2023 }
 	},
 
-	// ---- The one genuine remake: the same film, recut ----
+	// ---- Not a remake: the same film, recut ----
 	{
 		id: 'zack-snyders-justice-league-2021',
 		franchise: 'dc',
@@ -558,12 +558,13 @@ export const dcEntries: Entry[] = [
 		type: 'film',
 		status: 'released',
 		chronology: 15,
-		chronologyNote: 'the same story as the 2017 cut, told again at four hours',
+		chronologyNote: 'the same story as the 2017 cut, restored to four hours',
 		group: 'DCEU',
 		branch: SNYDER_CUT,
-		branchKind: 'remake',
+		branchKind: 'cut',
+		versionOf: 'justice-league-2017',
 		branchNote:
-			'Not a sequel and not a separate universe — the original director’s own cut of Justice League, so it runs level with it.',
+			'Not a remake and not a separate universe — the original director’s own cut of the same film, so it runs level with the theatrical version and stays joined to it.',
 		tags: [],
 		synopsis:
 			'Snyder’s restored version of the same story, with the fuller treatment of Cyborg, Steppenwolf and Darkseid that the theatrical cut dropped.',

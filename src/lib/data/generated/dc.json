@@ -1,1 +1,630 @@
-{}
+{
+	"aquaman-2018": {
+		"title": "Aquaman",
+		"releaseDate": "2018-12-07",
+		"runtimeMinutes": 143,
+		"synopsis": "Half-human, half-Atlantean Arthur Curry is taken on the journey of his lifetime to discover if he is worth of being a king.",
+		"cast": [
+			"Jason Momoa",
+			"Amber Heard",
+			"Willem Dafoe",
+			"Patrick Wilson",
+			"Nicole Kidman"
+		],
+		"rating": 6.9,
+		"director": "James Wan",
+		"posterPath": "/ufl63EFcc5XpByEV2Ecdw6WJZAI.jpg",
+		"backdropPath": "/9QusGjxcYvfPD1THg6oW3RLeNn7.jpg"
+	},
+	"aquaman-and-the-lost-kingdom-2023": {
+		"title": "Aquaman and the Lost Kingdom",
+		"releaseDate": "2023-12-20",
+		"runtimeMinutes": 124,
+		"synopsis": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Arthur (Aquaman) forges an alliance with his imprisoned brother. They must protect the kingdom.",
+		"cast": [
+			"Jason Momoa",
+			"Patrick Wilson",
+			"Yahya Abdul-Mateen II",
+			"Randall Park",
+			"Amber Heard"
+		],
+		"rating": 6.5,
+		"director": "James Wan",
+		"posterPath": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+		"backdropPath": "/bckxSN9ueOgm0gJpVJmPQrecWul.jpg"
+	},
+	"batman-1989": {
+		"title": "Batman",
+		"releaseDate": "1989-06-21",
+		"runtimeMinutes": 126,
+		"synopsis": "Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as Batman, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman known as 'The Joker' seizes control of Gotham's criminal underworld, Batman must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale.",
+		"cast": [
+			"Michael Keaton",
+			"Jack Nicholson",
+			"Kim Basinger",
+			"Robert Wuhl",
+			"Pat Hingle"
+		],
+		"rating": 7.2,
+		"director": "Tim Burton",
+		"posterPath": "/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+		"backdropPath": "/rBN6GPKUDZ6ZKAQiEZegZ0DZb6V.jpg"
+	},
+	"batman-and-robin-1997": {
+		"title": "Batman & Robin",
+		"releaseDate": "1997-06-20",
+		"runtimeMinutes": 125,
+		"synopsis": "Batman and his sidekick Robin attempt to the foil the sinister schemes of a deranged set of new villains, most notably the melancholy Mr. Freeze, who wants to make Gotham City into an arctic region, and the sultry Poison Ivy, a botanical femme fatale. As the Dynamic Duo contend with these bad guys, a third hero, Batgirl, joins the ranks of the city's crime-fighters.",
+		"cast": [
+			"George Clooney",
+			"Chris O'Donnell",
+			"Arnold Schwarzenegger",
+			"Uma Thurman",
+			"Alicia Silverstone"
+		],
+		"rating": 4.4,
+		"director": "Joel Schumacher",
+		"posterPath": "/i7hEUpDuMN2LOrCEifFyGSHZQSY.jpg",
+		"backdropPath": "/kEuQWHte2erRpAICrYqkAZaZAAY.jpg"
+	},
+	"batman-begins-2005": {
+		"title": "Batman Begins",
+		"releaseDate": "2005-06-10",
+		"runtimeMinutes": 140,
+		"synopsis": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+		"cast": [
+			"Christian Bale",
+			"Michael Caine",
+			"Liam Neeson",
+			"Katie Holmes",
+			"Gary Oldman"
+		],
+		"rating": 7.7,
+		"director": "Christopher Nolan",
+		"posterPath": "/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+		"backdropPath": "/ew5FcYiRhTYNJAkxoVPMNlCOdVn.jpg"
+	},
+	"batman-forever-1995": {
+		"title": "Batman Forever",
+		"releaseDate": "1995-06-16",
+		"runtimeMinutes": 121,
+		"synopsis": "Batman faces off against two foes: the schizophrenic, horribly scarred former District Attorney Harvey Dent, aka Two-Face, and the Riddler, a disgruntled ex-Wayne Enterprises inventor seeking revenge against his former employer by unleashing his brain-sucking weapon on Gotham City's residents. As the caped crusader also copes with tortured memories of his parents' murder, he has a new romance, with psychologist Chase Meridian.",
+		"cast": [
+			"Val Kilmer",
+			"Tommy Lee Jones",
+			"Jim Carrey",
+			"Nicole Kidman",
+			"Chris O'Donnell"
+		],
+		"rating": 5.5,
+		"director": "Joel Schumacher",
+		"posterPath": "/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
+		"backdropPath": "/snlu32RmjldF9b068UURJg8sQtn.jpg"
+	},
+	"batman-returns-1992": {
+		"title": "Batman Returns",
+		"releaseDate": "1992-06-19",
+		"runtimeMinutes": 126,
+		"synopsis": "The monstrous Penguin, who dwells in the sewers beneath Gotham, joins up with corrupt mayoral candidate Max Shreck to topple the Batman once and for all. But when Shreck's timid assistant Selina Kyle finds out, and Shreck tries to kill her, she's transformed into the sexy Catwoman. She teams up with the Penguin and Shreck to destroy Batman, but sparks fly unexpectedly when she confronts the caped crusader.",
+		"cast": [
+			"Michael Keaton",
+			"Danny DeVito",
+			"Michelle Pfeiffer",
+			"Christopher Walken",
+			"Michael Gough"
+		],
+		"rating": 7,
+		"director": "Tim Burton",
+		"posterPath": "/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
+		"backdropPath": "/7x4SNxO5HWArighxxFeet5sn3il.jpg"
+	},
+	"batman-v-superman-dawn-of-justice-2016": {
+		"title": "Batman v Superman: Dawn of Justice",
+		"releaseDate": "2016-03-23",
+		"runtimeMinutes": 152,
+		"synopsis": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+		"cast": [
+			"Ben Affleck",
+			"Henry Cavill",
+			"Jesse Eisenberg",
+			"Gal Gadot",
+			"Amy Adams"
+		],
+		"rating": 6,
+		"director": "Zack Snyder",
+		"posterPath": "/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
+		"backdropPath": "/5fX1oSGuYdKgwWmUTAN5MNSQGzr.jpg"
+	},
+	"birds-of-prey-2020": {
+		"title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+		"releaseDate": "2020-02-05",
+		"runtimeMinutes": 109,
+		"synopsis": "Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who had a hit placed on her after she stole a rare diamond from a crime lord.",
+		"cast": [
+			"Margot Robbie",
+			"Rosie Perez",
+			"Mary Elizabeth Winstead",
+			"Jurnee Smollett-Bell",
+			"Ewan McGregor"
+		],
+		"rating": 6.9,
+		"director": "Cathy Yan",
+		"posterPath": "/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg",
+		"backdropPath": "/3zBjU7mXlzxJKAStRzlNDZRGT0m.jpg"
+	},
+	"black-adam-2022": {
+		"title": "Black Adam",
+		"releaseDate": "2022-10-19",
+		"runtimeMinutes": 125,
+		"synopsis": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
+		"cast": [
+			"Dwayne Johnson",
+			"Aldis Hodge",
+			"Noah Centineo",
+			"Sarah Shahi",
+			"Quintessa Swindell"
+		],
+		"rating": 6.8,
+		"director": "Jaume Collet-Serra",
+		"posterPath": "/rCtreCr4xiYEWDQTebybolIh6Xe.jpg",
+		"backdropPath": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg"
+	},
+	"blue-beetle-2023": {
+		"title": "Blue Beetle",
+		"releaseDate": "2023-08-16",
+		"runtimeMinutes": 128,
+		"synopsis": "Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.",
+		"cast": [
+			"Xolo Maridueña",
+			"Bruna Marquezine",
+			"Susan Sarandon",
+			"Raoul Max Trujillo",
+			"Belissa Escobedo"
+		],
+		"rating": 6.6,
+		"director": "Ángel Manuel Soto",
+		"posterPath": "/mXLOHHc1Zeuwsl4xYKjKh2280oL.jpg",
+		"backdropPath": "/bVyFGnX8kt0XtJXdx2F1HyOkIic.jpg"
+	},
+	"clayface-2026": {
+		"title": "Clayface",
+		"releaseDate": "2026-10-21",
+		"synopsis": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+		"cast": [
+			"Tom Rhys Harries",
+			"Naomi Ackie",
+			"Eddie Marsan",
+			"Max Minghella",
+			"David Dencik"
+		],
+		"rating": 0,
+		"director": "James Watkins",
+		"posterPath": "/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+		"backdropPath": "/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg"
+	},
+	"creature-commandos-2024": {
+		"title": "Creature Commandos",
+		"releaseDate": "2024-12-05",
+		"seasons": 2,
+		"episodes": 8,
+		"synopsis": "Follow the exploits of the Creature Commandos, a secret team of incarcerated monsters recruited for missions deemed too dangerous for humans. When all else fails... they're your last, worst option.",
+		"cast": [
+			"Indira Varma",
+			"Sean Gunn",
+			"Alan Tudyk",
+			"Zoë Chao",
+			"David Harbour"
+		],
+		"rating": 7.8,
+		"posterPath": "/bB3G6Ug1jfsOUptb0RJsqrgMVta.jpg",
+		"backdropPath": "/y8T8BhptuHFPR0hCGcUSMyUfUfm.jpg"
+	},
+	"joker-2019": {
+		"title": "Joker",
+		"releaseDate": "2019-10-01",
+		"runtimeMinutes": 122,
+		"synopsis": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+		"cast": [
+			"Joaquin Phoenix",
+			"Robert De Niro",
+			"Zazie Beetz",
+			"Frances Conroy",
+			"Brett Cullen"
+		],
+		"rating": 8.1,
+		"director": "Todd Phillips",
+		"posterPath": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+		"backdropPath": "/rlay2M5QYvi6igbGcFjq8jxeusY.jpg"
+	},
+	"joker-folie-a-deux-2024": {
+		"title": "Joker: Folie à Deux",
+		"releaseDate": "2024-10-01",
+		"runtimeMinutes": 138,
+		"synopsis": "While struggling with his dual identity, Arthur Fleck not only stumbles upon true love, but also finds the music that's always been inside him.",
+		"cast": [
+			"Joaquin Phoenix",
+			"Lady Gaga",
+			"Brendan Gleeson",
+			"Catherine Keener",
+			"Zazie Beetz"
+		],
+		"rating": 5.4,
+		"director": "Todd Phillips",
+		"posterPath": "/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
+		"backdropPath": "/AVWlQpVhpudyFsSh3OQIieHHYf.jpg"
+	},
+	"justice-league-2017": {
+		"title": "Justice League",
+		"releaseDate": "2017-11-15",
+		"runtimeMinutes": 120,
+		"synopsis": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+		"cast": [
+			"Ben Affleck",
+			"Henry Cavill",
+			"Amy Adams",
+			"Gal Gadot",
+			"Ezra Miller"
+		],
+		"rating": 6.1,
+		"director": "Zack Snyder",
+		"posterPath": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+		"backdropPath": "/2nyaeISu2xIxIgZYNpX4UayY8PN.jpg"
+	},
+	"lanterns-2026": {
+		"title": "Lanterns",
+		"releaseDate": "2026-08-16",
+		"seasons": 1,
+		"episodes": 8,
+		"synopsis": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+		"cast": [
+			"Kyle Chandler",
+			"Aaron Pierre",
+			"Kelly Macdonald",
+			"Garret Dillahunt",
+			"Poorna Jagannathan"
+		],
+		"rating": 8.2,
+		"posterPath": "/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+		"backdropPath": "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg"
+	},
+	"man-of-steel-2013": {
+		"title": "Man of Steel",
+		"releaseDate": "2013-06-12",
+		"runtimeMinutes": 143,
+		"synopsis": "A young boy learns that he has extraordinary powers and is not of this earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.",
+		"cast": [
+			"Henry Cavill",
+			"Amy Adams",
+			"Michael Shannon",
+			"Diane Lane",
+			"Russell Crowe"
+		],
+		"rating": 6.7,
+		"director": "Zack Snyder",
+		"posterPath": "/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
+		"backdropPath": "/69EFgWWPFWbRNHmQgYdSnyJ94Ge.jpg"
+	},
+	"peacemaker-s01-2022": {
+		"releaseDate": "2022-01-13",
+		"runtimeMinutes": 44,
+		"episodes": 8,
+		"seasons": 1,
+		"synopsis": "After surviving being shot and then buried beneath a collapsing building, Peacemaker returns home only to realize that his freedom comes at a price. He is now part of Amanda Waller's new team fighting a mysterious new threat. Can he eliminate the threat without making things worse?",
+		"cast": [
+			"John Cena",
+			"Danielle Brooks",
+			"Freddie Stroma",
+			"Jennifer Holland",
+			"Steve Agee"
+		],
+		"rating": 7.5,
+		"posterPath": "/hE3LRZAY84fG19a18pzpkZERjTE.jpg",
+		"backdropPath": "/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg"
+	},
+	"peacemaker-s02-2025": {
+		"releaseDate": "2025-08-21",
+		"runtimeMinutes": 42,
+		"episodes": 8,
+		"seasons": 1,
+		"synopsis": "Following the exposure of Project Butterfly and the disbandment of Task Force X, the 11th Street Kids grapple with new identities, new friendships, and new rivalries. For Peacemaker, this means reconciling his past with his newfound sense of purpose — here and in an alternate dimension. Meanwhile, Rick Flag Sr. reappears as the director of A.R.G.U.S., focused on controlling metahumans and avenging the death of his son at the hands of Peacemaker.",
+		"cast": [
+			"John Cena",
+			"Danielle Brooks",
+			"Freddie Stroma",
+			"Jennifer Holland",
+			"Steve Agee"
+		],
+		"rating": 6.8,
+		"posterPath": "/2Wv0Zinc9nQ6ktL10Z9ckk2wjyZ.jpg",
+		"backdropPath": "/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg"
+	},
+	"shazam-2019": {
+		"title": "Shazam!",
+		"releaseDate": "2019-03-29",
+		"runtimeMinutes": 132,
+		"synopsis": "A boy is given the ability to become an adult superhero in times of need with a single magic word.",
+		"cast": [
+			"Zachary Levi",
+			"Mark Strong",
+			"Asher Angel",
+			"Jack Dylan Grazer",
+			"Adam Brody"
+		],
+		"rating": 7,
+		"director": "David F. Sandberg",
+		"posterPath": "/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+		"backdropPath": "/o7JVhqMmrex1TPbmuxl8YXVlcfl.jpg"
+	},
+	"shazam-fury-of-the-gods-2023": {
+		"title": "Shazam! Fury of the Gods",
+		"releaseDate": "2023-03-15",
+		"runtimeMinutes": 130,
+		"synopsis": "Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.",
+		"cast": [
+			"Zachary Levi",
+			"Asher Angel",
+			"Jack Dylan Grazer",
+			"Rachel Zegler",
+			"Adam Brody"
+		],
+		"rating": 6.4,
+		"director": "David F. Sandberg",
+		"posterPath": "/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg",
+		"backdropPath": "/kQV9sV0IbastbU5FYxuYwxfMawz.jpg"
+	},
+	"suicide-squad-2016": {
+		"title": "Suicide Squad",
+		"releaseDate": "2016-08-03",
+		"runtimeMinutes": 122,
+		"synopsis": "From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.",
+		"cast": [
+			"Will Smith",
+			"Jared Leto",
+			"Margot Robbie",
+			"Joel Kinnaman",
+			"Viola Davis"
+		],
+		"rating": 5.9,
+		"director": "David Ayer",
+		"posterPath": "/sk3FZgh3sRrmr8vyhaitNobMcfh.jpg",
+		"backdropPath": "/wAk0yKrhAmvsoMvlKs4QImhvK5X.jpg"
+	},
+	"supergirl-2026": {
+		"title": "Supergirl",
+		"releaseDate": "2026-06-24",
+		"runtimeMinutes": 108,
+		"synopsis": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+		"cast": [
+			"Milly Alcock",
+			"Eve Ridley",
+			"Matthias Schoenaerts",
+			"Jason Momoa",
+			"David Krumholtz"
+		],
+		"rating": 6.7,
+		"director": "Craig Gillespie",
+		"posterPath": "/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+		"backdropPath": "/54KIfdTEzOliHDKx0OkzYGqAICx.jpg"
+	},
+	"superman-1978": {
+		"title": "Superman",
+		"releaseDate": "1978-12-14",
+		"runtimeMinutes": 144,
+		"synopsis": "Mild-mannered Clark Kent works as a reporter at the Daily Planet alongside his crush, Lois Lane. Clark must summon his superhero alter-ego when the nefarious Lex Luthor launches a plan to take over the world.",
+		"cast": [
+			"Christopher Reeve",
+			"Margot Kidder",
+			"Gene Hackman",
+			"Marlon Brando",
+			"Ned Beatty"
+		],
+		"rating": 7.2,
+		"director": "Richard Donner",
+		"posterPath": "/d7px1FQxW4tngdACVRsCSaZq0Xl.jpg",
+		"backdropPath": "/5PfHGXosySGs0l1JfeREspy3v6G.jpg"
+	},
+	"superman-2025": {
+		"title": "Superman",
+		"releaseDate": "2025-07-09",
+		"runtimeMinutes": 130,
+		"synopsis": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+		"cast": [
+			"David Corenswet",
+			"Rachel Brosnahan",
+			"Nicholas Hoult",
+			"Edi Gathegi",
+			"Nathan Fillion"
+		],
+		"rating": 7.3,
+		"director": "James Gunn",
+		"posterPath": "/ldyfo0BKmz5rWtJJKCvwaNS4cJT.jpg",
+		"backdropPath": "/yRBc6WY3r1Fz5Cjd6DhSvzqunED.jpg"
+	},
+	"superman-ii-1980": {
+		"title": "Superman II",
+		"releaseDate": "1980-12-04",
+		"runtimeMinutes": 127,
+		"synopsis": "Three Kryptonian criminals led by General Zod team up with Lex Luthor to conquer Earth, forcing a depowered Superman to regain his strength and stop them.",
+		"cast": [
+			"Christopher Reeve",
+			"Margot Kidder",
+			"Terence Stamp",
+			"Sarah Douglas",
+			"Jack O'Halloran"
+		],
+		"rating": 6.8,
+		"director": "Richard Lester",
+		"posterPath": "/3xk5cno9BHcnwc97XO9k21aI1Zi.jpg",
+		"backdropPath": "/e77VeVcrXhxfCdJWD9rameYn7Qn.jpg"
+	},
+	"the-batman-2022": {
+		"title": "The Batman",
+		"releaseDate": "2022-03-01",
+		"runtimeMinutes": 177,
+		"synopsis": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+		"cast": [
+			"Robert Pattinson",
+			"Zoë Kravitz",
+			"Jeffrey Wright",
+			"Colin Farrell",
+			"Paul Dano"
+		],
+		"rating": 7.7,
+		"director": "Matt Reeves",
+		"posterPath": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+		"backdropPath": "/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg"
+	},
+	"the-batman-part-ii-2028": {
+		"title": "The Batman: Part II",
+		"releaseDate": "2028-02-17",
+		"synopsis": "Sequel to the 2022 film The Batman.",
+		"cast": [
+			"Robert Pattinson",
+			"Jeffrey Wright",
+			"Andy Serkis",
+			"Colin Farrell",
+			"Jayme Lawson"
+		],
+		"rating": 0,
+		"director": "Matt Reeves",
+		"posterPath": "/r5fl4aMsmTjgc8DdDqQaM84roWp.jpg",
+		"backdropPath": "/4uaHnYDDpUTj0nCg6YqBKab50YW.jpg"
+	},
+	"the-dark-knight-2008": {
+		"title": "The Dark Knight",
+		"releaseDate": "2008-07-16",
+		"runtimeMinutes": 152,
+		"synopsis": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+		"cast": [
+			"Christian Bale",
+			"Heath Ledger",
+			"Aaron Eckhart",
+			"Michael Caine",
+			"Maggie Gyllenhaal"
+		],
+		"rating": 8.5,
+		"director": "Christopher Nolan",
+		"posterPath": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+		"backdropPath": "/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg"
+	},
+	"the-dark-knight-rises-2012": {
+		"title": "The Dark Knight Rises",
+		"releaseDate": "2012-07-17",
+		"runtimeMinutes": 165,
+		"synopsis": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+		"cast": [
+			"Christian Bale",
+			"Gary Oldman",
+			"Tom Hardy",
+			"Joseph Gordon-Levitt",
+			"Anne Hathaway"
+		],
+		"rating": 7.8,
+		"director": "Christopher Nolan",
+		"posterPath": "/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+		"backdropPath": "/y2DB71C4nyIdMrANijz8mzvQtk6.jpg"
+	},
+	"the-flash-2023": {
+		"title": "The Flash",
+		"releaseDate": "2023-06-13",
+		"runtimeMinutes": 144,
+		"synopsis": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
+		"cast": [
+			"Ezra Miller",
+			"Sasha Calle",
+			"Michael Keaton",
+			"Michael Shannon",
+			"Ron Livingston"
+		],
+		"rating": 6.6,
+		"director": "Andy Muschietti",
+		"posterPath": "/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
+		"backdropPath": "/yF1eOkaYvwiORauRCPWznV9xVvi.jpg"
+	},
+	"the-penguin-2024": {
+		"title": "The Penguin",
+		"releaseDate": "2024-09-19",
+		"endDate": "2024-11-10",
+		"seasons": 1,
+		"episodes": 8,
+		"synopsis": "With the city in peril following the seawall's collapse, Oswald \"Oz\" Cobb seeks to fill the power vacuum left by the death of Carmine Falcone and finally give his mother Francis the life he's always promised. But first, Oz must confront his enemies and his own demoralizing reputation as \"the Penguin.\"",
+		"cast": [
+			"Colin Farrell",
+			"Cristin Milioti",
+			"Rhenzy Feliz",
+			"Deirdre O'Connell",
+			"Clancy Brown"
+		],
+		"rating": 8.3,
+		"posterPath": "/vOWcqC4oDQws1doDWLO7d3dh5qc.jpg",
+		"backdropPath": "/4TdmuuwiIiKw3JOjIuhdgYxRXnN.jpg"
+	},
+	"the-suicide-squad-2021": {
+		"title": "The Suicide Squad",
+		"releaseDate": "2021-07-28",
+		"runtimeMinutes": 132,
+		"synopsis": "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+		"cast": [
+			"Margot Robbie",
+			"Idris Elba",
+			"John Cena",
+			"Joel Kinnaman",
+			"Sylvester Stallone"
+		],
+		"rating": 7.4,
+		"director": "James Gunn",
+		"posterPath": "/q61qEyssk2ku3okWICKArlAdhBn.jpg",
+		"backdropPath": "/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg"
+	},
+	"wonder-woman-1984-2020": {
+		"title": "Wonder Woman 1984",
+		"releaseDate": "2020-12-16",
+		"runtimeMinutes": 151,
+		"synopsis": "A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.",
+		"cast": [
+			"Gal Gadot",
+			"Chris Pine",
+			"Kristen Wiig",
+			"Pedro Pascal",
+			"Robin Wright"
+		],
+		"rating": 6.4,
+		"director": "Patty Jenkins",
+		"posterPath": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
+		"backdropPath": "/egg7KFi18TSQc1s24RMmR9i2zO6.jpg"
+	},
+	"wonder-woman-2017": {
+		"title": "Wonder Woman",
+		"releaseDate": "2017-05-30",
+		"runtimeMinutes": 141,
+		"synopsis": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+		"cast": [
+			"Gal Gadot",
+			"Chris Pine",
+			"Connie Nielsen",
+			"Robin Wright",
+			"Danny Huston"
+		],
+		"rating": 7.2,
+		"director": "Patty Jenkins",
+		"posterPath": "/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
+		"backdropPath": "/AaABt75ZzfMGrscUR2seabz4PEX.jpg"
+	},
+	"zack-snyders-justice-league-2021": {
+		"title": "Zack Snyder's Justice League",
+		"releaseDate": "2021-03-18",
+		"runtimeMinutes": 242,
+		"synopsis": "Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+		"cast": [
+			"Ben Affleck",
+			"Henry Cavill",
+			"Gal Gadot",
+			"Ray Fisher",
+			"Jason Momoa"
+		],
+		"rating": 8.1,
+		"director": "Zack Snyder",
+		"posterPath": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+		"backdropPath": "/13Nz8EchKRdCgJcKdEoJAnpiVn2.jpg"
+	}
+}

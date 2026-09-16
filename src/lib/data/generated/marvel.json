@@ -99,7 +99,7 @@
 		],
 		"rating": 0,
 		"director": "Joe Russo",
-		"posterPath": "/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+		"posterPath": "/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
 		"backdropPath": "/s4v0UX1anfXm0UvloLsTTJ4v222.jpg"
 	},
 	"avengers-endgame-2019": {
@@ -132,7 +132,7 @@
 			"Mark Ruffalo"
 		],
 		"rating": 8.2,
-		"director": "Joe Russo",
+		"director": "Anthony Russo",
 		"posterPath": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
 		"backdropPath": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg"
 	},
@@ -424,7 +424,7 @@
 		],
 		"rating": 7.8,
 		"posterPath": "/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
-		"backdropPath": "/1R68vl3d5s86JsS2NPjl8UoMqIS.jpg"
+		"backdropPath": "/uHESULlKh7VSc0MRcqfyIf9Alk4.jpg"
 	},
 	"iron-man-2-2010": {
 		"title": "Iron Man 2",
@@ -753,7 +753,7 @@
 		"rating": 6.3,
 		"director": "Louis Leterrier",
 		"posterPath": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
-		"backdropPath": "/jPu8yiadqgzwFPGKJmGo637ASVP.jpg"
+		"backdropPath": "/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg"
 	},
 	"the-marvels-2023": {
 		"title": "The Marvels",
@@ -838,7 +838,7 @@
 		"rating": 6.5,
 		"director": "Alan Taylor",
 		"posterPath": "/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
-		"backdropPath": "/5QEOy0QEpad9QsXeMxuGHPXMale.jpg"
+		"backdropPath": "/5o88bbqcV5STn56jqOeovaaWbAE.jpg"
 	},
 	"thunderbolts-2025": {
 		"title": "Thunderbolts*",
@@ -873,7 +873,7 @@
 		],
 		"rating": 8.2,
 		"posterPath": "/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
-		"backdropPath": "/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg"
+		"backdropPath": "/cq62fLH3vwOmiaLKMqkDI86tPtH.jpg"
 	},
 	"werewolf-by-night-2022": {
 		"title": "Werewolf by Night",

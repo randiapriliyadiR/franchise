@@ -9,6 +9,11 @@
 	let order = $state<EntryOrder>('release');
 	const graph = $derived(buildTimelineGraph(entries, order));
 
+	// How each lane names itself. A remake retells one story; a universe is a
+	// whole separate continuity of its own.
+	const LANE_LABEL = { story: 'Branch', remake: 'Remake', universe: 'Universe' };
+	const LANE_GLYPH = { story: '⑂', remake: '∥', universe: '◈' };
+
 	let selected = $state<Entry | null>(null);
 
 	// Fixed-size grid: node position is pure arithmetic from (column, row),
@@ -109,10 +114,12 @@
 </div>
 
 <p class="disclaimer">
-	Story order is a fan-friendly approximation for browsing, not an official studio document. The
-	main continuity runs down the left; dashed branches are genuine spinoffs, prequels, or in-story
-	forks, connected where they split off. Solid, unconnected lines are remakes — unrelated retellings
-	of the same story, not a continuation of anything. Drag sideways (or scroll) if it doesn't fit.
+	Story order is a fan-friendly approximation for browsing, not an official studio document. Where
+	there is a main continuity it runs down the left, and dashed branches are genuine spinoffs,
+	prequels, or in-story forks, connected where they split off. Unconnected lines never forked from
+	anything: a <strong>remake</strong> retells one story a second time, while a
+	<strong>universe</strong> is a whole separate continuity recasting the same characters — DC runs several
+	side by side with no main line at all. Drag sideways (or scroll) if it doesn't fit.
 </p>
 
 <div
@@ -139,8 +146,8 @@
 				/>
 			{/if}
 			{#each graph.columns.filter((c) => !c.isMain) as col (col.column)}
-				{#if col.branchKind === 'remake'}
-					<path class="edge remake" d={remakePath(col)} fill="none" />
+				{#if col.branchKind === 'remake' || col.branchKind === 'universe'}
+					<path class="edge {col.branchKind}" d={remakePath(col)} fill="none" />
 				{:else}
 					<path class="edge branch" d={branchPath(col)} fill="none" />
 				{/if}
@@ -150,14 +157,13 @@
 		{#each graph.nodes as node (node.key)}
 			{#if node.isBranchStart}
 				<div
-					class="branch-tag"
-					class:remake={node.branchKind === 'remake'}
+					class="branch-tag {node.branchKind ?? 'story'}"
 					style="left: {x(node.column)}px; top: {y(node.row) - 24}px; width: {NODE_WIDTH}px"
 				>
 					<span class="branch-icon" aria-hidden="true"
-						>{node.branchKind === 'remake' ? '∥' : '⑂'}</span
+						>{LANE_GLYPH[node.branchKind ?? 'story']}</span
 					>
-					{node.branchKind === 'remake' ? 'Remake' : 'Branch'} — {node.entry.branch}
+					{LANE_LABEL[node.branchKind ?? 'story']} — {node.entry.branch}
 				</div>
 			{/if}
 			<div
@@ -273,6 +279,14 @@
 		stroke: var(--ink-faint);
 		stroke-width: 2;
 		opacity: 0.9;
+	}
+
+	/* A separate universe is a first-class continuity, not a footnote, so it
+	   carries the same weight as a main line rather than the muted grey. */
+	.edge.universe {
+		stroke: color-mix(in srgb, var(--accent-soft) 70%, transparent);
+		stroke-width: 2;
+		opacity: 0.95;
 	}
 
 	.node-slot {

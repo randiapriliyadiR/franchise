@@ -80,8 +80,14 @@ export interface Entry {
 	 * original at all. Drawn as a fully independent parallel line with no
 	 * connector, since implying a fork would be factually wrong: nothing
 	 * split off from anything, two productions just told the same story.
+	 *
+	 * `'universe'`: a whole separate continuity that recasts the same
+	 * characters and runs its own unrelated set of stories — DC's parallel
+	 * screen universes, say. Drawn independently like a remake, but labelled
+	 * differently, because Nolan's Batman isn't a remake of any one Snyder
+	 * film; it's a different world entirely.
 	 */
-	branchKind?: 'story' | 'remake';
+	branchKind?: 'story' | 'remake' | 'universe';
 
 	/** Grouping used for filters and timeline sections, e.g. "Phase One", "Season 4". */
 	group?: string;
@@ -155,7 +161,8 @@ export type AtmosphereKind =
 	| 'ember'
 	| 'vhs'
 	| 'comic'
-	| 'fog';
+	| 'fog'
+	| 'searchlight';
 
 export interface Franchise {
 	id: string;

@@ -22,6 +22,7 @@ import { lotrEntries } from '../src/lib/data/seed/lord-of-the-rings.ts';
 import { stephenKingEntries } from '../src/lib/data/seed/stephen-king.ts';
 import { asterixEntries } from '../src/lib/data/seed/asterix.ts';
 import { sherlockHolmesEntries } from '../src/lib/data/seed/sherlock-holmes.ts';
+import { dcEntries } from '../src/lib/data/seed/dc.ts';
 import type { Entry } from '../src/lib/data/types.ts';
 
 const API_KEY = process.env.TMDB_API_KEY;
@@ -40,7 +41,8 @@ const FRANCHISES: { id: string; entries: Entry[] }[] = [
 	{ id: 'lord-of-the-rings', entries: lotrEntries },
 	{ id: 'stephen-king', entries: stephenKingEntries },
 	{ id: 'asterix', entries: asterixEntries },
-	{ id: 'sherlock-holmes', entries: sherlockHolmesEntries }
+	{ id: 'sherlock-holmes', entries: sherlockHolmesEntries },
+	{ id: 'dc', entries: dcEntries }
 ];
 
 interface GeneratedFields {

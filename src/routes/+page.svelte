@@ -49,8 +49,12 @@
 <section class="intro">
 	<div class="container-wide intro-inner">
 		<p class="intro-kicker">
-			Ten universes <span aria-hidden="true">·</span>
-			{data.globalStats.total} entries <span aria-hidden="true">·</span> 1939—2026
+			{data.cards.length} franchises <span aria-hidden="true">·</span>
+			{data.globalStats.total} entries
+			{#if data.globalStats.yearRange}
+				<span aria-hidden="true">·</span>
+				{data.globalStats.yearRange[0]}—{data.globalStats.yearRange[1]}
+			{/if}
 		</p>
 
 		<h1 class="intro-title">

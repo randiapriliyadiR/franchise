@@ -9,6 +9,7 @@ import { lotrEntries } from './seed/lord-of-the-rings';
 import { stephenKingEntries } from './seed/stephen-king';
 import { asterixEntries } from './seed/asterix';
 import { sherlockHolmesEntries } from './seed/sherlock-holmes';
+import { dcEntries } from './seed/dc';
 import marvelGenerated from './generated/marvel.json';
 import twdGenerated from './generated/the-walking-dead.json';
 import harryPotterGenerated from './generated/harry-potter.json';
@@ -19,6 +20,7 @@ import lotrGenerated from './generated/lord-of-the-rings.json';
 import stephenKingGenerated from './generated/stephen-king.json';
 import asterixGenerated from './generated/asterix.json';
 import sherlockHolmesGenerated from './generated/sherlock-holmes.json';
+import dcGenerated from './generated/dc.json';
 export { franchises, getFranchise } from './franchises';
 
 /** Fields `scripts/sync-tmdb.mjs` is allowed to fill in from TMDB. */
@@ -68,7 +70,11 @@ const entriesByFranchise: Record<string, Entry[]> = {
 	'lord-of-the-rings': mergeGenerated(lotrEntries, lotrGenerated as GeneratedData),
 	'stephen-king': mergeGenerated(stephenKingEntries, stephenKingGenerated as GeneratedData),
 	asterix: mergeGenerated(asterixEntries, asterixGenerated as GeneratedData),
-	'sherlock-holmes': mergeGenerated(sherlockHolmesEntries, sherlockHolmesGenerated as GeneratedData)
+	'sherlock-holmes': mergeGenerated(
+		sherlockHolmesEntries,
+		sherlockHolmesGenerated as GeneratedData
+	),
+	dc: mergeGenerated(dcEntries, dcGenerated as GeneratedData)
 };
 
 export function getEntries(franchiseId: string): Entry[] {
@@ -144,8 +150,8 @@ export interface TimelineNode {
 	isBranchStart: boolean;
 	branchNote?: string;
 	/** See `Entry.branchKind` — carried onto the node so the branch-start
-	 * label can word itself correctly ("Branch" vs "Remake"). */
-	branchKind?: 'story' | 'remake';
+	 * label can word itself correctly ("Branch" / "Remake" / "Universe"). */
+	branchKind?: 'story' | 'remake' | 'universe';
 }
 
 export interface TimelineColumn {
@@ -154,10 +160,10 @@ export interface TimelineColumn {
 	isMain: boolean;
 	startRow: number;
 	endRow: number;
-	/** See `Entry.branchKind` — a 'remake' column draws as an independent
-	 * line with no connector to the main column, since it didn't fork from
-	 * anything. Always 'story' for the main column itself. */
-	branchKind: 'story' | 'remake';
+	/** See `Entry.branchKind` — a 'remake' or 'universe' column draws as an
+	 * independent line with no connector to the main column, since it didn't
+	 * fork from anything. Always 'story' for the main column itself. */
+	branchKind: 'story' | 'remake' | 'universe';
 }
 
 export interface TimelineGraph {
@@ -193,8 +199,14 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 		return aMin - bMin;
 	});
 
-	const columnOf = new Map<string, number>([[MAIN_BRANCH, 0]]);
-	branchKeys.forEach((key, i) => columnOf.set(key, i + 1));
+	// Not every franchise has a single spine for branches to hang off. DC is
+	// several parallel screen universes and no "main" continuity at all, so
+	// when nothing sits on the main branch the lanes start at column 0 and no
+	// empty main line gets drawn down the side of the board.
+	const hasMain = byBranch.has(MAIN_BRANCH);
+	const columnOf = new Map<string, number>();
+	if (hasMain) columnOf.set(MAIN_BRANCH, 0);
+	branchKeys.forEach((key, i) => columnOf.set(key, hasMain ? i + 1 : i));
 
 	const sorted = orderedEntries(entries, order);
 
@@ -240,16 +252,18 @@ export function buildTimelineGraph(entries: Entry[], order: EntryOrder): Timelin
 		})
 	);
 
-	const columns: TimelineColumn[] = [
-		{
-			column: 0,
-			branch: MAIN_BRANCH,
-			isMain: true,
-			startRow: 0,
-			endRow: rowGroups.length - 1,
-			branchKind: 'story'
-		}
-	];
+	const columns: TimelineColumn[] = hasMain
+		? [
+				{
+					column: 0,
+					branch: MAIN_BRANCH,
+					isMain: true,
+					startRow: 0,
+					endRow: rowGroups.length - 1,
+					branchKind: 'story'
+				}
+			]
+		: [];
 
 	for (const key of branchKeys) {
 		const column = columnOf.get(key)!;

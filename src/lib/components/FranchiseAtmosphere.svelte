@@ -414,6 +414,47 @@
 		animation: sweep-x 34s ease-in-out infinite alternate-reverse;
 	}
 
+	/* ---------- DC: a signal sweeping the rain over a cold city ---------- */
+
+	.searchlight .glow {
+		background:
+			radial-gradient(
+				44rem 30rem at 18% 92%,
+				color-mix(in srgb, var(--accent) 34%, transparent),
+				transparent 72%
+			),
+			radial-gradient(
+				32rem 26rem at 78% 10%,
+				color-mix(in srgb, var(--accent-soft) 20%, transparent),
+				transparent 70%
+			);
+	}
+
+	/* Rain, held still — a frame of it rather than a loop, for the same
+	   reason the film grain doesn't animate. */
+	.searchlight .texture {
+		background-image: repeating-linear-gradient(
+			74deg,
+			transparent 0 7px,
+			color-mix(in srgb, var(--ink) 9%, transparent) 7px 8px,
+			transparent 8px 26px
+		);
+		opacity: 0.4;
+	}
+
+	/* The signal itself: a wedge hinged below the viewport, searching. */
+	.searchlight .drift {
+		background: conic-gradient(
+			from 194deg at 50% 116%,
+			transparent 0deg 15deg,
+			color-mix(in srgb, var(--accent-soft) 18%, transparent) 17deg 23deg,
+			transparent 25deg 360deg
+		);
+		transform-origin: 50% 116%;
+		opacity: 0.6;
+		animation: sweep-beam 24s ease-in-out infinite alternate;
+	}
+
 	/* ---------- Shared motion ---------- */
 
 	@keyframes slide-tile {
@@ -448,6 +489,15 @@
 	@keyframes spin-slow {
 		to {
 			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes sweep-beam {
+		from {
+			transform: rotate(-10deg);
+		}
+		to {
+			transform: rotate(10deg);
 		}
 	}
 

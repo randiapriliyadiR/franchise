@@ -297,6 +297,35 @@ export const franchises: Franchise[] = [
 			uppercase: true
 		},
 		heroEntryId: 'sherlock-holmes-2009'
+	},
+	{
+		id: 'dc',
+		name: 'DC Universe',
+		shortName: 'DC',
+		tagline: 'Truth, justice, and a better tomorrow.',
+		description:
+			'The one franchise here with no main continuity at all: seven unrelated screen universes running in parallel, each recasting the same characters. Donner’s Superman, Burton and Schumacher’s Gotham, Nolan’s trilogy, the Snyder-era DCEU, Phillips’ Joker, Reeves’ detective Gotham, and the DCU that James Gunn rebooted from scratch in 2024.',
+		publisher: 'DC Studios / Warner Bros.',
+		startYear: 1978,
+		motto: 'The World’s Finest',
+		atmosphere: 'searchlight',
+		theme: {
+			accent: '#0b6fd6',
+			accentSoft: '#ffd54a',
+			accent2: '#c8102e',
+			surface: '#05080f',
+			surfaceRaised: '#0c1320',
+			gradient: 'linear-gradient(160deg, #0a1730 0%, #05080f 55%, #03050a 100%)'
+		},
+		type: {
+			family: "'Big Shoulders Display', 'Arial Narrow', sans-serif",
+			query: 'Big+Shoulders+Display:wght@400;700;900',
+			weight: 800,
+			tracking: '-0.005em',
+			scale: 1.04,
+			uppercase: true
+		},
+		heroEntryId: 'the-dark-knight-2008'
 	}
 ];
 

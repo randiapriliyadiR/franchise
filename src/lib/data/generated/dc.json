@@ -48,7 +48,7 @@
 		"rating": 7.2,
 		"director": "Tim Burton",
 		"posterPath": "/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
-		"backdropPath": "/rBN6GPKUDZ6ZKAQiEZegZ0DZb6V.jpg"
+		"backdropPath": "/rhc7OF7tC9HPu0X8DBKQJzaGRbu.jpg"
 	},
 	"batman-and-robin-1997": {
 		"title": "Batman & Robin",
@@ -82,7 +82,7 @@
 		"rating": 7.7,
 		"director": "Christopher Nolan",
 		"posterPath": "/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
-		"backdropPath": "/ew5FcYiRhTYNJAkxoVPMNlCOdVn.jpg"
+		"backdropPath": "/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg"
 	},
 	"batman-forever-1995": {
 		"title": "Batman Forever",
@@ -189,6 +189,7 @@
 	"clayface-2026": {
 		"title": "Clayface",
 		"releaseDate": "2026-10-21",
+		"runtimeMinutes": 108,
 		"synopsis": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
 		"cast": [
 			"Tom Rhys Harries",
@@ -200,7 +201,7 @@
 		"rating": 0,
 		"director": "James Watkins",
 		"posterPath": "/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-		"backdropPath": "/pwWR1DRjoFxwdH0jI2elBdXTF1F.jpg"
+		"backdropPath": "/1A7s8zG4PF6YoJrncrTO6N4r0Sx.jpg"
 	},
 	"creature-commandos-2024": {
 		"title": "Creature Commandos",
@@ -279,13 +280,11 @@
 		"cast": [
 			"Kyle Chandler",
 			"Aaron Pierre",
-			"Kelly Macdonald",
-			"Garret Dillahunt",
-			"Poorna Jagannathan"
+			"Kelly Macdonald"
 		],
-		"rating": 8.2,
+		"rating": 8.4,
 		"posterPath": "/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-		"backdropPath": "/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg"
+		"backdropPath": "/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg"
 	},
 	"man-of-steel-2013": {
 		"title": "Man of Steel",
@@ -334,7 +333,7 @@
 			"Jennifer Holland",
 			"Steve Agee"
 		],
-		"rating": 6.8,
+		"rating": 6.9,
 		"posterPath": "/2Wv0Zinc9nQ6ktL10Z9ckk2wjyZ.jpg",
 		"backdropPath": "/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg"
 	},
@@ -404,7 +403,7 @@
 		"rating": 6.7,
 		"director": "Craig Gillespie",
 		"posterPath": "/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
-		"backdropPath": "/54KIfdTEzOliHDKx0OkzYGqAICx.jpg"
+		"backdropPath": "/heZQmyNvkH236ha2M3JckdUQQqb.jpg"
 	},
 	"superman-1978": {
 		"title": "Superman",
@@ -522,7 +521,7 @@
 		"rating": 7.8,
 		"director": "Christopher Nolan",
 		"posterPath": "/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
-		"backdropPath": "/y2DB71C4nyIdMrANijz8mzvQtk6.jpg"
+		"backdropPath": "/c3OHQncTAnKFhdOTX7D3LTW6son.jpg"
 	},
 	"the-flash-2023": {
 		"title": "The Flash",
@@ -555,7 +554,7 @@
 			"Deirdre O'Connell",
 			"Clancy Brown"
 		],
-		"rating": 8.3,
+		"rating": 8.4,
 		"posterPath": "/vOWcqC4oDQws1doDWLO7d3dh5qc.jpg",
 		"backdropPath": "/4TdmuuwiIiKw3JOjIuhdgYxRXnN.jpg"
 	},
@@ -588,7 +587,7 @@
 			"Pedro Pascal",
 			"Robin Wright"
 		],
-		"rating": 6.4,
+		"rating": 6.3,
 		"director": "Patty Jenkins",
 		"posterPath": "/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
 		"backdropPath": "/egg7KFi18TSQc1s24RMmR9i2zO6.jpg"
@@ -625,6 +624,6 @@
 		"rating": 8.1,
 		"director": "Zack Snyder",
 		"posterPath": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
-		"backdropPath": "/13Nz8EchKRdCgJcKdEoJAnpiVn2.jpg"
+		"backdropPath": "/9WoLTsRgrupkvCgs3bhsl2EjLhs.jpg"
 	}
 }
